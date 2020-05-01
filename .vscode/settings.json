@@ -1,0 +1,74 @@
+{
+  "[html]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.scss": "scss"
+  },
+  "[scss]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "[mdx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "eslint.enable": true,
+  "cSpell.words": [
+    "Docgen",
+    "auditlog",
+    "devtools",
+    "devving",
+    "enddate",
+    "esbenp",
+    "fontawesome",
+    "fortawesome",
+    "iframe",
+    "iframes",
+    "ignorepaging",
+    "keydown",
+    "keyup",
+    "maxduration",
+    "parkmobile",
+    "reportingsuppliers",
+    "resetpasswordandacceptterms",
+    "scroller",
+    "sdoc",
+    "selfservicerateportal",
+    "selfservicerateportal's",
+    "sendresetlink",
+    "showable",
+    "startdate",
+    "testid",
+    "url's",
+    "usegetlocations",
+    "usequerygraphql",
+    "useredirection",
+    "usermanagement"
+  ]
+}

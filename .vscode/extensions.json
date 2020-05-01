@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "coenraads.bracket-pair-colorizer-2",
+    "dsznajder.es7-react-js-snippets",
+    "dbaeumer.vscode-eslint",
+    "skyran.js-jsx-snippets",
+    "esbenp.prettier-vscode",
+    "msjsdiag.debugger-for-chrome",
+    "eamodio.gitlens",
+    "wayou.vscode-todo-highlight",
+    "gruntfuggly.todo-tree",
+    "jonkwheeler.styled-components-snippets",
+    "jpoissonnier.vscode-styled-components",
+    "shd101wyy.markdown-preview-enhanced",
+    "silvenon.mdx",
+    "cssho.vscode-svgviewer"
+  ],
+  "unwantedRecommendations": []
+}
