@@ -1,6 +1,6 @@
 ## Spacing, Font Sizes, and Other Measurements
 
-Refer to `assets/mockups/desktop-home.png` for examples
+Refer to `../mockups/desktop-home.png` for examples
 
 * Max width of the content region should be `1180px`
 * We'll see three different "gutters" (spacing between, outside, or inside elements) used throughout:
