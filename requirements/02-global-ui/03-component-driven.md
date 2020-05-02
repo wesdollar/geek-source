@@ -1,4 +1,4 @@
-## Component Driven World
+## Component-Driven World
 
 Modern front end development is all about making reusable components. I start every project by first identifying my common components – components that appear all throughout the app. Once I've created all the common components, I'll then piece them together to build my UI – it's sort of like playing with Lego blocks at that point.
 
