@@ -10,5 +10,15 @@ $gutter: 20px;
 
   a {
     display: block;
+
+    &:before {
+      content: "•";
+      padding-right: 6px;
+    }
+
+    &:hover {
+      font-weight: normal;
+      text-decoration: underline;
+    }
   }
 }
