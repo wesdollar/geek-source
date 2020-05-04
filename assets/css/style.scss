@@ -3,4 +3,12 @@
 
 @import "{{ site.theme }}";
 
+$gutter: 20px;
 
+#sidebar-nav {
+  margin: $gutter 0;
+
+  a {
+    display: block;
+  }
+}
