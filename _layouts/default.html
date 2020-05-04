@@ -21,13 +21,13 @@
         {% endif %}
 
         <div id="sidebar-nav">
-          <a href="/requirements/00-prologue/">Prologue</a>
-          <a href="/requirements/01-project-setup/">Project Setup</a>
-          <a href="/requirements/02-global-ui/">Global UI</a>
-          <a href="/requirements/03-home-page/">Home Page</a>
-          <a href="/requirements/04-product-page/">Product Page</a>
-          <a href="/requirements/05-category-page/">Category Page</a>
-          <a href="/requirements/mockups/">Mockups</a>
+          <a href="{{ "/requirements/00-prologue/" | absolute_url }}">Prologue</a>
+          <a href="{{ "/requirements/01-project-setup/" | absolute_url }}">Project Setup</a>
+          <a href="{{ "/requirements/02-global-ui/" | absolute_url }}">Global UI</a>
+          <a href="{{ "/requirements/03-home-page/" | absolute_url }}">Home Page</a>
+          <a href="{{ "/requirements/04-product-page/" | absolute_url }}">Product Page</a>
+          <a href="{{ "/requirements/05-category-page/" | absolute_url }}">Category Page</a>
+          <a href="{{ "/requirements/mockups/" | absolute_url }}">Mockups</a>
         </div>
 
         {% if site.github.is_project_page %}
