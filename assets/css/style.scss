@@ -5,6 +5,13 @@
 
 $gutter: 20px;
 
+a {
+  &:hover {
+    font-weight: normal;
+    text-decoration: underline;
+  }
+}
+
 #sidebar-nav {
   margin: $gutter 0;
 
@@ -14,11 +21,6 @@ $gutter: 20px;
     &:before {
       content: "•";
       padding-right: 6px;
-    }
-
-    &:hover {
-      font-weight: normal;
-      text-decoration: underline;
     }
   }
 }
