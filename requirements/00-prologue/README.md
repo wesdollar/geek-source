@@ -4,3 +4,4 @@
 2. [Learn the Lingo](./02-learn-the-lingo.md)
 3. [Read the Docs](./03-read-the-docs.md)
 4. [Code Reviews](./04-code-reviews.md)
+5. [Concepts to Know](./05-concepts.md)
