@@ -3,12 +3,12 @@
 Git is a version control system that keeps track of your files and provides some powerful tools for managing your codebase. If you're not experienced with Git, check out the resources below and get in the habit of using a good Git flow.
 
 * A few guides:
-    * https://guides.github.com/introduction/git-handbook/
-    * https://rogerdudler.github.io/git-guide/
+    * [Git Handbook](https://guides.github.com/introduction/git-handbook/)
+    * [Git Guide](https://rogerdudler.github.io/git-guide/)
 * Learn by doing:
-    * https://github.com/jlord/git-it-electron#what-to-install
-    * https://lab.github.com/githubtraining/introduction-to-design-thinking
-    * https://lab.github.com/githubtraining/paths/ramp-up-on-git-and-github
+    * [Git-It (Desktop App)](https://github.com/jlord/git-it-electron)
+    * [Intro to Design Thinking](https://lab.github.com/githubtraining/introduction-to-design-thinking)
+    * [Ramp Up on Git & GitHub](https://lab.github.com/githubtraining/paths/ramp-up-on-git-and-github)
 
 You'll want to be familiar with all of the following concepts. Take the time to read about them and use the links above to practice your skills. Solid knowledge of Git will pay off over and over again.
 
