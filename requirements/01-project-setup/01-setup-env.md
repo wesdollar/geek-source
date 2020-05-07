@@ -5,6 +5,7 @@
 - Add additional lint rulesets for Angular/React/JSX/Styled Components lint rulesets
 - Extend lint rules with additional rules included below
 - Install recommended and/or helpful VS Code plugins
+    - VS Code will prompt you to install the plugins we recommend, which can be found in the `.vscode` folder in `extensions.json`
 
 If using React
 - Use Create React App, do not eject
@@ -16,7 +17,11 @@ If using React
 ---
 
 **Additional ESLint Rules for Angular & React**
-```
+<details>
+<summaryClick to expand</summary>
+<p>
+
+```json
 "rules": {
     "prettier/prettier": "error",
     "object-shorthand": [
@@ -199,11 +204,19 @@ If using React
 }
 ```
 
+</p>
+</details>
+
 ---
 
 **ESLint Configuration for React**
 Include rules from above, as well.
-```
+
+<details>
+<summary>Click to expand</summary>
+<p>
+
+```json
 "extends": [
     "react-app",
     "eslint:recommended",
@@ -214,3 +227,6 @@ Include rules from above, as well.
     "plugin:mdx/recommended"
 ],
 ```
+
+</p>
+</details>
