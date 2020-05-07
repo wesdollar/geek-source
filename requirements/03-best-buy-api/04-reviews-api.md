@@ -2,9 +2,11 @@
  The Best Buy Reviews API is used to return reviews for a given Product
 
  ## Get reviews for Product SKU
- ```https://api.bestbuy.com/v1/reviews(sku=4580243)?apiKey=YOUR_API_KEY&show=comment,id,rating,reviewer.name,sku,submissionTime,title&callback=JSON_CALLBACK&format=json```
+ `https://api.bestbuy.com/v1/reviews(sku=4580243)?apiKey=YOUR_API_KEY&show=comment,id,rating,reviewer.name,sku,submissionTime,title&callback=JSON_CALLBACK&format=json`
+
 <details>
 <summary>Click to show response</summary>
+<p>
 
 ```json
 {
@@ -151,4 +153,5 @@
     ]
 }
 ```
+</p>
 </details>
