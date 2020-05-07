@@ -1,11 +1,11 @@
 # The Categories API
- The Best Buy Category API is used to return information abot a category and a list of subcategories
+ The Best Buy Category API is used to return information about a category and a list of subcategories
 
  ## Get subcategories for a given category:
  ```https://api.bestbuy.com/v1/categories(id=abcat0300000)?apiKey=YOUR_API_KEY&format=json```
  <details>
   <summary>Click to show response</summary>
- 
+
   ```{
     "from": 1,
     "to": 10,
