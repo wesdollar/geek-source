@@ -2,7 +2,7 @@
 - Fork `geek-source` to your personal GitHub and clone locally
 - Setup either Angular or React
 - Setup Prettier, include appropriate lint rules
-- Add additional lint rulesets for Angular/React/JSX/Styled Components lint rulesets
+- Add additional lint rulesets for Angular/React/JSX/Styled Components
 - Extend lint rules with additional rules included below
 - Install recommended and/or helpful VS Code plugins
     - VS Code will prompt you to install the plugins we recommend, which can be found in the `.vscode` folder in `extensions.json`
