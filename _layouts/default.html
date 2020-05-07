@@ -14,10 +14,8 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
         {% endif %}
 
         <div id="sidebar-nav">
@@ -26,8 +24,8 @@
           <a href="{{ "/requirements/02-global-ui/" | absolute_url }}">Global UI</a>
           <a href="{{ "/requirements/03-best-buy-api/" | absolute_url }}">Best Buy API</a>
           <a href="{{ "/requirements/04-home-page/" | absolute_url }}">Home Page</a>
-          <a href="{{ "/requirements/05-product-page/" | absolute_url }}">Product Page</a>
-          <a href="{{ "/requirements/06-category-page/" | absolute_url }}">Category Page</a>
+          <a href="{{ "/requirements/05-category-page/" | absolute_url }}">Category Page</a>
+          <a href="{{ "/requirements/06-product-page/" | absolute_url }}">Product Page</a>
           <a href="{{ "/requirements/07-testing/" | absolute_url }}">Testing</a>
           <a href="{{ "/requirements/mockups/" | absolute_url }}">Mockups</a>
         </div>

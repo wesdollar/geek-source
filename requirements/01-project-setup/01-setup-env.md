@@ -5,7 +5,7 @@
 - Add additional lint rulesets for Angular/React/JSX/Styled Components
 - Extend lint rules with additional rules included below
 - Install recommended and/or helpful VS Code plugins
-    - VS Code will prompt you to install the plugins we recommend, which can be found in the `.vscode` folder in `extensions.json`
+    - VS Code will prompt you to install the plugins we recommend, thanks to the `extensions.json` file in the `.vscode` directory
 
 If using React
 - Use Create React App, do not eject
