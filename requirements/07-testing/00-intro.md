@@ -22,7 +22,7 @@ Writing tests for the negative paths in your code is much more valuable than wri
 Before I go into detail about each benefit, I want to first debunk a few myths about testing.
 
 **Myth: Testing is hard**
-Every new skill is hard at first. Just like anything else in software, once you learn how to do it, it's quick and easy – and can be quite fun & rewarding (more on that in a minute). Learn the test suite, begin thinking from a testing perspective, and it'll all fall into place and it'll be no longer be one of those activities you dread.
+Every new skill is hard at first. Just like anything else in software, once you learn how to do it, it's quick and easy – and can be quite fun & rewarding (more on that in a minute). Learn the test suite, begin thinking from a testing perspective, and it'll all fall into place and no longer be one of those activities you dread.
 
 **Myth: Testing is no fun**
 Maybe I'm a masochist, but there's something in my brain that really enjoys watching the CLI turn from red to green. According to science, it's not just me, though. I'm no biology expert, but I do know there's a reward center in the brain that can make us feel good and release some of those wonderful brain things like dopamine when we get that rewarding feedback from the CLI indicating that our test(s) passed. It can be very satisfying. I've also found testing to be one of the more relaxing activities I do as a developer – but, again, I may be weird.
