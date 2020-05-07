@@ -5,7 +5,7 @@
 ```https://api.bestbuy.com/v1/products/5005633.json?apiKey=YOUR_API_KEY```
 <details>
   <summary>Click to show response</summary>
-  
+
   ```{
     "sku": 5005633,
     "score": null,
@@ -486,7 +486,7 @@
 ```https://api.bestbuy.com/v1/products((categoryPath.id=abcat0502000))?apiKey=YOUR_API_KEY&format=json```
 <details>
   <summary>Click to show response</summary>
-  
+
   ```
   {
   "from": 1,
@@ -5400,5 +5400,6 @@
   ]
 }```
 </details>
+<br>
 
->Pro Tip:  That second response is massive.  A good developer should use filters to only display exactly which attributes he/she plans to use.
+> Pro Tip:  That second response is massive.  A good developer should use filters to only display exactly which attributes he/she plans to use.

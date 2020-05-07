@@ -18,7 +18,7 @@ If using React
 
 **Additional ESLint Rules for Angular & React**
 <details>
-<summaryClick to expand</summary>
+<summary>Click to expand</summary>
 <p>
 
 ```json
