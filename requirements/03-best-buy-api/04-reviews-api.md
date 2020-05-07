@@ -6,7 +6,8 @@
 <details>
 <summary>Click to show response</summary>
 
-```{
+```json
+{
     "from": 1,
     "to": 10,
     "currentPage": 1,
@@ -148,5 +149,6 @@
             "title": "Perfect"
         }
     ]
-}```
+}
+```
 </details>
