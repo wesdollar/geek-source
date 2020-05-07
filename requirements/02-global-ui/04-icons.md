@@ -3,7 +3,7 @@
 All icons used through the design come to us by way of FontAwesome, except for the shopping cart icon, which is available in `assets/svg`. FontAwesome makes packages for both Angular ([angular-fontawesome](https://github.com/FortAwesome/angular-fontawesome)) and React ([react-fontawesome](https://github.com/FortAwesome/react-fontawesome)) available for consumption. But, before you go coupling directly to FontAwesome...
 
 > Pro Tip:
-Rather than coupling directly to FontAwesome, create components for each icon and consume FontAwesome via your custom component. Should you ever choose to replace the icon with something different, you only have to edit your custom component to swap the icon out throughout your app rather than replacing every use that references the FontAwesome icon directly. This is called coupling, and we always want to limit how coupled we are to third party offerings.
+Rather than coupling directly to FontAwesome, create components for each icon, and consume FontAwesome via your custom component. Should you ever choose to replace the icon with something different, you only have to edit your custom component to swap the icon out throughout your app rather than replacing every use that references the FontAwesome icon directly. This is called coupling, and we always want to limit how coupled we are to third party offerings.
 
 You'll also want to create a component for the shopping cart icon, that way you don't have to go snag the SVG code every time you need to use it. Be sure to clean the generated SVG code up, such as removing comments, ids, etc.
 

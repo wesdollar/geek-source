@@ -7,17 +7,17 @@ Before embarking on this journey and to be successful as a professional develope
 * CSS
     * Flexbox
     * Pre-processors and post-processors
-* Javascript
-    * [MDN Javascript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
-        * Go through this often, especially early on, so you can see all the built-in methods Javascript has available to make developing easier and faster
-        * Use [JSFiddle](https://jsfiddle.net) to try thing outs
+* JavaScript
+    * [MDN JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+        * Go through this often, especially early on, so you can see all the built-in methods JavaScript has available to make developing easier and faster
+        * Use [JSFiddle](https://jsfiddle.net) to try thing out
     * ES6 Modules
         * `exports` and `imports`
     * `async`/`await`
     * `try`/`catch`/`throw`
     * `var` vs. `let` vs. `const`
 * React and Angular
-    * Familiarize yourself with both – pick one to learn fist, then do a project in the other
+    * Familiarize yourself with both – pick one to learn first, then do a project in the other
     * [React in 20 Minutes](https://www.youtube.com/watch?v=FNnhEBDYBr8)
     * [React community examples](https://reactjs.org/community/examples.html)
 * Git
