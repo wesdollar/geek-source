@@ -20,6 +20,6 @@ You'll want to be familiar with all of the following concepts. Take the time to 
 * `git merge` vs `git rebase`
 * `git stash` & `git stash pop`
 * Merge strategies
-* Cherry picking
+* Cherry-picking
 
 You will find yourself in a situation one day where Git will either save your butt or cause a massive headache. Mastering Git now will ensure it's there to save the day time and time again, and you'll no longer have to live in fear that the command you copied from StackOverflow ends up causing you to lose work.
