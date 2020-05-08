@@ -9,7 +9,7 @@
 ## Querying the APIs
  The Best Buy APIs can refine, sort, and format data simply by using the appropriate query params in your request.
 
- | Param | Function | Sample |
+| Param | Function | Sample |
 | ------------ | ------------- | ------------- |
 | apiKey | your Best Buy API key.  required for all API calls | https://api.bestbuy.com/v1/products?apiKey=YOUR_API_KEY |
 | format | xml or json.  Specifies output format | https://api.bestbuy.com/v1/products?format=json&apiKey=YOUR_API_KEY |
