@@ -1,5 +1,5 @@
 # The Categories API
- The Best Buy Category API is used to return information about a category and a list of subcategories
+ The Best Buy Category API is used to return subcategories for a given category and is used to further drill down into nested subcategories.  It is reccomended to use abcat0300000 as your top level category.
 
  ## Get subcategories for a given category:
 
