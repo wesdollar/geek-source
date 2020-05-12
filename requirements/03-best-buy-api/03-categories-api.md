@@ -1,12 +1,16 @@
 # The Categories API
- The Best Buy Category API is used to return information about a category and a list of subcategories
+ The Best Buy Category API is used to return subcategories for a given category and is used to further drill down into nested subcategories.  It is reccomended to use abcat0300000 as your top level category.
 
  ## Get subcategories for a given category:
+
  ```https://api.bestbuy.com/v1/categories(id=abcat0300000)?apiKey=YOUR_API_KEY&format=json```
+
  <details>
+ <p>
   <summary>Click to show response</summary>
 
-  ```{
+  ```json
+  {
     "from": 1,
     "to": 10,
     "currentPage": 1,
@@ -728,15 +732,22 @@
             ]
         }
     ]
-}```
+}
+```
+
+</p>
 </details>
 
-## Search for Category by Name
-https://api.bestbuy.com/v1/categories(name=pizza*)?apiKey=YOUR_API_KEY&format=json
+ ## Search for Category by Name
+
+```https://api.bestbuy.com/v1/categories(name=pizza*)?apiKey=YOUR_API_KEY&format=json```
+
 <details>
+<p>
   <summary>Click to show response</summary>
 
-```{
+```json
+{
     "from": 1,
     "to": 3,
     "currentPage": 1,
@@ -836,5 +847,8 @@ https://api.bestbuy.com/v1/categories(name=pizza*)?apiKey=YOUR_API_KEY&format=js
             "subCategories": []
         }
     ]
-}```
+}
+```
+
+</p>
 </details>
