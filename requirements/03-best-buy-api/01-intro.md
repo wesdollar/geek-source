@@ -9,11 +9,11 @@
 ## Querying the APIs
  The Best Buy APIs can refine, sort, and format data simply by using the appropriate query params in your request.
 
- | Param | Function | Sample |
-| ------------ | ------------- | ------------- |
-| apiKey | your Best Buy API key.  required for all API calls | https://api.bestbuy.com/v1/products?apiKey=YOUR_API_KEY |
-| format | xml or json.  Specifies output format | https://api.bestbuy.com/v1/products?format=json&apiKey=YOUR_API_KEY |
-| show | what attributes the API should return.  ```all``` will return all attributes | https://api.bestbuy.com/v1/products?show=name,sku,salePrice,department&apiKey=YOUR_API_KEY |
+| Param | Function | Sample |
+|--|--|--|
+| apiKey | your Best Buy API key. required for all API calls | https://api.bestbuy.com/v1/products?apiKey=YOUR_API_KEY |
+| format | xml or json. Specifies output format | https://api.bestbuy.com/v1/products?format=json&apiKey=YOUR_API_KEY |
+| show | what attributes the API should return. ```all``` will return all attributes | https://api.bestbuy.com/v1/products?show=name,sku,salePrice,department&apiKey=YOUR_API_KEY |
 | sort | attribute.asc or attribute.desc | https://api.bestbuy.com/v1/products(categoryPath.name="All%20Flat-Screen%20TVs")?format=json&show=sku,name,salePrice&sort=salePrice&apiKey=YOUR_API_KEY |
 | facets | returns summary info for product or category | https://api.bestbuy.com/v1/products(categoryPath.name="All%20Flat-Panel%20TVs")?format=json&show=sku,name,salePrice&facet=manufacturer,5&apiKey=YOUR_API_KEY |
 | pageSize, page | for collections, how many items to return per page and which page you are viewing | https://api.bestbuy.com/v1/products(type=Movie)?format=json&show=sku,name,salePrice&pageSize=3&page=10&apiKey=YOUR_API_KEY |

@@ -3,10 +3,13 @@
 
 ## Getting a Single Product
 ```https://api.bestbuy.com/v1/products/5005633.json?apiKey=YOUR_API_KEY```
+
 <details>
+<p>
   <summary>Click to show response</summary>
 
-  ```{
+  ```json
+  {
     "sku": 5005633,
     "score": null,
     "productId": null,
@@ -479,15 +482,20 @@
     "proposition65WarningType": "01",
     "displayType": "LCD touch screen",
     "screenSizeIn": 3
-}```
+}
+```
+</p>
 </details>
+
+
 
 ## Get Products for a given Category
 ```https://api.bestbuy.com/v1/products((categoryPath.id=abcat0502000))?apiKey=YOUR_API_KEY&format=json```
 <details>
+<p>
   <summary>Click to show response</summary>
 
-  ```
+  ```json
   {
   "from": 1,
   "to": 10,
@@ -5398,7 +5406,10 @@
       "screenSizeIn": 15.4
     }
   ]
-}```
+}
+```
+
+</p>
 </details>
 <br>
 
