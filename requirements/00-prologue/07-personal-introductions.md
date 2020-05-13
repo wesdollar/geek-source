@@ -35,13 +35,13 @@ My goal is to give my audience a little morsels, not the whole thing. I'm trying
 
 Notice I offered no details, but I spoke to something every project wants – success delivery in less time. This will prompt my audience to ask me questions, such as,
 
-"What were you able to automated?"
+"What were you able to automate?"
 
 "How did you automate it?"
 
-"What as the original timeline of the project?"
+"What was the original timeline of the project?"
 
-"How much time did it save?"
+"How much time did automation save?"
 
 "Is there anything about our project you think you could automate?"
 
