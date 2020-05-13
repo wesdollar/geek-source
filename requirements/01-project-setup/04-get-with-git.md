@@ -10,7 +10,7 @@ Git is a version control system that keeps track of your files and provides some
     * [Intro to Design Thinking](https://lab.github.com/githubtraining/introduction-to-design-thinking)
     * [Ramp Up on Git & GitHub](https://lab.github.com/githubtraining/paths/ramp-up-on-git-and-github)
 
-You'll want to be familiar with all of the following concepts. Take the time to read about them and use the links above to practice your skills. Solid knowledge of Git will pay off over and over again.
+You'll want to be familiar with all of the following concepts. Take the time to read about them and use the links above to practice your skills. Solid knowledge of Git will pay off time and time again.
 
 * Checkout files
 * Committing & pushing files
@@ -22,4 +22,4 @@ You'll want to be familiar with all of the following concepts. Take the time to 
 * Merge strategies
 * Cherry-picking
 
-You will find yourself in a situation one day where Git will either save your butt or cause a massive headache. Mastering Git now will ensure it's there to save the day time and time again, and you'll no longer have to live in fear that the command you copied from StackOverflow ends up causing you to lose work.
+You will find yourself in a situation one day where Git will either save your butt or cause a massive headache. Mastering Git now will ensure it's there to save the day, and you'll no longer have to live in fear that the command you copied from StackOverflow ends up causing you to lose work.

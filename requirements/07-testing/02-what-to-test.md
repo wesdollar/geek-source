@@ -2,7 +2,7 @@
 
 I'll start by reiterating a pro tip I shared in the intro: testing the negative paths is more important than testing the positive paths. Don't get me wrong, we should strive to provide coverage for as much as possible, but I've found it to be a good habit to start with the negative paths. This approach tends to identify bugs earlier, but it also ensures I at least have my negative paths covered in case I find myself in a time crunch.
 
-During development, we tend to go through the experience of the positive path dozens – if not hundreds – of times. Tt's reasonable to have a high level of confidence in the positive path given the frequency at which we traverse it. We'll often find all the bugs within the positive path, because we need that functionality to work in order to get to the next step of our engineering. The negative paths, however, get traveled much less, or perhaps, are even forgotten.
+During development, we tend to go through the experience of the positive path dozens – if not hundreds – of times. Tt's reasonable to have a high level of confidence in the positive path given the frequency at which we traverse it. We'll often find all the bugs within the positive path, because we need that functionality to work to get to the next step of our engineering. The negative paths, however, get traveled much less, or perhaps, are even forgotten.
 
 Here are some areas you should always be thinking about in terms of providing frontend test coverage:
 
