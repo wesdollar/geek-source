@@ -1,9 +1,9 @@
 ## Personal Introductions
 
 Three keys to success:
-1. Have a prepared intro and outro
-2. Give them just enough to pique their interest
-3. Know your audience
+1. [Have a prepared intro and outro](#have-a-prepared-intro-&-outro)
+2. [Give them just enough to pique their interest](#give-them-just-enough-to-pique-their-interest)
+3. [Know your audience](#know-your-audience)
 
 <br>
 
@@ -25,7 +25,7 @@ Introductions are no different. We've set ourselves up for success by preparing 
 
 <br>
 
-### Give Them Just Enough to Peak Their Interest
+### Give Them Just Enough to Pique Their Interest
 
 As with everything, saying less is more. I usually focus on trying to say all the right things that will prompt my audience to ask follow up questions, thus beginning a dialog. This is not the opportunity to tell my entire life story nor entire career journey. I purposely hold back details so that I can have a real dialog with them when the time comes.
 
