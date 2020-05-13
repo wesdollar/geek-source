@@ -56,7 +56,7 @@ Now, don't feel sad or like an opportunity was missed if follow-up questions or 
 
 ### Know Your Audience
 
-One last, very important thing – avoid "bragging". You can certainly lead them to ask you to share those things you're proud of. People listen completely differently when they prompt you for information/details versus when you force it down their throats. Quick story,
+Avoid "bragging". You can certainly lead them to ask you to share those things you're proud of. People listen completely differently when they prompt you for information/details versus when you force it down their throats. Quick story,
 
 I was once at a conference and someone that I didn't know but had become a fixture in our group that weekend was introducing himself to a newcomer to our group. His introduction was way too long, not polished, and was essentially what he thought was his opportunity to brag and talk about how awesome he is. He had recently made the switch from Apache to Nginx to run the myriad of "game-changing" apps he had created, not one of which I could give you any details on. True to form since he knows everything about everything, he started bashing on Nginx and how we would have done so many things differently to make it so much better. The person he was speaking to was Igor Sysoev – the creator of Nginx.
 
