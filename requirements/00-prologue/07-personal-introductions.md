@@ -27,7 +27,7 @@ Introductions are no different. We've set ourselves up for success by preparing 
 
 ### Give Them Just Enough to Pique Their Interest
 
-As with everything, saying less is more. I usually focus on trying to say all the right things that will prompt my audience to ask follow up questions, thus beginning a dialog. This is not the opportunity to tell my entire life story nor entire career journey. I purposely hold back details so that I can have a real dialog with them when the time comes.
+As with everything, saying less is more. I usually focus on trying to say all the right things that will prompt my audience to ask follow-up questions, thus beginning a dialog. This is not the opportunity to tell my entire life story nor entire career journey. I purposely hold back details so that I can have a real dialog with them when the time comes.
 
 My goal is to give my audience a little morsels, not the whole thing. I'm trying to prompt them to ask me follow-up questions or to start a conversation. For example,
 
@@ -48,9 +48,9 @@ Notice I offered no details, but I spoke to something every project wants – su
 > Pro Tip:
 As a consultant, I know I've won when they start asking me questions specific to their project or how I can personally help them.
 
-Again, the goal is to build rapport and start a conversation. Give them enough to prompt questions or follow up conversations. Leave some gas in the tank for future discussions.
+Again, the goal is to build rapport and start a conversation. Give them enough to prompt questions or follow-up conversations. Leave some gas in the tank for future discussions.
 
-Now, don't feel sad or like an opportunity was missed if follow up questions or discussions don't come right then and there. It may be days, weeks, or months later before you are asked one of those nuggets you dropped. You're planting conversation seeds. Sometimes it takes time for those seeds to produce something of value.
+Now, don't feel sad or like an opportunity was missed if follow-up questions or discussions don't come right then and there. It may be days, weeks, or months later before you are asked about one of those nuggets you dropped. You're planting conversation seeds. Sometimes it takes time for those seeds to produce something of value.
 
 <br>
 
