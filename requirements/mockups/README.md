@@ -12,3 +12,4 @@ Be sure to account for tablet displays. We didn't provide mockups for tablets, b
 * Mobile
     * [Home](./mobile-home.png)
     * [Nav](./mobile-nav.png)
+    * [Product](./mobile-product.png)
