@@ -32,4 +32,8 @@ a {
 
 #breadcrumbs {
   margin-bottom: $gutter;
+
+  a {
+    text-transform: capitalize;
+  }
 }
