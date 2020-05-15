@@ -1,4 +1,5 @@
 ## Category Page
+This page displays products for a given category and provides the user with a way to further refine their search.
 
 ### Shop by Category
  * Similar to Categories section on home page
