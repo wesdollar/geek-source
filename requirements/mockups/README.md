@@ -9,7 +9,10 @@ Be sure to account for tablet displays. We didn't provide mockups for tablets, b
     * [Home](./desktop-home.png)
     * [Product](./desktop-product.png)
     * [Category](./desktop-category.png)
+    * [Nav Dropdown Products](./desktop-nav-netflix-products.png)
+    * [Nav Dropdown Recently Views & Saved Items](./desktop-nav-products.png)
 * Mobile
     * [Home](./mobile-home.png)
     * [Nav](./mobile-nav.png)
     * [Product](./mobile-product.png)
+    * [Category](./mobile-category.png)
