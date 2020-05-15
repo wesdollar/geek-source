@@ -75,4 +75,5 @@
    * only one category can be expanded at any given time
  * Subcategories do not allow further drilling down from this view
  * Clicking the text of a category or subcategory will take you to the Category Page.
+ * Do not display ">" if no subcategories exist for given category
 

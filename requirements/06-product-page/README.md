@@ -1,5 +1,6 @@
 ## Product Page
 This page displays information about a specific product.
+* Be sure to save product data in Recently Viewed.  Do not add if it already exists there.
 
 ### Product
 * Display product name, model(if applicable), SKU and review star rating at top
@@ -14,6 +15,15 @@ This page displays information about a specific product.
 
 ### Similar Products
  * Use products api to pull items from this products parent category
+ * Carousel
+ * expand size of image in tile 10% on hover
+ * No more than 10 items
+ * Left/Right buttons disable functionally and visually when at either end of list
+ * For each item, display image, product name, rating information, price, and shopping cart icon
+ * Clicking any part of the card will navigate to the product page, including the cart icon
+
+### Similar Products
+ * get products from recently viewed
  * Carousel
  * expand size of image in tile 10% on hover
  * No more than 10 items
