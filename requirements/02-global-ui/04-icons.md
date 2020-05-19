@@ -7,7 +7,10 @@ Rather than coupling directly to FontAwesome, create components for each icon, a
 
 You'll also want to create a component for the shopping cart icon, that way you don't have to go snag the SVG code every time you need to use it. Be sure to clean the generated SVG code up, such as removing comments, ids, etc.
 
-FontAwesome icons used:
+> Pro Tip:
+FontAwesome 5 has two styles, solid & regular. Be sure to snag the icon out of its proper collection using the UI mockup as reference.
+
+FontAwesome 5 icons used:
 * `search` (magnifying glass used in search box)
 * `angle-down` (nav drop-down icon)
 * `star` (product ratings)
@@ -27,3 +30,6 @@ FontAwesome icons used:
     * `cc-mastercard`
     * `cc-amex`
     * `cc-apple-pay`
+* check boxes (from regular style `far`):
+    * `square` (deselected state)
+    * `check-square` (selected state)
