@@ -17,3 +17,4 @@ Be sure to account for tablet displays. We didn't provide mockups for tablets, b
     * [Nav](./mobile-nav.png)
     * [Product](./mobile-product.png)
     * [Category](./mobile-category.png)
+    * [Shopping Cart](./mobile-cart.png)
