@@ -2,7 +2,7 @@
 
 Code should tell a story.
 
-Code should read like a book, describing exactly what's happening in plain English. We make this possible by being mindful to assign meaningful names to our variables, functions, methods, directories, files, everything else. Younger developers tend to struggle with naming, which is understandable. Below are some tips and tricks I use to ensure the name I assign today has meaning to six-months-from-now me.
+Code should read like a book, describing exactly what's happening in plain English. We make this possible by being mindful to assign meaningful names to our variables, functions, methods, directories, files, and anything else. Younger developers tend to struggle with naming, which is understandable. Below are some tips and tricks I use to ensure the name I assign today has meaning to six-months-from-now me.
 
 * Be descriptive
     * The name should adequately describe what it is or what it's doing. Keep in mind to describe what it's assigning/returning and, if applicable, from where.
