@@ -6,7 +6,7 @@ I've watched so many younger developers (in dev experience, not necessarily age)
 
 I'll pose one simple question: if you haven't read the docs, how do you know that the video you're watching or tutorial you're reading is teaching you how to do it the right way? Anyone of any skill level can publish a video and tutorial online. The official documentation is guarded like Fort Knox.
 
-Your first resource should always be the actual docs themselves. For JavaScript, that's [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript); for React, that's the [React Docs](https://reactjs.org/); for Angular... you guessed it... the [Angular Docs](angular.io).
+Your first resource should always be the actual docs themselves. For JavaScript, that's [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript); for React, that's the [React Docs](https://reactjs.org/); for Angular... you guessed it... the [Angular Docs](https://angular.io).
 
 Learning to read and understand the docs is a skill in and of itself. Just like any other skill, the only way you get better at it is by doing it. When you come across concepts you don't understand in the docs, go dig around Google for better understanding.
 
