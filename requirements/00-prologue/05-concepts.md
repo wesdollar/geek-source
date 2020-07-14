@@ -10,7 +10,7 @@ Before embarking on this journey and to be successful as a professional develope
 * JavaScript
     * [MDN JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
         * Go through this often, especially early on, so you can see all the built-in methods JavaScript has available to make developing easier and faster
-        * Use [JSFiddle](https://jsfiddle.net) to try thing out
+        * Use [JSFiddle](https://jsfiddle.net) to try things out
     * ES6 Modules
         * `exports` and `imports`
     * `async`/`await`
