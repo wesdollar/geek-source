@@ -1,0 +1,226 @@
+{
+  "name": "jd-geek-source",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~9.1.9",
+    "@angular/common": "~9.1.9",
+    "@angular/compiler": "~9.1.9",
+    "@angular/core": "~9.1.9",
+    "@angular/forms": "~9.1.9",
+    "@angular/platform-browser": "~9.1.9",
+    "@angular/platform-browser-dynamic": "~9.1.9",
+    "@angular/router": "~9.1.9",
+    "rxjs": "~6.5.4",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.901.7",
+    "@angular/cli": "~9.1.7",
+    "@angular/compiler-cli": "~9.1.9",
+    "@types/node": "^12.11.1",
+    "@types/jasmine": "~3.5.0",
+    "@types/jasminewd2": "~2.0.3",
+    "codelyzer": "^5.1.2",
+    "jasmine-core": "~3.5.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~5.0.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~2.1.0",
+    "karma-jasmine": "~3.0.1",
+    "karma-jasmine-html-reporter": "^1.4.2",
+    "protractor": "~7.0.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~3.8.3"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "object-shorthand": [
+    "error",
+    "always"
+    ],
+    "prefer-const": [
+    "error",
+    {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+    }
+    ],
+    "prefer-destructuring": [
+    "error",
+    {
+        "array": true,
+        "object": true
+    },
+    {
+        "enforceForRenamedProperties": false
+    }
+    ],
+    "no-use-before-define": [
+    "error",
+    {
+        "functions": true,
+        "classes": true
+    }
+    ],
+    "no-undefined": "error",
+    "no-undef-init": "error",
+    "dot-notation": "error",
+    "no-else-return": [
+    "error",
+    {
+        "allowElseIf": false
+    }
+    ],
+    "eqeqeq": [
+    "error",
+    "smart"
+    ],
+    "no-implicit-coercion": "error",
+    "no-multi-spaces": "error",
+    "no-return-assign": "error",
+    "no-return-await": "error",
+    "require-await": "error",
+    "no-nested-ternary": "error",
+    "block-scoped-var": "error",
+    "no-duplicate-imports": "error",
+    "no-var": "error",
+    "prefer-spread": "error",
+    "prefer-template": "error",
+    "padding-line-between-statements": [
+    "error",
+    {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+    },
+    {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "switch"
+    },
+    {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "if"
+    },
+    {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "export"
+    },
+    {
+        "blankLine": "any",
+        "prev": "export",
+        "next": "export"
+    },
+    {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "try"
+    },
+    {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "while"
+    },
+    {
+        "blankLine": "always",
+        "prev": "import",
+        "next": "*"
+    },
+    {
+        "blankLine": "never",
+        "prev": "import",
+        "next": "import"
+    },
+    {
+        "blankLine": "always",
+        "prev": [
+        "const",
+        "let",
+        "var"
+        ],
+        "next": "*"
+    },
+    {
+        "blankLine": "any",
+        "prev": [
+        "const",
+        "let",
+        "var"
+        ],
+        "next": [
+        "const",
+        "let",
+        "var"
+        ]
+    }
+    ],
+    "max-statements-per-line": [
+    "error",
+    {
+        "max": 1
+    }
+    ],
+    "max-params": [
+    "error",
+    3
+    ],
+    "max-depth": [
+    "error",
+    3
+    ],
+    "no-magic-numbers": [
+    "error",
+    {
+        "enforceConst": true
+    }
+    ],
+    "no-alert": "error",
+    "max-classes-per-file": [
+    "error",
+    1
+    ],
+    "curly": "error",
+    "no-console": "warn",
+    "multiline-comment-style": [
+    "error",
+    "starred-block"
+    ],
+    "react/destructuring-assignment": [
+    2
+    ],
+    "react/jsx-handler-names": [
+    1
+    ],
+    "react/no-direct-mutation-state": [
+    1
+    ],
+    "react/no-this-in-sfc": [
+    1
+    ],
+    "react/no-unused-prop-types": [
+    1
+    ],
+    "react/no-unused-state": [
+    1
+    ],
+    "react/jsx-pascal-case": [
+    1
+    ],
+    "react-hooks/exhaustive-deps": [
+    0
+    ]
+  }
+}
