@@ -21,3 +21,4 @@ Below are a number of resources to prime you on your journey. Learning is a proc
 * [MDN: Javascript Intro](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
 * [MDN: Javascript Reference Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 * [Eloquent Javascript, 3rd ed.](https://eloquentjavascript.net/Eloquent_JavaScript.pdf)
+* [Javascript Challenges](https://www.jschallenger.com/)
