@@ -5,28 +5,21 @@
     alt="Personal Logo"
     src="assets/images/JMD-Studios-Logo3in.png"
   />
-  <span>{{message}}</span>
+  <span>{{ message }}</span>
   <div class="spacer running-logo">
     <span>{{ title }} app is running!</span>
   </div>
 </div>
 
 <div class="content" role="main">
-  <h2><app-batman></app-batman></h2>
+  <h2><button router-link to="/test-diplay">Test Display</button></h2>
   <!-- Highlight Card -->
 
-
-
   <!-- Links -->
-  <div class="card-container">
-
-  </div>
+  <div class="card-container"></div>
 
   <!-- Footer -->
-  <footer>
-      JMD Portfolio created using Angular 8
-  </footer>
-
+  <footer>JMD Portfolio created using Angular 8</footer>
 </div>
 
 <router-outlet></router-outlet>
