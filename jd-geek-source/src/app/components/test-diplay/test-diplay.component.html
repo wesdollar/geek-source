@@ -1,1 +1,13 @@
-<p>test-diplay works!</p>
+<div>
+  <h4>Testing Getting Data From The Best Buy API</h4>
+
+  <div *ngFor="let product of testResults">
+    <div>
+      <p>
+        <b>Department: </b>{{ product.department }}&nbsp;&nbsp; <b>SKU: </b>{{ product.sku }}
+      </p>
+      <p><b>Name: </b>{{ product.name }}</p>
+      <p><b>Sale Price: </b>{{ product.salePrice }}</p>
+    </div>
+  </div>
+</div>

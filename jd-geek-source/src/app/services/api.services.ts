@@ -9,7 +9,9 @@ export class ApiService {
   headers = new HttpHeaders({'content-type': 'application/json'});
 
   getTestData() {
-    const payload = JSON.stringify({});
-    return this.http.post("https://api.bestbuy.com/v1/products((search=HP)&inStoreAvailability=true&(categoryPath.id=abcat0501000))?apiKey=ma6v7d7sxqmp6tbsssu7rcas&format=json" + this.contentTypeQuery, {headers: this.headers});
+    var format = "JSON";
+    var apiKey = "ma6v7d7sxqmp6tbsssu7rcas"
+    const payload = JSON.stringify({apiKey, format});
+    return this.http.get("https://api.bestbuy.com/v1/products?show=name,sku,salePrice,department&pageSize=3&format=json&apiKey=ma6v7d7sxqmp6tbsssu7rcas");
   }
 }

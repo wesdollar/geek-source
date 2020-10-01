@@ -1,5 +1,8 @@
 import { CategoryPath } from './categoryPath.interface'
+import { Images } from './images.interface'
+import { IncludedItemList } from './includedItemList.interface'
 import { Shipping } from './shipping.interface'
+import { ShippingLevelsOfService } from './shippingLevelsOfService.interface'
 
 export interface Product {
   sku: number,
@@ -82,35 +85,19 @@ export interface Product {
   releaseDate: string,
   shippingCost: number,
   shipping: Shipping[],
-  shippingLevelsOfService: [
-    {
-      serviceLevelId: 5,
-      serviceLevelName: One Day,
-      unitShippingPrice: 57.79
-    },
-    {
-      serviceLevelId: 3,
-      serviceLevelName: Two Day,
-      unitShippingPrice: 30.79
-    },
-    {
-      serviceLevelId: 21,
-      serviceLevelName: Standard,
-      unitShippingPrice: 0
-    }
-  ],
+  shippingLevelsOfService: ShippingLevelsOfService[],
   specialOrder: boolean,
-  shortDescription: RefurbishedWindows 10 ProTechnical details: 3rd Gen Intel&#174; Core&#8482; i5 processor; 8GB memory; 1TB hard driveSpecial features: keyboard and mouse,
-  class: DESK TOP COMPUTERS,
-  classId: 85,
-  subclass: SO RFRB DESKTOP,
-  subclassId: 179,
-  department: COMPUTERS,
-  departmentId: 6,
-  protectionPlanTerm: HP ,
+  shortDescription: string,
+  class: string,
+  classId: number,
+  subclass: string,
+  subclassId: number,
+  department: string,
+  departmentId: number,
+  protectionPlanTerm: string ,
   protectionPlanType: string,
-  protectionPlanLowPrice: ,
-  protectionPlanHighPrice: ,
+  protectionPlanLowPrice: number,
+  protectionPlanHighPrice: number,
   buybackPlans: [],
   protectionPlans: [],
   protectionPlanDetails: [],
@@ -124,63 +111,14 @@ export interface Product {
   studio: string,
   theatricalReleaseDate: string,
   description: string,
-  manufacturer: HP,
-  modelNumber: HP8300SFF.8GB.1TB.WIN10,
-  images: [
-    {
-      rel: Front_Zoom,
-      unitOfMeasure: pixels,
-      width: 1000,
-      height: 1000,
-      href: https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5710/5710109_sd.jpg,
-      primary: boolean
-    },
-    {
-      rel: Front_Detail,
-      unitOfMeasure: pixels,
-      width: 105,
-      height: 105,
-      href: https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5710/5710109_sc.jpg,
-      primary: boolean
-    },
-    {
-      rel: Front_Medium,
-      unitOfMeasure: pixels,
-      width: 70,
-      height: 70,
-      href: https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5710/5710109fp.gif,
-      primary: boolean
-    },
-    {
-      rel: Front_Standard,
-      unitOfMeasure: pixels,
-      width: 500,
-      height: 500,
-      href: https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5710/5710109_sa.jpg,
-      primary: boolean
-    },
-    {
-      rel: Front_Thumbnail,
-      unitOfMeasure: pixels,
-      width: 54,
-      height: 54,
-      href: https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5710/5710109_s.gif,
-      primary: boolean
-    },
-    {
-      rel: Front_Large,
-      unitOfMeasure: pixels,
-      width: 160,
-      height: 160,
-      href: https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5710/5710109_sb.jpg,
-      primary: boolean
-    }
-  ],
-  image: https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5710/5710109_sa.jpg,
-  largeFrontImage: https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5710/5710109_sd.jpg,
-  mediumImage: https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5710/5710109fp.gif,
-  thumbnailImage: https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5710/5710109_s.gif,
-  largeImage: https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5710/5710109_sb.jpg,
+  manufacturer: string,
+  modelNumber: string,
+  images: Images[],
+  image: string,
+  largeFrontImage: string,
+  mediumImage: string,
+  thumbnailImage: string,
+  largeImage: string,
   alternateViewsImage: string,
   angleImage: string,
   backViewImage: string,
@@ -190,7 +128,7 @@ export interface Product {
   remoteControlImage: string,
   rightViewImage: string,
   topViewImage: string,
-  albumTitle: Refurbished Compaq Desktop - Intel Core i5 - 8GB Memory - 1TB Hard Drive,
+  albumTitle: string,
   artistName: string,
   artistId: string,
   originalReleaseDate: string,
@@ -198,53 +136,45 @@ export interface Product {
   mediaCount: string,
   monoStereo: string,
   studioLive: string,
-  condition: Refurbished,
+  condition: string,
   inStorePickup: boolean,
   friendsAndFamilyPickup: boolean,
   homeDelivery: boolean,
-  quantityLimit: 3,
+  quantityLimit: number,
   fulfilledBy: string,
   members: [],
   bundledIn: [],
   albumLabel: string,
   genre: string,
-  color: Black,
-  depth: 14.9 inches,
-  dollarSavings: 120,
-  percentSavings: 36.36,
-  tradeInValue: ,
-  height: 4 inches,
-  orderable: Available,
-  weight: 16.7 pounds,
-  shippingWeight: 20,
-  width: 13.3 inches,
-  warrantyLabor: 18 months,
-  warrantyParts: 18 months,
+  color: string,
+  depth: string,
+  dollarSavings: number,
+  percentSavings: number,
+  tradeInValue: number,
+  height: string,
+  orderable: string,
+  weight: string,
+  shippingWeight: number,
+  width: string,
+  warrantyLabor: string,
+  warrantyParts: string,
   softwareAge: string,
   softwareGrade: string,
   platform: string,
   numberOfPlayers: string,
   softwareNumberOfPlayers: string,
   esrbRating: string,
-  longDescription: Refurbished HP Compaq Desktop: Increase your productivity with this HP Compaq Elite computer. Its generous 8GB of RAM and Intel Core processor keep things humming, and its 1TB hard drive stores all your programs, photos and movies handily. This small form factor HP Compaq Elite computer has Windows 10 preinstalled, so you can stay current on security updates effortlessly.,
-  includedItemList: [
-    {
-      includedItem: Refurbished HP Compaq Elite 8300
-    },
-    {
-      includedItem: Mouse, keyboard
-    }
-  ],
+  longDescription: string,
+  includedItemList: IncludedItemList[],
   marketplace: string,
   listingId: string,
   sellerId: string,
   shippingRestrictions: string,
   proposition65WarningMessage: string,
-  proposition65WarningType: 05,
-  driveCapacityGb: 1000,
+  proposition65WarningType: number,
+  driveCapacityGb: number,
   energyStarQualified: boolean,
   ethernetPort: boolean,
-  mobileOperatingSystem: Windows 10 Home,
+  mobileOperatingSystem: string,
   usbPort: boolean
-
 }
