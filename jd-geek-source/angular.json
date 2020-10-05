@@ -147,6 +147,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "jd-geek-source"
+    }
+  },
+  "defaultProject": "jd-geek-source",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

@@ -1,22 +1,6 @@
-<!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <img
-    width="40"
-    alt="Personal Logo"
-    src="assets/images/JMD-Studios-Logo3in.png"
-  />
-  <span>{{ message }}</span>
-  <div class="spacer running-logo">
-    <span>{{ title }} app is running!</span>
-  </div>
-</div>
-
 <div class="content" role="main">
-  <div>
-    <a [routerLink]="['test-diplay']">
-      <button>Test Display</button>
-    </a>
-  </div>
+  <app-header></app-header>
 </div>
-
-<router-outlet></router-outlet>
+<div>
+  <router-outlet></router-outlet>
+</div>

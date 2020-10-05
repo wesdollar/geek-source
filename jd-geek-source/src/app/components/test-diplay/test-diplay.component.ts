@@ -8,7 +8,7 @@ import { ApiService } from 'src/app/services/api.services';
 @Component({
   selector: 'app-test-diplay',
   templateUrl: './test-diplay.component.html',
-  styleUrls: ['./test-diplay.component.css'],
+  styleUrls: ['./test-diplay.component.scss'],
   animations: [
     trigger("slideInOut", [
       transition(":enter", [

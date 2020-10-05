@@ -9,12 +9,32 @@ import { TestDiplayComponent } from './components/test-diplay/test-diplay.compon
 import { ApiService } from './services/api.services';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { JwtInterceptor } from './interceptors/jwt.interceptor';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ButtonComponent } from './components/button/button.component';
+import { ProductShowcaseComponent } from './components/product-showcase/product-showcase.component';
+import { SearchComponent } from './components/search/search.component';
+import { ShopByCategoryComponent } from './components/shop-by-category/shop-by-category.component';
+import { HeroImageComponent } from './components/hero-image/hero-image.component';
+import { FeaturedProductsComponent } from './components/featured-products/featured-products.component';
+import { DailyDealsComponent } from './components/daily-deals/daily-deals.component';
+import { HottestDealsComponent } from './components/hottest-deals/hottest-deals.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BatmanComponent,
-    TestDiplayComponent
+    TestDiplayComponent,
+    HeaderComponent,
+    FooterComponent,
+    ButtonComponent,
+    ProductShowcaseComponent,
+    SearchComponent,
+    ShopByCategoryComponent,
+    HeroImageComponent,
+    FeaturedProductsComponent,
+    DailyDealsComponent,
+    HottestDealsComponent
   ],
   imports: [
     BrowserModule,
