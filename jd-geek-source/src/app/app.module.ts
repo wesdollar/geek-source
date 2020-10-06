@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BatmanComponent } from './components/batman/batman.component';
 import { TestDiplayComponent } from './components/test-diplay/test-diplay.component';
 import { ApiService } from './services/api.services';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
@@ -23,7 +22,6 @@ import { HottestDealsComponent } from './components/hottest-deals/hottest-deals.
 @NgModule({
   declarations: [
     AppComponent,
-    BatmanComponent,
     TestDiplayComponent,
     HeaderComponent,
     FooterComponent,

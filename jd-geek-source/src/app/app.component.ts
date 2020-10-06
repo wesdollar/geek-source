@@ -10,7 +10,7 @@ import { colors } from '../constants/color';
 })
 export class AppComponent {
   title = 'jd-geek-source';
-  message = 'Welcome to Gotham'
+  message = ''
 
 
 }
