@@ -12,8 +12,8 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(document.getElementById("headerbar"));
     document.getElementById("headerbar").setAttribute("style", "background-color:" + colors.white);
+    document.getElementById("bottomheader").setAttribute("style", "background-color:" + colors.secondary);
   }
 
 }

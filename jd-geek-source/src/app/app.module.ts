@@ -18,6 +18,7 @@ import { HeroImageComponent } from './components/hero-image/hero-image.component
 import { FeaturedProductsComponent } from './components/featured-products/featured-products.component';
 import { DailyDealsComponent } from './components/daily-deals/daily-deals.component';
 import { HottestDealsComponent } from './components/hottest-deals/hottest-deals.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { HottestDealsComponent } from './components/hottest-deals/hottest-deals.
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [
     ApiService,

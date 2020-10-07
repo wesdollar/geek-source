@@ -1,8 +1,10 @@
 <div class="content" role="main">
   <app-header></app-header>
-</div>
 
-<button [routerLink]="['test-diplay']">Best Buy API Testing</button>
-<div>
-  <router-outlet></router-outlet>
+  <div class="testbuttonposition">
+    <button [routerLink]="['test-diplay']">Best Buy API Testing</button>
+  </div>
+  <div class="testbuttonposition">
+    <router-outlet></router-outlet>
+  </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { colors } from '../../../constants/color';
 
 @Component({
   selector: 'app-search',
@@ -10,6 +11,7 @@ export class SearchComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.getElementById("searchproducts").setAttribute("style", "placeholder:" + colors.secondary);
   }
 
 }

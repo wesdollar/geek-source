@@ -7,10 +7,17 @@
   width: 80%;
   display: flex;
   align-items: center;
-  color: white;
-  font-weight: 600;
 }
 
 .toolbar img {
   margin: 0 16px;
+}
+
+.bottomheader {
+  position: absolute;
+  top: 60px;
+  left: 10%;
+  right: 0;
+  height: 40px;
+  width: 80%;
 }
