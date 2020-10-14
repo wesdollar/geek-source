@@ -1,5 +1,13 @@
-@import '../../../constants/color.scss';
+@import "../../../constants/color.scss";
 
 ::placeholder {
   color: $secondary;
+}
+
+.noborder {
+  border: none;
+}
+
+.searchbox {
+  border-bottom: 1px solid black;
 }

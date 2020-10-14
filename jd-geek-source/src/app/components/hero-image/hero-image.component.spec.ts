@@ -8,9 +8,8 @@ describe('HeroImageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeroImageComponent ]
-    })
-    .compileComponents();
+      declarations: [HeroImageComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

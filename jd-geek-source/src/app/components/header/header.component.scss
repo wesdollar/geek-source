@@ -1,3 +1,5 @@
+@import "../../../constants/color.scss";
+
 .toolbar {
   position: absolute;
   top: 0;
@@ -7,6 +9,8 @@
   width: 80%;
   display: flex;
   align-items: center;
+  background-color: $white;
+  color: $secondary;
 }
 
 .toolbar img {
@@ -20,4 +24,5 @@
   right: 0;
   height: 40px;
   width: 80%;
+  background-color: $secondary;
 }

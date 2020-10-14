@@ -19,9 +19,11 @@
     "@angular/platform-browser": "~10.1.4",
     "@angular/platform-browser-dynamic": "~10.1.4",
     "@angular/router": "~10.1.4",
+    "@fortawesome/angular-fontawesome": "^0.7.0",
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "rxjs": "~6.5.4",
+    "rxjs": "~6.6.3",
     "tslib": "^2.0.0",
     "wrappy": "^1.0.2",
     "zone.js": "~0.10.2"
@@ -33,7 +35,12 @@
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
     "codelyzer": "^5.1.2",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "font-awesome": "^4.7.0",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",
@@ -43,191 +50,12 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "node-sass": "^4.14.1",
+    "prettier": "2.1.2",
     "protractor": "~7.0.0",
     "sass-loader": "^10.0.2",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.3",
     "webpack": "^4.44.2"
-  },
-  "rules": {
-    "prettier/prettier": "error",
-    "object-shorthand": [
-      "error",
-      "always"
-    ],
-    "prefer-const": [
-      "error",
-      {
-        "destructuring": "any",
-        "ignoreReadBeforeAssign": false
-      }
-    ],
-    "prefer-destructuring": [
-      "error",
-      {
-        "array": true,
-        "object": true
-      },
-      {
-        "enforceForRenamedProperties": false
-      }
-    ],
-    "no-use-before-define": [
-      "error",
-      {
-        "functions": true,
-        "classes": true
-      }
-    ],
-    "no-undefined": "error",
-    "no-undef-init": "error",
-    "dot-notation": "error",
-    "no-else-return": [
-      "error",
-      {
-        "allowElseIf": false
-      }
-    ],
-    "eqeqeq": [
-      "error",
-      "smart"
-    ],
-    "no-implicit-coercion": "error",
-    "no-multi-spaces": "error",
-    "no-return-assign": "error",
-    "no-return-await": "error",
-    "require-await": "error",
-    "no-nested-ternary": "error",
-    "block-scoped-var": "error",
-    "no-duplicate-imports": "error",
-    "no-var": "error",
-    "prefer-spread": "error",
-    "prefer-template": "error",
-    "padding-line-between-statements": [
-      "error",
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": "return"
-      },
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": "switch"
-      },
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": "if"
-      },
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": "export"
-      },
-      {
-        "blankLine": "any",
-        "prev": "export",
-        "next": "export"
-      },
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": "try"
-      },
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": "while"
-      },
-      {
-        "blankLine": "always",
-        "prev": "import",
-        "next": "*"
-      },
-      {
-        "blankLine": "never",
-        "prev": "import",
-        "next": "import"
-      },
-      {
-        "blankLine": "always",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
-        "next": "*"
-      },
-      {
-        "blankLine": "any",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
-        "next": [
-          "const",
-          "let",
-          "var"
-        ]
-      }
-    ],
-    "max-statements-per-line": [
-      "error",
-      {
-        "max": 1
-      }
-    ],
-    "max-params": [
-      "error",
-      3
-    ],
-    "max-depth": [
-      "error",
-      3
-    ],
-    "no-magic-numbers": [
-      "error",
-      {
-        "enforceConst": true
-      }
-    ],
-    "no-alert": "error",
-    "max-classes-per-file": [
-      "error",
-      1
-    ],
-    "curly": "error",
-    "no-console": "warn",
-    "multiline-comment-style": [
-      "error",
-      "starred-block"
-    ],
-    "react/destructuring-assignment": [
-      2
-    ],
-    "react/jsx-handler-names": [
-      1
-    ],
-    "react/no-direct-mutation-state": [
-      1
-    ],
-    "react/no-this-in-sfc": [
-      1
-    ],
-    "react/no-unused-prop-types": [
-      1
-    ],
-    "react/no-unused-state": [
-      1
-    ],
-    "react/jsx-pascal-case": [
-      1
-    ],
-    "react-hooks/exhaustive-deps": [
-      0
-    ]
   }
 }

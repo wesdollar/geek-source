@@ -15,19 +15,19 @@ export interface Products {
   clearance: boolean;
   onSale: boolean;
   planPrice?: null;
-  priceWithPlan?: (null)[] | null;
-  contracts?: (null)[] | null;
+  priceWithPlan?: null[] | null;
+  contracts?: null[] | null;
   priceRestriction?: null;
   priceUpdateDate: string;
   digital: boolean;
   preowned: boolean;
-  carriers?: (null)[] | null;
-  planFeatures?: (null)[] | null;
-  devices?: (null)[] | null;
-  carrierPlans?: (null)[] | null;
+  carriers?: null[] | null;
+  planFeatures?: null[] | null;
+  devices?: null[] | null;
+  carrierPlans?: null[] | null;
   technologyCode?: null;
   carrierModelNumber?: null;
-  earlyTerminationFees?: (null)[] | null;
+  earlyTerminationFees?: null[] | null;
   monthlyRecurringCharge: string;
   monthlyRecurringChargeGrandTotal: string;
   activationCharge: string;
@@ -40,12 +40,12 @@ export interface Products {
   carrierPlan?: null;
   outletCenter?: null;
   secondaryMarket?: null;
-  frequentlyPurchasedWith?: (null)[] | null;
-  accessories?: (null)[] | null;
-  relatedProducts?: (null)[] | null;
-  requiredParts?: (null)[] | null;
-  techSupportPlans?: (null)[] | null;
-  crossSell?: (null)[] | null;
+  frequentlyPurchasedWith?: null[] | null;
+  accessories?: null[] | null;
+  relatedProducts?: null[] | null;
+  requiredParts?: null[] | null;
+  techSupportPlans?: null[] | null;
+  crossSell?: null[] | null;
   salesRankShortTerm: number;
   salesRankMediumTerm: number;
   salesRankLongTerm: number;
@@ -60,9 +60,9 @@ export interface Products {
   linkShareAffiliateAddToCartUrl: string;
   upc: string;
   productTemplate: string;
-  categoryPath?: (CategoryPathEntity)[] | null;
-  alternateCategories?: (null)[] | null;
-  lists?: (null)[] | null;
+  categoryPath?: CategoryPathEntity[] | null;
+  alternateCategories?: null[] | null;
+  lists?: null[] | null;
   customerReviewCount: number;
   customerReviewAverage: number;
   customerTopRated: boolean;
@@ -78,8 +78,8 @@ export interface Products {
   onlineAvailabilityUpdateDate: string;
   releaseDate: string;
   shippingCost: number;
-  shipping?: (ShippingEntity)[] | null;
-  shippingLevelsOfService?: (ShippingLevelsOfServiceEntity)[] | null;
+  shipping?: ShippingEntity[] | null;
+  shippingLevelsOfService?: ShippingLevelsOfServiceEntity[] | null;
   specialOrder: boolean;
   shortDescription: string;
   class: string;
@@ -92,11 +92,11 @@ export interface Products {
   protectionPlanType?: null;
   protectionPlanLowPrice: string;
   protectionPlanHighPrice: string;
-  buybackPlans?: (null)[] | null;
-  protectionPlans?: (null)[] | null;
-  protectionPlanDetails?: (null)[] | null;
-  productFamilies?: (null)[] | null;
-  productVariations?: (ProductVariationsEntity)[] | null;
+  buybackPlans?: null[] | null;
+  protectionPlans?: null[] | null;
+  protectionPlanDetails?: null[] | null;
+  productFamilies?: null[] | null;
+  productVariations?: ProductVariationsEntity[] | null;
   aspectRatio?: null;
   screenFormat?: null;
   lengthInMinutes?: null;
@@ -107,7 +107,7 @@ export interface Products {
   description?: null;
   manufacturer: string;
   modelNumber: string;
-  images?: (ImagesEntity)[] | null;
+  images?: ImagesEntity[] | null;
   image: string;
   largeFrontImage: string;
   mediumImage: string;
@@ -136,8 +136,8 @@ export interface Products {
   homeDelivery: boolean;
   quantityLimit: number;
   fulfilledBy?: null;
-  members?: (null)[] | null;
-  bundledIn?: (BundledInEntity)[] | null;
+  members?: null[] | null;
+  bundledIn?: BundledInEntity[] | null;
   albumLabel?: null;
   genre?: null;
   color: string;
@@ -159,7 +159,7 @@ export interface Products {
   softwareNumberOfPlayers?: null;
   esrbRating?: null;
   longDescription: string;
-  includedItemList?: (IncludedItemListEntity)[] | null;
+  includedItemList?: IncludedItemListEntity[] | null;
   marketplace?: null;
   listingId?: null;
   sellerId?: null;
@@ -186,7 +186,7 @@ export interface ShippingLevelsOfServiceEntity {
 }
 export interface ProductVariationsEntity {
   sku: string;
-  variations?: (VariationsEntity)[] | null;
+  variations?: VariationsEntity[] | null;
 }
 export interface VariationsEntity {
   name: string;

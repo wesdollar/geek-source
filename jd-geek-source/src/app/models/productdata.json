@@ -61,26 +61,26 @@
   "upc": "013803271843",
   "productTemplate": "Digital_Cameras",
   "categoryPath": [
-      {
-          "id": "cat00000",
-          "name": "Best Buy"
-      },
-      {
-          "id": "abcat0400000",
-          "name": "Cameras & Camcorders"
-      },
-      {
-          "id": "abcat0401000",
-          "name": "Digital Cameras"
-      },
-      {
-          "id": "abcat0401005",
-          "name": "Digital SLR Cameras"
-      },
-      {
-          "id": "pcmcat180400050000",
-          "name": "DSLR Body & Lens"
-      }
+    {
+      "id": "cat00000",
+      "name": "Best Buy"
+    },
+    {
+      "id": "abcat0400000",
+      "name": "Cameras & Camcorders"
+    },
+    {
+      "id": "abcat0401000",
+      "name": "Digital Cameras"
+    },
+    {
+      "id": "abcat0401005",
+      "name": "Digital SLR Cameras"
+    },
+    {
+      "id": "pcmcat180400050000",
+      "name": "DSLR Body & Lens"
+    }
   ],
   "alternateCategories": [],
   "lists": [],
@@ -100,19 +100,19 @@
   "releaseDate": "2016-03-25",
   "shippingCost": 0,
   "shipping": [
-      {
-          "ground": "",
-          "secondDay": "",
-          "nextDay": 0,
-          "vendorDelivery": ""
-      }
+    {
+      "ground": "",
+      "secondDay": "",
+      "nextDay": 0,
+      "vendorDelivery": ""
+    }
   ],
   "shippingLevelsOfService": [
-      {
-          "serviceLevelId": 6,
-          "serviceLevelName": "One Day",
-          "unitShippingPrice": 0
-      }
+    {
+      "serviceLevelId": 6,
+      "serviceLevelName": "One Day",
+      "unitShippingPrice": 0
+    }
   ],
   "specialOrder": false,
   "shortDescription": "24.2-megapixel APS-C format CMOS sensorISO 100&#8211;16,000, expandable to 25,600Shooting speeds up to 7 fpsBuilt-in Wi-Fi45 focus points (45 cross-type)Built-in NFC",
@@ -131,33 +131,33 @@
   "protectionPlanDetails": [],
   "productFamilies": [],
   "productVariations": [
-      {
-          "sku": "5005626",
-          "variations": [
-              {
-                  "name": "Digital_Cameras_and_Camcorders:Product_Set",
-                  "value": "Body Only"
-              }
-          ]
-      },
-      {
-          "sku": "5005633",
-          "variations": [
-              {
-                  "name": "Digital_Cameras_and_Camcorders:Product_Set",
-                  "value": "w/ 18-135mm Lens"
-              }
-          ]
-      },
-      {
-          "sku": "5005642",
-          "variations": [
-              {
-                  "name": "Digital_Cameras_and_Camcorders:Product_Set",
-                  "value": "w/ 18-55mm Lens"
-              }
-          ]
-      }
+    {
+      "sku": "5005626",
+      "variations": [
+        {
+          "name": "Digital_Cameras_and_Camcorders:Product_Set",
+          "value": "Body Only"
+        }
+      ]
+    },
+    {
+      "sku": "5005633",
+      "variations": [
+        {
+          "name": "Digital_Cameras_and_Camcorders:Product_Set",
+          "value": "w/ 18-135mm Lens"
+        }
+      ]
+    },
+    {
+      "sku": "5005642",
+      "variations": [
+        {
+          "name": "Digital_Cameras_and_Camcorders:Product_Set",
+          "value": "w/ 18-55mm Lens"
+        }
+      ]
+    }
   ],
   "aspectRatio": null,
   "screenFormat": null,
@@ -170,214 +170,214 @@
   "manufacturer": "Canon",
   "modelNumber": "1263C006",
   "images": [
-      {
-          "rel": "Front_Zoom",
-          "unitOfMeasure": "pixels",
-          "width": "1000",
-          "height": "991",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_sd.jpg",
-          "primary": true
-      },
-      {
-          "rel": "Front_Thumbnail",
-          "unitOfMeasure": "pixels",
-          "width": "54",
-          "height": "54",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_s.gif",
-          "primary": false
-      },
-      {
-          "rel": "Left_Zoom",
-          "unitOfMeasure": "pixels",
-          "width": "1000",
-          "height": "955",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633ld.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Standard_1",
-          "unitOfMeasure": "pixels",
-          "width": "500",
-          "height": "322",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv1a.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Left_Standard",
-          "unitOfMeasure": "pixels",
-          "width": "500",
-          "height": "478",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633le.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Standard_2",
-          "unitOfMeasure": "pixels",
-          "width": "500",
-          "height": "325",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv2a.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Standard_12",
-          "unitOfMeasure": "pixels",
-          "width": "427",
-          "height": "500",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv12a.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Standard_11",
-          "unitOfMeasure": "pixels",
-          "width": "413",
-          "height": "500",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv11a.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Standard_16",
-          "unitOfMeasure": "pixels",
-          "width": "500",
-          "height": "327",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv16a.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Standard_15",
-          "unitOfMeasure": "pixels",
-          "width": "500",
-          "height": "312",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv15a.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Standard_14",
-          "unitOfMeasure": "pixels",
-          "width": "500",
-          "height": "331",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv14a.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Standard_13",
-          "unitOfMeasure": "pixels",
-          "width": "500",
-          "height": "393",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv13a.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Front_Detail",
-          "unitOfMeasure": "pixels",
-          "width": "105",
-          "height": "104",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_sc.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Top_Zoom",
-          "unitOfMeasure": "pixels",
-          "width": "844",
-          "height": "1000",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_td.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Top_Standard",
-          "unitOfMeasure": "pixels",
-          "width": "422",
-          "height": "500",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_ta.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Front_Large",
-          "unitOfMeasure": "pixels",
-          "width": "161",
-          "height": "160",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_sb.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Zoom_1",
-          "unitOfMeasure": "pixels",
-          "width": "1000",
-          "height": "644",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv1d.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Zoom_2",
-          "unitOfMeasure": "pixels",
-          "width": "1000",
-          "height": "650",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv2d.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Front_Medium",
-          "unitOfMeasure": "pixels",
-          "width": "70",
-          "height": "69",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633fp.gif",
-          "primary": false
-      },
-      {
-          "rel": "Front_Standard",
-          "unitOfMeasure": "pixels",
-          "width": "500",
-          "height": "496",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_sa.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Zoom_11",
-          "unitOfMeasure": "pixels",
-          "width": "826",
-          "height": "1000",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv11d.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Zoom_12",
-          "unitOfMeasure": "pixels",
-          "width": "854",
-          "height": "1000",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv12d.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Zoom_13",
-          "unitOfMeasure": "pixels",
-          "width": "1000",
-          "height": "786",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv13d.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Zoom_14",
-          "unitOfMeasure": "pixels",
-          "width": "1000",
-          "height": "662",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv14d.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Zoom_15",
-          "unitOfMeasure": "pixels",
-          "width": "1000",
-          "height": "624",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv15d.jpg",
-          "primary": false
-      },
-      {
-          "rel": "Alt_View_Zoom_16",
-          "unitOfMeasure": "pixels",
-          "width": "1000",
-          "height": "654",
-          "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv16d.jpg",
-          "primary": false
-      }
+    {
+      "rel": "Front_Zoom",
+      "unitOfMeasure": "pixels",
+      "width": "1000",
+      "height": "991",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_sd.jpg",
+      "primary": true
+    },
+    {
+      "rel": "Front_Thumbnail",
+      "unitOfMeasure": "pixels",
+      "width": "54",
+      "height": "54",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_s.gif",
+      "primary": false
+    },
+    {
+      "rel": "Left_Zoom",
+      "unitOfMeasure": "pixels",
+      "width": "1000",
+      "height": "955",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633ld.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Standard_1",
+      "unitOfMeasure": "pixels",
+      "width": "500",
+      "height": "322",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv1a.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Left_Standard",
+      "unitOfMeasure": "pixels",
+      "width": "500",
+      "height": "478",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633le.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Standard_2",
+      "unitOfMeasure": "pixels",
+      "width": "500",
+      "height": "325",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv2a.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Standard_12",
+      "unitOfMeasure": "pixels",
+      "width": "427",
+      "height": "500",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv12a.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Standard_11",
+      "unitOfMeasure": "pixels",
+      "width": "413",
+      "height": "500",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv11a.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Standard_16",
+      "unitOfMeasure": "pixels",
+      "width": "500",
+      "height": "327",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv16a.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Standard_15",
+      "unitOfMeasure": "pixels",
+      "width": "500",
+      "height": "312",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv15a.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Standard_14",
+      "unitOfMeasure": "pixels",
+      "width": "500",
+      "height": "331",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv14a.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Standard_13",
+      "unitOfMeasure": "pixels",
+      "width": "500",
+      "height": "393",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv13a.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Front_Detail",
+      "unitOfMeasure": "pixels",
+      "width": "105",
+      "height": "104",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_sc.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Top_Zoom",
+      "unitOfMeasure": "pixels",
+      "width": "844",
+      "height": "1000",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_td.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Top_Standard",
+      "unitOfMeasure": "pixels",
+      "width": "422",
+      "height": "500",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_ta.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Front_Large",
+      "unitOfMeasure": "pixels",
+      "width": "161",
+      "height": "160",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_sb.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Zoom_1",
+      "unitOfMeasure": "pixels",
+      "width": "1000",
+      "height": "644",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv1d.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Zoom_2",
+      "unitOfMeasure": "pixels",
+      "width": "1000",
+      "height": "650",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv2d.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Front_Medium",
+      "unitOfMeasure": "pixels",
+      "width": "70",
+      "height": "69",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633fp.gif",
+      "primary": false
+    },
+    {
+      "rel": "Front_Standard",
+      "unitOfMeasure": "pixels",
+      "width": "500",
+      "height": "496",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_sa.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Zoom_11",
+      "unitOfMeasure": "pixels",
+      "width": "826",
+      "height": "1000",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv11d.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Zoom_12",
+      "unitOfMeasure": "pixels",
+      "width": "854",
+      "height": "1000",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv12d.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Zoom_13",
+      "unitOfMeasure": "pixels",
+      "width": "1000",
+      "height": "786",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv13d.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Zoom_14",
+      "unitOfMeasure": "pixels",
+      "width": "1000",
+      "height": "662",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv14d.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Zoom_15",
+      "unitOfMeasure": "pixels",
+      "width": "1000",
+      "height": "624",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv15d.jpg",
+      "primary": false
+    },
+    {
+      "rel": "Alt_View_Zoom_16",
+      "unitOfMeasure": "pixels",
+      "width": "1000",
+      "height": "654",
+      "href": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633cv16d.jpg",
+      "primary": false
+    }
   ],
   "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_sa.jpg",
   "largeFrontImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5005/5005633_sd.jpg",
@@ -409,12 +409,12 @@
   "fulfilledBy": null,
   "members": [],
   "bundledIn": [
-      {
-          "sku": 9999265200050012
-      },
-      {
-          "sku": 9999270000050002
-      }
+    {
+      "sku": 9999265200050012
+    },
+    {
+      "sku": 9999270000050002
+    }
   ],
   "albumLabel": null,
   "genre": null,
@@ -438,30 +438,30 @@
   "esrbRating": null,
   "longDescription": "Get great performance with the Canon EOS 80D lens kit. It combines a 24.2-megapixel sensor with an 18-135mm lens to get you closer to the action than ever before, and image stabilization reduces the effects of hand shake. Enjoy ultra-precise focusing and high-definition video for maximum versatility from this Canon EOS 80D lens kit. .",
   "includedItemList": [
-      {
-          "includedItem": "Canon EOS 80D DSLR Camera"
-      },
-      {
-          "includedItem": "18-135mm IS USM lens"
-      },
-      {
-          "includedItem": "eyecup"
-      },
-      {
-          "includedItem": "camera cover"
-      },
-      {
-          "includedItem": "wide strap"
-      },
-      {
-          "includedItem": "battery pack (LP-E6N)"
-      },
-      {
-          "includedItem": "battery charger (LC-E6)"
-      },
-      {
-          "includedItem": "Owner's Manual"
-      }
+    {
+      "includedItem": "Canon EOS 80D DSLR Camera"
+    },
+    {
+      "includedItem": "18-135mm IS USM lens"
+    },
+    {
+      "includedItem": "eyecup"
+    },
+    {
+      "includedItem": "camera cover"
+    },
+    {
+      "includedItem": "wide strap"
+    },
+    {
+      "includedItem": "battery pack (LP-E6N)"
+    },
+    {
+      "includedItem": "battery charger (LC-E6)"
+    },
+    {
+      "includedItem": "Owner's Manual"
+    }
   ],
   "marketplace": null,
   "listingId": null,

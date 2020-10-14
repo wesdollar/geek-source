@@ -8,9 +8,8 @@ describe('ShopByCategoryComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShopByCategoryComponent ]
-    })
-    .compileComponents();
+      declarations: [ShopByCategoryComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

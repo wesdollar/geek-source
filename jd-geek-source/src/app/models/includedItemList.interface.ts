@@ -1,3 +1,3 @@
 export interface IncludedItemList {
-  includedItem: string
+  includedItem: string;
 }
