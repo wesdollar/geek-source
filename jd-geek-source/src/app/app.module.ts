@@ -19,6 +19,9 @@ import { FeaturedProductsComponent } from "./components/featured-products/featur
 import { DailyDealsComponent } from "./components/daily-deals/daily-deals.component";
 import { HottestDealsComponent } from "./components/hottest-deals/hottest-deals.component";
 import { BestBuyService } from "./services/best-buy.service";
+import { LogoComponent } from "./components/logo/logo.component";
+import { SearchIconComponent } from "./components/search-icon/search-icon.component";
+import { ShopingCartIconComponent } from "./components/shoping-cart-icon/shoping-cart-icon.component";
 
 @NgModule({
   declarations: [
@@ -34,6 +37,9 @@ import { BestBuyService } from "./services/best-buy.service";
     FeaturedProductsComponent,
     DailyDealsComponent,
     HottestDealsComponent,
+    LogoComponent,
+    SearchIconComponent,
+    ShopingCartIconComponent,
   ],
   imports: [
     BrowserModule,
