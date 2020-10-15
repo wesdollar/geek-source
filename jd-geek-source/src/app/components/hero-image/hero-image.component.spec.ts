@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { HeroImageComponent } from './hero-image.component';
+import { HeroImageComponent } from "./hero-image.component";
 
-describe('HeroImageComponent', () => {
+describe("HeroImageComponent", () => {
   let component: HeroImageComponent;
   let fixture: ComponentFixture<HeroImageComponent>;
 
@@ -18,7 +18,7 @@ describe('HeroImageComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

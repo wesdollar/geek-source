@@ -1,7 +1,7 @@
 import { animate, style, transition, trigger } from "@angular/animations";
 import { Component, OnInit } from "@angular/core";
 import { ProductLimited } from "src/app/models/productLimited.interface";
-//import { SearchData } from "src/app/models/searchData.interface";
+// import { SearchData } from "src/app/models/searchData.interface";
 import { TestData } from "src/app/models/testdata.interface";
 import { BestBuyService } from "src/app/services/best-buy.service";
 

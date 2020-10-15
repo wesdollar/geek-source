@@ -15,7 +15,7 @@
     "directive-class-suffix": true,
     "directive-selector": [true, "attribute", "app", "camelCase"],
     "component-selector": [true, "element", "app", "kebab-case"],
-    "eofline": true,
+    "eofline": [true, "crlf"],
     "import-blacklist": [true, "rxjs/Rx"],
     "import-spacing": true,
     "indent": {
@@ -42,7 +42,7 @@
     "no-switch-case-fall-through": true,
     "no-var-requires": false,
     "object-literal-key-quotes": [true, "as-needed"],
-    "quotemark": [true, "single"],
+    "quotemark": [true, "double"],
     "semicolon": {
       "options": ["always"]
     },
