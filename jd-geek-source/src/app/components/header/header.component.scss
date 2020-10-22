@@ -26,3 +26,34 @@
   width: 80%;
   background-color: $secondary;
 }
+
+section {
+  display: flex;
+}
+
+ul li {
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul li:first-child {
+  background: $white;
+}
+ul li:nth-child(2) {
+  background: $secondary;
+}
+
+.logoItem {
+  flex: 1;
+  justify-content: left;
+}
+
+.searchItem {
+  flex: 2;
+  justify-content: center;
+}
+
+.shoppingCartItem {
+  flex: 3;
+  justify-content: right;
+}
