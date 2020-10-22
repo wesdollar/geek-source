@@ -10,7 +10,7 @@ import { Observable } from "rxjs";
 export class BestBuyService {
   constructor(private http: HttpClient) {}
   contentTypeQuery = "?Content-type=%22application%2Fjson%22 HTTP/1.1";
-  headers = new HttpHeaders({ "content-type": "application/json"});
+  headers = new HttpHeaders({ "content-type": "application/json" });
 
   getTestData(): Observable<TestData> {
     const httpParams = new HttpParams()

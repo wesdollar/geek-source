@@ -1,4 +1,4 @@
-import { ProductLimited } from './productLimited.interface';
+import { ProductLimited } from "./productLimited.interface";
 
 export interface TestData {
   from: number;
