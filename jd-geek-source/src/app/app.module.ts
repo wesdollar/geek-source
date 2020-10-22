@@ -1,12 +1,11 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
+import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from "./app-routing.module";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 // For api testing -- will be removed
 import { TestDiplayComponent } from "./components/test-diplay/test-diplay.component";
-import { JwtInterceptor } from "./interceptors/jwt.interceptor";
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
@@ -42,10 +41,7 @@ import { BestBuyService } from "./services/best-buy.service";
     HttpClientModule,
     FontAwesomeModule,
   ],
-  providers: [
-    BestBuyService,
-    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
-  ],
+  providers: [BestBuyService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 import { TestData } from "../models/testdata.interface";
 import * as configs from "../../assets/config.json";
+import { Observable } from "rxjs";
 
 @Injectable({
   providedIn: "root",
@@ -11,7 +12,7 @@ export class BestBuyService {
   contentTypeQuery = "?Content-type=%22application%2Fjson%22 HTTP/1.1";
   headers = new HttpHeaders({ "content-type": "application/json"});
 
-  getTestData() {
+  getTestData(): Observable<TestData> {
     const httpParams = new HttpParams()
       .set("show", configs.show)
       .set("pageSize", "3")
