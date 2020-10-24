@@ -1,10 +1,12 @@
 <div class="content" role="main">
-  <app-header></app-header>
+  <app-header class="header"></app-header>
 
-  <div class="testbuttonposition">
-    <button [routerLink]="['test-diplay']">Best Buy API Testing</button>
-  </div>
-  <div class="testbuttonposition">
-    <router-outlet></router-outlet>
-  </div>
+  <!-- <div class="testbuttonposition"> -->
+  <button class="menuNav testbutton" [routerLink]="['test-diplay']">
+    Best Buy API Testing
+  </button>
+  <!-- </div> -->
+  <!-- <div class="testbuttonposition"> -->
+  <router-outlet class="item"></router-outlet>
+  <!-- </div> -->
 </div>
