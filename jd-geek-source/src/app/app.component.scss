@@ -13,18 +13,15 @@
   column-gap: $MAIN_GUTTER_WIDTH * 2;
 }
 
-.content {
+.wrapper {
   display: flex;
-  //margin: 82px auto 32px;
-  //padding: 0 16px;
-  //max-width: 1180px;
-  flex-flow: row wrap;
+  margin: -8px auto 32px;
+  padding: 0 16px;
+  max-width: 1180px;
+  flex-flow: column nowrap;
 }
 
-.item {
-  flex-grow: 4;
-}
-header {
+.header {
   order: 1;
 }
 

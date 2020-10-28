@@ -4,11 +4,19 @@
   color: $secondary;
 }
 
-.noborder {
+.searchBox {
+  padding-left: 5px;
+  padding-right: 5px;
   border: none;
+  color: $secondary;
+  width: 225px;
+}
+.searchBox:focus {
+  outline: none;
 }
 
-.searchbox {
-  margin-left: 80px;
+.searchBoxArea {
+  margin-left: 40px;
+  width: 250px;
   border-bottom: 1px solid black;
 }
