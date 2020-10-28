@@ -1,8 +1,8 @@
-import { CategoryPath } from './categoryPath.interface';
-import { Images } from './images.interface';
-import { IncludedItemList } from './includedItemList.interface';
-import { Shipping } from './shipping.interface';
-import { ShippingLevelsOfService } from './shippingLevelsOfService.interface';
+import { CategoryPath } from "./categoryPath.interface";
+import { Images } from "./images.interface";
+import { IncludedItemList } from "./includedItemList.interface";
+import { Shipping } from "./shipping.interface";
+import { ShippingLevelsOfService } from "./shippingLevelsOfService.interface";
 
 export interface Product {
   sku: number;

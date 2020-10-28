@@ -3,12 +3,13 @@
 
   <div *ngFor="let product of testResults">
     <div>
-      <p>
-        <b>Department: </b>{{ product.department }}&nbsp;&nbsp; <b>SKU: </b
-        >{{ product.sku }}
-      </p>
-      <p><b>Name: </b>{{ product.name }}</p>
-      <p><b>Sale Price: </b>{{ product.salePrice }}</p>
+      <label class="labelBold">Department: </label
+      >{{ product.department }}&nbsp;&nbsp;
+      <label class="labelBold">SKU: </label>{{ product.sku }}
+    </div>
+    <div><label class="labelBold">Name: </label>{{ product.name }}</div>
+    <div>
+      <label class="labelBold">Sale Price: </label>{{ product.salePrice }}
     </div>
   </div>
 
