@@ -1,6 +1,4 @@
-import { style } from "@angular/animations";
 import { Component, OnInit } from "@angular/core";
-import { colors } from "../../../constants/color";
 
 @Component({
   selector: "app-header",
@@ -8,6 +6,11 @@ import { colors } from "../../../constants/color";
   styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent implements OnInit {
+  menuItems = [
+    { name: "TVs", url: "/" },
+    { name: "Cameras", url: "/" },
+    { name: "Appliances", url: "/" },
+  ];
   constructor() {}
 
   ngOnInit(): void {}
