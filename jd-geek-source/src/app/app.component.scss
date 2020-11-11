@@ -13,17 +13,24 @@
   column-gap: $MAIN_GUTTER_WIDTH * 2;
 }
 
-.content {
+.wrapper {
   display: flex;
-  margin: 82px auto 32px;
+  margin: -8px auto 32px;
   padding: 0 16px;
   max-width: 1180px;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: column nowrap;
 }
 
-.spacer {
-  flex: 1;
+.header {
+  order: 1;
+}
+
+.menuNav {
+  order: 2;
+}
+
+.routerContent {
+  order: 3;
 }
 
 footer {
@@ -38,7 +45,8 @@ footer a {
   align-items: center;
 }
 
-.testbuttonposition {
-  position: relative;
-  top: 100px;
+.testbutton {
+  margin: 5px;
+  width: 150px;
+  height: 25px;
 }

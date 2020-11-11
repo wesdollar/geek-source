@@ -1,0 +1,19 @@
+@import "../../../constants/color.scss";
+
+.headerIconColor {
+  fill: $secondary;
+}
+
+.headerIconSize {
+  width: 20px;
+  height: 20px;
+}
+
+.footerIconColor {
+  fill: $white;
+}
+
+.footerIconSize {
+  width: 20px;
+  height: 20px;
+}

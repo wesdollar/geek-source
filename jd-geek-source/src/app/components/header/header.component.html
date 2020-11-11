@@ -1,12 +1,11 @@
-<div>
-  <div class="toolbar">
-    <img
-      width="100"
-      alt="Geek Source Logo"
-      src="../../../assets/images/logo.png"
-      [routerLink]="['/']"
-    />
-    <app-search></app-search>
+<div class="flex headerMain">
+  <div class="topHeader">
+    <div class="flex topHeader2">
+      <app-logo class="logoItem"></app-logo>
+      <div class="veritcalLine"></div>
+      <app-search class="flex searchItem"></app-search>
+      <app-shopping-cart class="flex shoppingCartItem"></app-shopping-cart>
+    </div>
   </div>
   <div class="bottomheader">
     <app-vertical-dropdown-menu

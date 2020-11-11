@@ -1,28 +1,48 @@
 @import "../../../constants/color.scss";
 
-.toolbar {
-  position: absolute;
-  top: 0;
-  left: 10%;
-  right: 0;
-  height: 60px;
-  width: 80%;
+.flex {
   display: flex;
+}
+.headerMain {
+  height: 102px;
   align-items: center;
-  background-color: $white;
-  color: $secondary;
+  flex-direction: column;
 }
 
-.toolbar img {
-  margin: 0 16px;
+.topHeader {
+  width: 100%;
+  background-color: $white;
+  color: $secondary;
+  margin-bottom: 2px;
+  flex: 3;
+}
+
+.topHeader2 {
+  align-items: center;
+}
+.logoItem {
+  justify-content: flex-start;
+}
+
+.veritcalLine {
+  height: 30px;
+  margin-left: 40px;
+  border-left: 1px solid $verticalLine;
+}
+
+.searchItem {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.shoppingCartItem {
+  margin-right: 5px;
+  justify-content: flex-end;
+  flex: 1;
 }
 
 .bottomheader {
-  position: absolute;
-  top: 60px;
-  left: 10%;
-  right: 0;
-  height: 40px;
-  width: 80%;
+  width: 100%;
   background-color: $secondary;
+  flex: 2;
 }
