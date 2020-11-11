@@ -1,10 +1,13 @@
-<div class="content" role="main">
-  <app-header></app-header>
-
-  <div class="testbuttonposition">
-    <button [routerLink]="['test-diplay']">Best Buy API Testing</button>
+<div class="wrapper" role="main">
+  <div class="header">
+    <app-header></app-header>
   </div>
-  <div class="testbuttonposition">
+  <div class="menuNav">
+    <button class="testbutton" [routerLink]="['test-diplay']">
+      Best Buy API Testing
+    </button>
+  </div>
+  <div class="routerContent">
     <router-outlet></router-outlet>
   </div>
 </div>
