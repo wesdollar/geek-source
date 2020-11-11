@@ -18,6 +18,8 @@ import { FeaturedProductsComponent } from "./components/featured-products/featur
 import { DailyDealsComponent } from "./components/daily-deals/daily-deals.component";
 import { HottestDealsComponent } from "./components/hottest-deals/hottest-deals.component";
 import { BestBuyService } from "./services/best-buy.service";
+import { TemplateDrivenDropdownMenuComponent } from "./components/common/template-driven-dropdown-menu/template-driven-dropdown-menu.component";
+import { ProductDisplayPortalComponent } from "./components/common/product-display-portal/product-display-portal.component";
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { BestBuyService } from "./services/best-buy.service";
     FeaturedProductsComponent,
     DailyDealsComponent,
     HottestDealsComponent,
+    TemplateDrivenDropdownMenuComponent,
+    ProductDisplayPortalComponent,
   ],
   imports: [
     BrowserModule,

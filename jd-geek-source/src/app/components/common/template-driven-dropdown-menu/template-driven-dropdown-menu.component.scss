@@ -1,0 +1,20 @@
+@import "../../../../constants/color.scss";
+
+.template-drop-menu {
+  display: inline-block;
+}
+
+.drop-menu-button {
+  background-color: $secondary;
+  color: $white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+.template-drop-menu:hover .drop-menu-content {
+  display: block;
+}
+
+.template-drop-menu:hover .drop-menu-button {
+  background-color: $menuHover;
+}
