@@ -1,1 +1,47 @@
-<p>product-display-portal works!</p>
+<div class="flex portalView">
+  <div class="flex carouselContainer">
+    <div id="carousel" class="flex carousel">
+      <section
+        class="flex portalProduct"
+        *ngFor="let product of portalProducts"
+      >
+        <div>
+          <img
+            class="imageSize"
+            src="{{ product.image }}"
+            alt="{{ product.name }}"
+          />
+        </div>
+        <div style="height: fit-content">{{ product.name }}</div>
+        <div class="reviews">
+          {{ product.customerReviewAverage }}
+          ({{ product.customerReviewCount }})
+        </div>
+        <div>
+          {{ product.salePrice }}
+        </div>
+        <div>
+          {{ product.regularPrice }}
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="flex carouselNavigations">
+    <button
+      [disabled]="leftScrollDisabled"
+      type="button"
+      class="carouselNavigation"
+      (click)="leftScroll(200, 'carousel')"
+    >
+      <app-angle-left-icon></app-angle-left-icon>
+    </button>
+    <button
+      [disabled]="rightScrollDisabled"
+      type="button"
+      class="carouselNavigation"
+      (click)="rightScroll(200, 'carousel')"
+    >
+      <app-angle-right-icon></app-angle-right-icon>
+    </button>
+  </div>
+</div>

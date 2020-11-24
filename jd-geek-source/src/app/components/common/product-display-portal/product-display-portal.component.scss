@@ -1,0 +1,84 @@
+@import "../../../../constants/color.scss";
+@import "../../../../constants/sizing.scss";
+@import "../../../../constants/gutters.scss";
+
+$imageWidth: 230px;
+$imageHeight: 95px;
+
+.imageSize {
+  display: block;
+  max-width: $imageWidth;
+  max-height: $imageHeight;
+  width: auto;
+  height: auto;
+  margin: 10px;
+}
+
+.imageSize:hover {
+  max-width: $imageWidth + 23px;
+  max-height: $imageHeight + 9.5px;
+}
+
+.flex {
+  display: flex;
+}
+
+.portalView {
+  background-color: $white;
+  width: $maxPageWidth;
+  height: 300px;
+  border: 1px solid $white;
+  box-shadow: inset -8px 0px 5px $primary;
+  flex-flow: column nowrap;
+}
+
+.carouselContainer {
+  flex: 4;
+}
+
+.carousel {
+  box-sizing: border-box;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+
+.portalProduct {
+  min-width: 200px;
+  height: 120px;
+  margin: 10px;
+  margin: $halfGutter $mainGutter $halfGutter $mainGutter;
+  flex-flow: column nowrap;
+}
+
+.reviews {
+  color: $secondary;
+}
+
+.carouselNavigations {
+  margin-top: 10px;
+  margin-right: 50px;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.carouselNavigation {
+  border: 0;
+  border-radius: 10px;
+  text-align: center;
+  color: $secondary;
+  background: none;
+  font-size: large;
+}
+
+.carouselNavigation:focus {
+  outline: none;
+}
+
+.carouselNavigation:hover {
+  color: $secondaryLight;
+}
+
+.carouselNavigation:disabled {
+  color: $secondaryLight;
+}

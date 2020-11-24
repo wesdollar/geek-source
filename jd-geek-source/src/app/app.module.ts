@@ -21,9 +21,11 @@ import { BestBuyService } from "./services/best-buy.service";
 import { TemplateDrivenDropdownMenuComponent } from "./components/common/template-driven-dropdown-menu/template-driven-dropdown-menu.component";
 import { ProductDisplayPortalComponent } from "./components/common/product-display-portal/product-display-portal.component";
 import { LogoComponent } from "./components/logo/logo.component";
-import { SearchIconComponent } from "./components/search-icon/search-icon.component";
-import { ShoppingCartIconComponent } from "./components/shopping-cart-icon/shopping-cart-icon.component";
+import { SearchIconComponent } from "./components/icons/search-icon/search-icon.component";
+import { ShoppingCartIconComponent } from "./components/icons/shopping-cart-icon/shopping-cart-icon.component";
 import { ShoppingCartComponent } from "./components/shopping-cart/shopping-cart.component";
+import { AngleRightIconComponent } from './components/icons/angle-right-icon/angle-right-icon.component';
+import { AngleLeftIconComponent } from './components/icons/angle-left-icon/angle-left-icon.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { ShoppingCartComponent } from "./components/shopping-cart/shopping-cart.
     SearchIconComponent,
     ShoppingCartIconComponent,
     ShoppingCartComponent,
+    AngleRightIconComponent,
+    AngleLeftIconComponent,
   ],
   imports: [
     BrowserModule,

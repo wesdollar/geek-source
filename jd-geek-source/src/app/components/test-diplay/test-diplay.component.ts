@@ -27,7 +27,7 @@ export class TestDiplayComponent implements OnInit {
 
   ngOnInit(): void {
     this.bestBuyService
-      .getPortalProducts()
+      .getPortalProducts("digital_insert")
       .subscribe((results: CommonProductsAPIData) => {
         if (results != null) {
           this.testResults = results.products;

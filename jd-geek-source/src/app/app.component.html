@@ -2,7 +2,13 @@
   <div class="header">
     <app-header></app-header>
   </div>
+
   <div class="menuNav">
+    <div style="margin-top: 20px">
+      <app-product-display-portal
+        offerTypes="digital_insert"
+      ></app-product-display-portal>
+    </div>
     <button class="testbutton" [routerLink]="['test-diplay']">
       Best Buy API Testing
     </button>

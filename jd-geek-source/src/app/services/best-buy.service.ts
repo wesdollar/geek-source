@@ -3,7 +3,6 @@ import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 import { TestData } from "../models/testdata.interface";
 import * as configs from "../../assets/config.json";
 import { Observable } from "rxjs";
-import { CommonPortalData } from "../models/commonPortalData.interface";
 import { CommonProductsAPIData } from "../models/commonProductsAPIData.interface";
 
 @Injectable({
@@ -28,9 +27,9 @@ export class BestBuyService {
       options
     );
   }
-  //https://api.bestbuy.com/v1/products(offers.type=digital_insert)?apiKey=ma6v7d7sxqmp6tbsssu7rcas&sort=image.asc&show=image,description,customerReviewAverage,customerReviewCount,regularPrice,salePrice&format=json
 
-  getPortalProducts(): Observable<CommonProductsAPIData> {
+  getPortalProducts(offerTypes: string): Observable<CommonProductsAPIData> {
+    const httpUrl = `https://api.bestbuy.com/v1/products(offers.type=${offerTypes})?`;
     const httpParams = new HttpParams()
       .set(
         "show",
@@ -42,9 +41,6 @@ export class BestBuyService {
 
     const options = { params: httpParams };
 
-    return this.http.get<CommonProductsAPIData>(
-      "https://api.bestbuy.com/v1/products(offers.type=digital_insert)?",
-      options
-    );
+    return this.http.get<CommonProductsAPIData>(httpUrl, options);
   }
 }
