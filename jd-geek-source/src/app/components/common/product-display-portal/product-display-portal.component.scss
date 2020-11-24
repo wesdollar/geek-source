@@ -23,12 +23,25 @@ $imageHeight: 95px;
   display: flex;
 }
 
+.portalShroud {
+  position: absolute;
+  box-sizing: border-box;
+  width: $maxPageWidth;
+  height: 250px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 98%,
+    $white 100%
+  );
+}
+
 .portalView {
   background-color: $white;
+  box-sizing: border-box;
   width: $maxPageWidth;
   height: 300px;
   border: 1px solid $white;
-  box-shadow: inset -8px 0px 5px $primary;
   flex-flow: column nowrap;
 }
 
