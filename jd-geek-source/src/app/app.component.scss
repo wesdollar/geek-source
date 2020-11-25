@@ -1,11 +1,12 @@
 @import "../constants/gutters.scss";
 @import "../constants/color.scss";
+@import "../constants/sizing.scss";
 
 .wrapper {
   display: flex;
   margin: -8px auto 32px;
   padding: 0 16px;
-  max-width: 1180px;
+  max-width: $maxPageWidth;
   flex-flow: column nowrap;
 }
 
