@@ -1,5 +1,7 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 import { TestDiplayComponent } from "./test-diplay.component";
+import { BestBuyService } from "src/app/services/best-buy.service";
+import { HttpClientModule } from "@angular/common/http";
 
 describe("TestDiplayComponent", () => {
   let component: TestDiplayComponent;
@@ -8,6 +10,7 @@ describe("TestDiplayComponent", () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [TestDiplayComponent],
+      imports: [HttpClientModule],
     }).compileComponents();
   }));
 

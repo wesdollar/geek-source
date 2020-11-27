@@ -6,6 +6,7 @@ import { ProductLimited } from "src/app/models/productLimited.interface";
 // import { SearchData } from "src/app/models/searchData.interface";
 import { TestData } from "src/app/models/testdata.interface";
 import { BestBuyService } from "src/app/services/best-buy.service";
+import { HttpClientModule } from "@angular/common/http";
 
 @Component({
   selector: "app-test-diplay",
