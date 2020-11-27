@@ -47,7 +47,7 @@ $imageHeight: 95px;
 }
 
 .carouselContainer {
-  flex: 4;
+  flex: 5;
 }
 
 .carousel {
@@ -59,7 +59,7 @@ $imageHeight: 95px;
 
 .portalProduct {
   min-width: 200px;
-  height: 120px;
+  height: 160px;
   margin: 10px;
   margin: $halfGutter $mainGutter $halfGutter $mainGutter;
   flex-flow: column nowrap;

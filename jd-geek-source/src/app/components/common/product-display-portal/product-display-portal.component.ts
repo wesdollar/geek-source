@@ -37,6 +37,7 @@ export class ProductDisplayPortalComponent implements OnInit {
       .subscribe((results: CommonProductsAPIData) => {
         if (results != null) {
           this.portalProducts = results.products;
+          console.log("product details", this.portalProducts);
         }
       });
   }

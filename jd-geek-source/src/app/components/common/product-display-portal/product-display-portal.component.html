@@ -15,11 +15,15 @@
         </div>
         <div style="height: fit-content">{{ product.name }}</div>
         <div class="reviews">
+          <app-product-ratings
+            [productRating]="product.customerReviewAverage"
+          ></app-product-ratings>
           {{ product.customerReviewAverage }}
           ({{ product.customerReviewCount }})
         </div>
         <div>
           {{ product.salePrice }}
+          <app-cart-plus-icon></app-cart-plus-icon>
         </div>
         <div>
           {{ product.regularPrice }}
