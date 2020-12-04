@@ -44,3 +44,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+#Testing and Code Coverage
+/jd-geek-source/coverage
+/jd-geek-source/spec
