@@ -7,5 +7,10 @@
       <app-shopping-cart class="flex shoppingCartItem"></app-shopping-cart>
     </div>
   </div>
-  <div class="bottomheader"></div>
+  <div class="bottomheader">
+    <app-template-driven-dropdown-menu
+      menuTitle="RECENTLY VIEWED"
+      [productData]="productsData"
+    ></app-template-driven-dropdown-menu>
+  </div>
 </div>

@@ -1,17 +1,8 @@
-import {
-  Component,
-  ElementRef,
-  HostListener,
-  Input,
-  OnInit,
-} from "@angular/core";
-import { element } from "protractor";
+import { Component, Input, OnInit } from "@angular/core";
 import { CommonPortalData } from "src/app/models/commonPortalData.interface";
-import { CommonProductsAPIData } from "src/app/models/commonProductsAPIData.interface";
 import { BestBuyService } from "src/app/services/best-buy.service";
 
 const RIGHT_SCROLL_STOP = 0;
-const LEFT_SCROLL_STOP = 1390;
 
 @Component({
   selector: "app-product-display-portal",
@@ -19,27 +10,21 @@ const LEFT_SCROLL_STOP = 1390;
   styleUrls: ["./product-display-portal.component.scss"],
 })
 export class ProductDisplayPortalComponent implements OnInit {
-  @Input() offerTypes: string;
+  @Input() productData: CommonPortalData[];
   portalProducts: CommonPortalData[] = null;
   leftScrollDisabled: boolean;
   rightScrollDisabled = true;
   maxScroll: number;
   scrollTracker = RIGHT_SCROLL_STOP;
 
-  constructor(
-    private bestBuyService: BestBuyService,
-    private eleRef: ElementRef
-  ) {}
+  constructor(private bestBuyService: BestBuyService) {}
 
   ngOnInit(): void {
-    this.bestBuyService
-      .getPortalProducts(this.offerTypes)
-      .subscribe((results: CommonProductsAPIData) => {
-        if (results !== null) {
-          this.portalProducts = results.products;
-          console.log("product details", this.portalProducts);
-        }
-      });
+    this.portalProducts = this.productData;
+  }
+
+  ngOnChanges(): void {
+    this.portalProducts = this.productData;
   }
 
   leftScroll(scrollAmount: number, elementId: string): void {
