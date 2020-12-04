@@ -38,9 +38,15 @@ speed-measure-plugin*.json
 /libpeerconnection.log
 npm-debug.log
 yarn-error.log
+*.log
 testem.log
 /typings
+/jd-geek-source/debug.log
 
 # System Files
 .DS_Store
 Thumbs.db
+
+#Testing and Code Coverage
+/jd-geek-source/coverage
+/jd-geek-source/spec

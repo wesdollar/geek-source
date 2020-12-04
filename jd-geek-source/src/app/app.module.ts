@@ -29,8 +29,8 @@ import { AngleLeftIconComponent } from "./components/icons/angle-left-icon/angle
 import { FilledStarIconComponent } from "./components/icons/filled-star-icon/filled-star-icon.component";
 import { EmptyStarIconComponent } from "./components/icons/empty-star-icon/empty-star-icon.component";
 import { HalfStarIconComponent } from "./components/icons/half-star-icon/half-star-icon.component";
-import { ProductRatingsComponent } from './components/product-ratings/product-ratings.component';
-import { CartPlusIconComponent } from './components/icons/cart-plus-icon/cart-plus-icon.component';
+import { ProductRatingsComponent } from "./components/product-ratings/product-ratings.component";
+import { CartPlusIconComponent } from "./components/icons/cart-plus-icon/cart-plus-icon.component";
 
 @NgModule({
   declarations: [
