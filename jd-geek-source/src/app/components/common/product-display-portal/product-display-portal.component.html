@@ -1,7 +1,7 @@
 <div class="portalShroud"></div>
 <div class="flex portalView">
   <div class="flex carouselContainer">
-    <div id="carousel" class="flex carousel">
+    <div id="{{ carouselElementID }}" class="flex carousel">
       <section
         class="flex portalProduct"
         *ngFor="let product of portalProducts"
@@ -36,7 +36,7 @@
       [disabled]="leftScrollDisabled"
       type="button"
       class="carouselNavigation"
-      (click)="leftScroll(200, 'carousel')"
+      (click)="leftScroll(200, carouselElementID)"
     >
       <app-angle-left-icon></app-angle-left-icon>
     </button>
@@ -44,7 +44,7 @@
       [disabled]="rightScrollDisabled"
       type="button"
       class="carouselNavigation"
-      (click)="rightScroll(200, 'carousel')"
+      (click)="rightScroll(200, carouselElementID)"
     >
       <app-angle-right-icon></app-angle-right-icon>
     </button>

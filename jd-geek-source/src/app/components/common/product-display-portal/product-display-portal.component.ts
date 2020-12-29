@@ -11,6 +11,8 @@ const RIGHT_SCROLL_STOP = 0;
 })
 export class ProductDisplayPortalComponent implements OnInit {
   @Input() productData: CommonPortalData[];
+  @Input() carouselID: string;
+  carouselElementID: string;
   portalProducts: CommonPortalData[] = null;
   leftScrollDisabled: boolean;
   rightScrollDisabled = true;
@@ -21,6 +23,7 @@ export class ProductDisplayPortalComponent implements OnInit {
 
   ngOnInit(): void {
     this.portalProducts = this.productData;
+    this.carouselElementID = this.carouselID;
   }
 
   ngOnChanges(): void {
