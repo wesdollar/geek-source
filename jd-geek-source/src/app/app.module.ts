@@ -22,6 +22,7 @@ import { LogoComponent } from "./components/logo/logo.component";
 import { SearchIconComponent } from "./components/search-icon/search-icon.component";
 import { ShoppingCartIconComponent } from "./components/shopping-cart-icon/shopping-cart-icon.component";
 import { ShoppingCartComponent } from "./components/shopping-cart/shopping-cart.component";
+import { ProductDisplayPortalComponent } from './components/common/product-display-portal/product-display-portal.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ShoppingCartComponent } from "./components/shopping-cart/shopping-cart.
     SearchIconComponent,
     ShoppingCartIconComponent,
     ShoppingCartComponent,
+    ProductDisplayPortalComponent,
   ],
   imports: [
     BrowserModule,
