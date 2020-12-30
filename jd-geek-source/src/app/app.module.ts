@@ -9,7 +9,7 @@ import { TestDiplayComponent } from "./components/test-diplay/test-diplay.compon
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
-import { ButtonComponent } from "./components/button/button.component";
+import { ButtonComponent } from "./components/common/button/button.component";
 import { ProductShowcaseComponent } from "./components/product-showcase/product-showcase.component";
 import { SearchComponent } from "./components/search/search.component";
 import { ShopByCategoryComponent } from "./components/shop-by-category/shop-by-category.component";
@@ -20,6 +20,7 @@ import { HottestDealsComponent } from "./components/hottest-deals/hottest-deals.
 import { BestBuyService } from "./services/best-buy.service";
 import { TemplateDrivenDropdownMenuComponent } from "./components/common/template-driven-dropdown-menu/template-driven-dropdown-menu.component";
 import { ProductDisplayPortalComponent } from "./components/common/product-display-portal/product-display-portal.component";
+import { VerticalDropdownMenuComponent } from "./components/common/vertical-dropdown-menu/vertical-dropdown-menu.component";
 import { LogoComponent } from "./components/logo/logo.component";
 import { SearchIconComponent } from "./components/icons/search-icon/search-icon.component";
 import { ShoppingCartIconComponent } from "./components/icons/shopping-cart-icon/shopping-cart-icon.component";
@@ -48,6 +49,7 @@ import { CartPlusIconComponent } from "./components/icons/cart-plus-icon/cart-pl
     HottestDealsComponent,
     TemplateDrivenDropdownMenuComponent,
     ProductDisplayPortalComponent,
+    VerticalDropdownMenuComponent,
     LogoComponent,
     SearchIconComponent,
     ShoppingCartIconComponent,

@@ -12,6 +12,11 @@ export class HeaderComponent implements OnInit {
   productsData: CommonPortalData[] = null;
   offerTypes = "digital_insert";
   constructor(private bestBuyService: BestBuyService) {}
+  menuItems = [
+    { name: "TVs", url: "/" },
+    { name: "Cameras", url: "/" },
+    { name: "Appliances", url: "/" },
+  ];
 
   ngOnInit(): void {
     this.bestBuyService
