@@ -8,9 +8,7 @@ import { Component, Input, OnInit } from "@angular/core";
 export class ShoppingCartIconComponent implements OnInit {
   @Input("iconPlacingClassName") iconPlacingClassName: string;
   @Input("iconSizeClassName") iconSizeClassName: string;
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

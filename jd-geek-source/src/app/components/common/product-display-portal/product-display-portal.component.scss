@@ -1,0 +1,98 @@
+@import "../../../../constants/color.scss";
+@import "../../../../constants/sizing.scss";
+@import "../../../../constants/gutters.scss";
+
+$imageWidth: 230px;
+$imageHeight: 95px;
+
+.imageSize {
+  display: block;
+  max-width: $imageWidth;
+  max-height: $imageHeight;
+  width: auto;
+  height: auto;
+  margin: 10px;
+}
+
+.imageSize:hover {
+  max-width: $imageWidth + 23px;
+  max-height: $imageHeight + 9.5px;
+}
+
+.flex {
+  display: flex;
+}
+
+.portalShroud {
+  position: absolute;
+  box-sizing: border-box;
+  width: $maxPageWidth;
+  height: 250px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 98%,
+    $white 100%
+  );
+  pointer-events: none;
+}
+
+.portalView {
+  background-color: $white;
+  box-sizing: border-box;
+  width: $maxPageWidth;
+  height: 300px;
+  border: 1px solid $white;
+  flex-flow: column nowrap;
+}
+
+.carouselContainer {
+  flex: 5;
+}
+
+.carousel {
+  box-sizing: border-box;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+
+.portalProduct {
+  min-width: 200px;
+  height: 160px;
+  margin: 10px;
+  margin: $halfGutter $mainGutter $halfGutter $mainGutter;
+  flex-flow: column nowrap;
+}
+
+.reviews {
+  color: $secondary;
+}
+
+.carouselNavigations {
+  margin-top: 10px;
+  margin-right: 50px;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.carouselNavigation {
+  border: 0;
+  border-radius: 10px;
+  text-align: center;
+  color: $secondary;
+  background: none;
+  font-size: large;
+}
+
+.carouselNavigation:focus {
+  outline: none;
+}
+
+.carouselNavigation:hover {
+  color: $secondaryLight;
+}
+
+.carouselNavigation:disabled {
+  color: $secondaryLight;
+}

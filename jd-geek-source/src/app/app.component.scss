@@ -1,23 +1,12 @@
 @import "../constants/gutters.scss";
 @import "../constants/color.scss";
-
-.main-gutter {
-  column-gap: $MAIN_GUTTER_WIDTH;
-}
-
-.half-gutter {
-  column-gap: $MAIN_GUTTER_WIDTH/2;
-}
-
-.double-gutter {
-  column-gap: $MAIN_GUTTER_WIDTH * 2;
-}
+@import "../constants/sizing.scss";
 
 .wrapper {
   display: flex;
   margin: -8px auto 32px;
   padding: 0 16px;
-  max-width: 1180px;
+  max-width: $maxPageWidth;
   flex-flow: column nowrap;
 }
 
