@@ -6,6 +6,8 @@
 }
 
 .drop-menu-button {
+  display: inline-block;
+  position: relative;
   background-color: $secondary;
   color: $white;
   padding: 10px;
@@ -25,7 +27,7 @@
 }
 
 .template-drop-menu:hover .drop-menu-content {
-  display: block;
+  display: grid;
 }
 
 .template-drop-menu:hover .drop-menu-button {

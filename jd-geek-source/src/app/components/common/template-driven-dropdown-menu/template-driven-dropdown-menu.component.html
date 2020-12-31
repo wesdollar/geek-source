@@ -1,9 +1,15 @@
 <div class="template-drop-menu">
-  <button class="drop-menu-button">{{ menuTitle }}</button>
-  <div class="drop-menu-content">
+  <button
+    class="drop-menu-button"
+    (mouseenter)="getDataSelection(menuTitle)"
+    (mouseleave)="getDataSelection('')"
+  >
+    {{ menuTitle }}
+  </button>
+  <!-- <div class="drop-menu-content">
     <app-product-display-portal
       [productData]="productData"
-      carouselID="carousel"
+      [carouselID]="carouselID"
     ></app-product-display-portal>
-  </div>
+  </div> -->
 </div>

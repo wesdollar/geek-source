@@ -1,3 +1,41 @@
+export interface CategoryPathEntity {
+  id: string;
+  name: string;
+}
+export interface ShippingEntity {
+  ground: string;
+  secondDay: string;
+  nextDay: number;
+  vendorDelivery: string;
+}
+export interface ShippingLevelsOfServiceEntity {
+  serviceLevelId: number;
+  serviceLevelName: string;
+  unitShippingPrice: number;
+}
+export interface VariationsEntity {
+  name: string;
+  value: string;
+}
+export interface ProductVariationsEntity {
+  sku: string;
+  variations?: VariationsEntity[] | null;
+}
+export interface ImagesEntity {
+  rel: string;
+  unitOfMeasure: string;
+  width: string;
+  height: string;
+  href: string;
+  primary: boolean;
+}
+export interface BundledInEntity {
+  sku: number;
+}
+export interface IncludedItemListEntity {
+  includedItem: string;
+}
+
 export interface Products {
   sku: number;
   score?: null;
@@ -168,41 +206,4 @@ export interface Products {
   proposition65WarningType: string;
   displayType: string;
   screenSizeIn: number;
-}
-export interface CategoryPathEntity {
-  id: string;
-  name: string;
-}
-export interface ShippingEntity {
-  ground: string;
-  secondDay: string;
-  nextDay: number;
-  vendorDelivery: string;
-}
-export interface ShippingLevelsOfServiceEntity {
-  serviceLevelId: number;
-  serviceLevelName: string;
-  unitShippingPrice: number;
-}
-export interface ProductVariationsEntity {
-  sku: string;
-  variations?: VariationsEntity[] | null;
-}
-export interface VariationsEntity {
-  name: string;
-  value: string;
-}
-export interface ImagesEntity {
-  rel: string;
-  unitOfMeasure: string;
-  width: string;
-  height: string;
-  href: string;
-  primary: boolean;
-}
-export interface BundledInEntity {
-  sku: number;
-}
-export interface IncludedItemListEntity {
-  includedItem: string;
 }

@@ -8,13 +8,23 @@
     </div>
   </div>
   <div class="bottomheader">
-    <app-template-driven-dropdown-menu
-      menuTitle="RECENTLY VIEWED"
-      [productData]="productsData"
-    ></app-template-driven-dropdown-menu>
     <app-vertical-dropdown-menu
-      menuTitle="Products"
+      menuTitle="PRODUCTS"
       [menuItems]="menuItems"
     ></app-vertical-dropdown-menu>
+    <app-template-driven-dropdown-menu
+      menuTitle="RECENTLY VIEWED"
+      (dataChoice)="getProductSelection($event)"
+    ></app-template-driven-dropdown-menu>
+    <app-template-driven-dropdown-menu
+      menuTitle="SAVED ITEMS"
+      (dataChoice)="getProductSelection($event)"
+    ></app-template-driven-dropdown-menu>
+  </div>
+  <div *ngIf="displayProductsCarousel">
+    <app-product-display-portal
+      [productData]="productData"
+      carouselID="mainCarousel"
+    ></app-product-display-portal>
   </div>
 </div>

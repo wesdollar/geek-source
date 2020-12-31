@@ -32,6 +32,7 @@ import { EmptyStarIconComponent } from "./components/icons/empty-star-icon/empty
 import { HalfStarIconComponent } from "./components/icons/half-star-icon/half-star-icon.component";
 import { ProductRatingsComponent } from "./components/product-ratings/product-ratings.component";
 import { CartPlusIconComponent } from "./components/icons/cart-plus-icon/cart-plus-icon.component";
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { CartPlusIconComponent } from "./components/icons/cart-plus-icon/cart-pl
     HalfStarIconComponent,
     ProductRatingsComponent,
     CartPlusIconComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
