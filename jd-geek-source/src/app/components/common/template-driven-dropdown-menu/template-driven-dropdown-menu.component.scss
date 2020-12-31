@@ -10,26 +10,11 @@
   position: relative;
   background-color: $secondary;
   color: $white;
-  padding: 10px;
+  padding: 10px 3px 10px 3px;
   font-size: 16px;
   border: none;
 }
 
 .drop-menu-button:focus {
   outline: none;
-}
-
-.drop-menu-content {
-  display: none;
-  position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.template-drop-menu:hover .drop-menu-content {
-  display: grid;
-}
-
-.template-drop-menu:hover .drop-menu-button {
-  background-color: $menuHover;
 }
