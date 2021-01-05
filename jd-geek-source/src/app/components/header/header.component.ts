@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { DropDownLink } from "src/app/models/drop-down-link.interface";
 
 @Component({
   selector: "app-header",
@@ -6,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent implements OnInit {
-  menuItems = [
+  menuItems: DropDownLink[] = [
     { name: "TVs", url: "/" },
     { name: "Cameras", url: "/" },
     { name: "Appliances", url: "/" },
