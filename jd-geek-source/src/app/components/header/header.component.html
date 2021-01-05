@@ -7,5 +7,10 @@
       <app-shopping-cart class="flex shoppingCartItem"></app-shopping-cart>
     </div>
   </div>
-  <div class="bottomheader"></div>
+  <div class="bottomheader">
+    <app-vertical-dropdown-menu
+      menuTitle="Products"
+      [menuItems]="menuItems"
+    ></app-vertical-dropdown-menu>
+  </div>
 </div>

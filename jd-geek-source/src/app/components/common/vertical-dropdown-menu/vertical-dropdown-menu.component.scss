@@ -1,0 +1,47 @@
+@import "../../../../constants/color.scss";
+
+.vertical-drop-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-menu-button {
+  background-color: $secondary;
+  color: $white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+.drop-menu-button:focus {
+  outline: none;
+}
+
+.drop-menu-content {
+  display: none;
+  position: absolute;
+  background-color: $white;
+  font-size: 16px;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+
+  a {
+    padding: 10px;
+    text-decoration: none;
+    color: $menuText;
+    display: block;
+  }
+
+  a:hover {
+    background-color: #dddddd;
+  }
+}
+
+.vertical-drop-menu:hover .drop-menu-content {
+  display: block;
+}
+
+.vertical-drop-menu:hover .drop-menu-button {
+  background-color: $menuHover;
+}
