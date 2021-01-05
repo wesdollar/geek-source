@@ -1,15 +1,11 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: "app-angle-right-icon",
-  templateUrl: "./angle-right-icon.component.html",
+  template: "<fa-icon [icon]='faAngleRight'></fa-icon>",
   styleUrls: ["./angle-right-icon.component.scss"],
 })
-export class AngleRightIconComponent implements OnInit {
+export class AngleRightIconComponent {
   faAngleRight = faAngleRight;
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }
