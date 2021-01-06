@@ -10,9 +10,7 @@ import { HalfStarIconComponent } from "../../components/icons/half-star-icon/hal
 import { CartPlusIconComponent } from "../../components/icons/cart-plus-icon/cart-plus-icon.component";
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
+  declarations: [
     SearchIconComponent,
     ShoppingCartIconComponent,
     AngleLeftIconComponent,
@@ -22,5 +20,16 @@ import { CartPlusIconComponent } from "../../components/icons/cart-plus-icon/car
     HalfStarIconComponent,
     CartPlusIconComponent,
   ],
+  exports: [
+    SearchIconComponent,
+    ShoppingCartIconComponent,
+    AngleLeftIconComponent,
+    AngleRightIconComponent,
+    FilledStarIconComponent,
+    EmptyStarIconComponent,
+    HalfStarIconComponent,
+    CartPlusIconComponent,
+  ],
+  imports: [CommonModule],
 })
 export class IconsModule {}

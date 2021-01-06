@@ -13,7 +13,6 @@ export class ProductDisplayPortalComponent implements OnInit {
   @Input() productData: CommonPortalData[];
   @Input() carouselID: string;
   carouselElementID: string;
-  portalProducts: CommonPortalData[] = null;
   leftScrollDisabled: boolean;
   rightScrollDisabled = true;
   maxScroll: number;
@@ -22,22 +21,16 @@ export class ProductDisplayPortalComponent implements OnInit {
   constructor(private bestBuyService: BestBuyService) {}
 
   ngOnInit(): void {
-    this.portalProducts = this.productData;
     this.carouselElementID = this.carouselID;
   }
 
-  ngOnChanges(): void {
-    this.portalProducts = this.productData;
-  }
-
   leftScroll(scrollAmount: number, elementId: string): void {
-    const maxScroll =
-      document.getElementById(elementId).scrollWidth -
-      document.getElementById(elementId).clientWidth;
+    const carouselElement = document.getElementById(elementId);
+    const maxScroll = carouselElement.scrollWidth - carouselElement.clientWidth;
 
     if (this.scrollTracker < maxScroll) {
       this.scrollTracker += scrollAmount;
-      document.getElementById(elementId).scrollLeft += scrollAmount;
+      carouselElement.scrollLeft += scrollAmount;
     }
 
     if (this.scrollTracker >= maxScroll) {
