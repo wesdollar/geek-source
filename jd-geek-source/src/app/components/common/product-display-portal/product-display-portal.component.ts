@@ -50,8 +50,6 @@ export class ProductDisplayPortalComponent implements OnInit {
     if (this.scrollTracker <= RIGHT_SCROLL_STOP) {
       this.rightScrollDisabled = true;
       this.leftScrollDisabled = false;
-    } else {
-      this.leftScrollDisabled = false;
     }
   }
 }
