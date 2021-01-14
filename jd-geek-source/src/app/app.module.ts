@@ -20,15 +20,8 @@ import { HottestDealsComponent } from "./components/hottest-deals/hottest-deals.
 import { BestBuyService } from "./services/best-buy.service";
 import { VerticalDropdownMenuComponent } from "./components/common/vertical-dropdown-menu/vertical-dropdown-menu.component";
 import { LogoComponent } from "./components/logo/logo.component";
-import { SearchIconComponent } from "./components/search-icon/search-icon.component";
-import { ShoppingCartIconComponent } from "./components/shopping-cart-icon/shopping-cart-icon.component";
 import { ShoppingCartComponent } from "./components/shopping-cart/shopping-cart.component";
-import { AngleRightIconComponent } from "./components/icons/angle-right-icon/angle-right-icon.component";
-import { AngleLeftIconComponent } from "./components/icons/angle-left-icon/angle-left-icon.component";
-import { FilledStarIconComponent } from "./components/icons/filled-star-icon/filled-star-icon.component";
-import { EmptyStarIconComponent } from "./components/icons/empty-star-icon/empty-star-icon.component";
-import { HalfStarIconComponent } from "./components/icons/half-star-icon/half-star-icon.component";
-import { CartPlusIconComponent } from "./components/icons/cart-plus-icon/cart-plus-icon.component";
+import { IconsModule } from "./modules/icons/icons.module";
 
 @NgModule({
   declarations: [
@@ -46,15 +39,7 @@ import { CartPlusIconComponent } from "./components/icons/cart-plus-icon/cart-pl
     HottestDealsComponent,
     VerticalDropdownMenuComponent,
     LogoComponent,
-    SearchIconComponent,
-    ShoppingCartIconComponent,
     ShoppingCartComponent,
-    AngleLeftIconComponent,
-    AngleRightIconComponent,
-    FilledStarIconComponent,
-    EmptyStarIconComponent,
-    HalfStarIconComponent,
-    CartPlusIconComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,6 +47,7 @@ import { CartPlusIconComponent } from "./components/icons/cart-plus-icon/cart-pl
     BrowserAnimationsModule,
     HttpClientModule,
     FontAwesomeModule,
+    IconsModule,
   ],
   providers: [BestBuyService],
   bootstrap: [AppComponent],
