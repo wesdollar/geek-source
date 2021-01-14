@@ -1,17 +1,13 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Input } from "@angular/core";
+import { SizeProp } from "@fortawesome/fontawesome-svg-core";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: "app-search-icon",
-  templateUrl: "./search-icon.component.html",
+  template: "<fa-icon [size]='iconSize' [icon]='faSearch'></fa-icon>",
   styleUrls: ["./search-icon.component.scss"],
 })
-export class SearchIconComponent implements OnInit {
+export class SearchIconComponent {
+  @Input() iconSize: SizeProp;
   faSearch = faSearch;
-
-  constructor() {}
-
-  ngOnInit(): void {
-  }
-
 }
