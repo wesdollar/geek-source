@@ -12,6 +12,7 @@ import { CartPlusIconComponent } from "../../components/icons/cart-plus-icon/car
 import { FreeShippingIconComponent } from "../../components/icons/free-shipping-icon/free-shipping-icon.component";
 import { ZeroPercentFinancingIconComponent } from "../../components/icons/zero-percent-financing-icon/zero-percent-financing-icon.component";
 import { FreeTechSupportIconComponent } from "../../components/icons/free-tech-support-icon/free-tech-support-icon.component";
+import { AngleDownIconComponent } from "../../components/icons/angle-down-icon/angle-down-icon.component";
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FreeTechSupportIconComponent } from "../../components/icons/free-tech-s
     FreeShippingIconComponent,
     ZeroPercentFinancingIconComponent,
     FreeTechSupportIconComponent,
+    AngleDownIconComponent,
   ],
   exports: [
     SearchIconComponent,
@@ -39,6 +41,7 @@ import { FreeTechSupportIconComponent } from "../../components/icons/free-tech-s
     FreeShippingIconComponent,
     ZeroPercentFinancingIconComponent,
     FreeTechSupportIconComponent,
+    AngleDownIconComponent,
   ],
   imports: [CommonModule, FontAwesomeModule],
 })

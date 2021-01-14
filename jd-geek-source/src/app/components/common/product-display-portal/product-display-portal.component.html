@@ -2,10 +2,7 @@
 <div class="flex portalView">
   <div class="flex carouselContainer">
     <div id="{{ carouselElementID }}" class="flex carousel">
-      <section
-        class="flex portalProduct"
-        *ngFor="let product of portalProducts"
-      >
+      <section class="flex portalProduct" *ngFor="let product of productData">
         <div>
           <img
             class="imageSize"

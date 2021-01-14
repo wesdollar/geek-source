@@ -1,8 +1,5 @@
 /* eslint-disable no-magic-numbers */
 import { Component, Input, OnInit } from "@angular/core";
-import { EmptyStarIconComponent } from "../icons/empty-star-icon/empty-star-icon.component";
-import { FilledStarIconComponent } from "../icons/filled-star-icon/filled-star-icon.component";
-import { HalfStarIconComponent } from "../icons/half-star-icon/half-star-icon.component";
 
 const EMPTY_RATE = 0;
 const RATING_MAX = 5;
@@ -17,8 +14,6 @@ export class ProductRatingsComponent implements OnInit {
   filledRate: number;
   emptyRate = RATING_MAX;
   hasHalfStar: boolean;
-
-  constructor() {}
 
   ngOnInit(): void {
     this.filledRate = Math.floor(this.productRating);
