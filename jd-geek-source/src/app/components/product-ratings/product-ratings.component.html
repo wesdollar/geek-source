@@ -1,0 +1,9 @@
+<ng-container>
+  <span *ngFor="let fullStar of filledStars"
+    ><app-filled-star-icon></app-filled-star-icon
+  ></span>
+  <span *ngIf="hasHalfStar"><app-half-star-icon></app-half-star-icon></span>
+  <span *ngFor="let empty of emptyStars"
+    ><app-empty-star-icon></app-empty-star-icon
+  ></span>
+</ng-container>

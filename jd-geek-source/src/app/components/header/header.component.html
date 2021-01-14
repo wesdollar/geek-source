@@ -9,8 +9,25 @@
   </div>
   <div class="bottomheader">
     <app-vertical-dropdown-menu
-      menuTitle="Products"
+      class="mainLeftGutter"
+      menuTitle="PRODUCTS"
       [menuItems]="menuItems"
     ></app-vertical-dropdown-menu>
+    <app-template-driven-dropdown-menu
+      class="mainLeftDoubleGutter"
+      menuTitle="RECENTLY VIEWED"
+      (dataChoice)="getProductSelection($event)"
+    ></app-template-driven-dropdown-menu>
+    <app-template-driven-dropdown-menu
+      class="mainLeftDoubleGutter"
+      menuTitle="SAVED ITEMS"
+      (dataChoice)="getProductSelection($event)"
+    ></app-template-driven-dropdown-menu>
+  </div>
+  <div class="carouselMenu" *ngIf="displayProductsCarousel">
+    <app-product-display-portal
+      [productData]="productData"
+      carouselID="mainCarousel"
+    ></app-product-display-portal>
   </div>
 </div>

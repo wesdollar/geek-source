@@ -4,6 +4,8 @@ import { TestData } from "../models/testdata.interface";
 import * as configs from "../../assets/config.json";
 import { Observable } from "rxjs";
 import { CommonProductsAPIData } from "../models/commonProductsAPIData.interface";
+import { Categories } from "../models/Categories.interface";
+import { CommonPortalData } from "../models/commonPortalData.interface";
 
 @Injectable({
   providedIn: "root",
@@ -42,5 +44,32 @@ export class BestBuyService {
     const options = { params: httpParams };
 
     return this.http.get<CommonProductsAPIData>(httpUrl, options);
+  }
+
+  getTopLevelCategories(): Observable<Categories> {
+    const httpUrl = "https://api.bestbuy.com/v1/categories(id=abcat*)?";
+    const httpParams = new HttpParams()
+      .set("show", "id,name")
+      .set("format", configs.format)
+      .set("apiKey", configs.apiKey);
+
+    const options = { params: httpParams };
+
+    return this.http.get<Categories>(httpUrl, options);
+  }
+
+  getSingleProduct(productID: number): Observable<CommonPortalData> {
+    const httpUrl = `https://api.bestbuy.com/v1/products/${productID}.json?`;
+    const httpParams = new HttpParams()
+      .set(
+        "show",
+        "image,name,customerReviewAverage,customerReviewCount,regularPrice,salePrice"
+      )
+      .set("format", configs.format)
+      .set("apiKey", configs.apiKey);
+
+    const options = { params: httpParams };
+
+    return this.http.get<CommonPortalData>(httpUrl, options);
   }
 }
