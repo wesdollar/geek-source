@@ -1,0 +1,35 @@
+@import "../../../constants/color.scss";
+@import "../../../constants/sizing.scss";
+@import "../../../constants/gutters.scss";
+
+.megaImageBackground {
+  margin-top: $mainGutter;
+  width: $maxPageWidth + $doubleGutter * 2;
+  height: 350px;
+  background-color: $white;
+  position: relative;
+  left: -$doubleGutter * 2;
+}
+
+.flex {
+  display: flex;
+}
+
+.purchasePerksMain {
+  justify-content: space-around;
+  margin-top: $mainGutter;
+  color: $primaryLight;
+}
+
+.wording {
+  flex-flow: column nowrap;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.bigWording {
+  font-size: large;
+}
+
+.smallWording {
+  font-size: small;
+}

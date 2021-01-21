@@ -25,6 +25,7 @@ import { VerticalDropdownMenuComponent } from "./components/common/vertical-drop
 import { LogoComponent } from "./components/logo/logo.component";
 import { ShoppingCartComponent } from "./components/shopping-cart/shopping-cart.component";
 import { ProductRatingsComponent } from "./components/product-ratings/product-ratings.component";
+import { HomeComponent } from "./components/home/home.component";
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { ProductRatingsComponent } from "./components/product-ratings/product-ra
     ShoppingCartComponent,
     ProductDisplayPortalComponent,
     ProductRatingsComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

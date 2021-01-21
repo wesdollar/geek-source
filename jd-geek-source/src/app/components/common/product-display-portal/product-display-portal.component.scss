@@ -26,7 +26,7 @@ $imageHeight: 95px;
 .portalShroud {
   position: absolute;
   box-sizing: border-box;
-  width: $maxPageWidth;
+  width: $maxContentWidth;
   height: 250px;
   background: linear-gradient(
     to right,
@@ -40,7 +40,7 @@ $imageHeight: 95px;
 .portalView {
   background-color: $white;
   box-sizing: border-box;
-  width: $maxPageWidth;
+  width: $maxContentWidth;
   height: 300px;
   border: 1px solid $white;
   flex-flow: column nowrap;

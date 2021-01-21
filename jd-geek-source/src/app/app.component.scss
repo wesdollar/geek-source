@@ -2,11 +2,11 @@
 @import "../constants/color.scss";
 @import "../constants/sizing.scss";
 
-.wrapper {
+.content {
   display: flex;
   margin: -8px auto 32px;
   padding: 0 16px;
-  max-width: $maxPageWidth;
+  width: $maxContentWidth;
   flex-flow: column nowrap;
 }
 
