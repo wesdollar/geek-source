@@ -21,6 +21,7 @@ import { BestBuyService } from "./services/best-buy.service";
 import { VerticalDropdownMenuComponent } from "./components/common/vertical-dropdown-menu/vertical-dropdown-menu.component";
 import { LogoComponent } from "./components/logo/logo.component";
 import { ShoppingCartComponent } from "./components/shopping-cart/shopping-cart.component";
+import { ProductDisplayPortalComponent } from "./components/common/product-display-portal/product-display-portal.component";
 import { IconsModule } from "./modules/icons/icons.module";
 
 @NgModule({
@@ -40,6 +41,7 @@ import { IconsModule } from "./modules/icons/icons.module";
     VerticalDropdownMenuComponent,
     LogoComponent,
     ShoppingCartComponent,
+    ProductDisplayPortalComponent,
   ],
   imports: [
     BrowserModule,
