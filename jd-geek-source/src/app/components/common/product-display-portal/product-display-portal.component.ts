@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from "@angular/core";
+/* eslint-disable no-magic-numbers */
+import { Component, Input, OnChanges } from "@angular/core";
 import { CommonPortalData } from "src/app/models/commonPortalData.interface";
-import { BestBuyService } from "src/app/services/best-buy.service";
 
 const RIGHT_SCROLL_STOP = 0;
 
@@ -9,20 +9,19 @@ const RIGHT_SCROLL_STOP = 0;
   templateUrl: "./product-display-portal.component.html",
   styleUrls: ["./product-display-portal.component.scss"],
 })
-export class ProductDisplayPortalComponent implements OnInit {
+export class ProductDisplayPortalComponent implements OnChanges {
+  ngOnChanges(): void {
+    this.displayProducts = this.productData.length > 0;
+  }
   @Input() productData: CommonPortalData[];
   @Input() carouselID: string;
+  @Input() errorMessage: string;
   carouselElementID: string;
   leftScrollDisabled: boolean;
   rightScrollDisabled = true;
   maxScroll: number;
   scrollTracker = RIGHT_SCROLL_STOP;
-
-  constructor(private bestBuyService: BestBuyService) {}
-
-  ngOnInit(): void {
-    this.carouselElementID = this.carouselID;
-  }
+  displayProducts = true;
 
   leftScroll(scrollAmount: number, elementId: string): void {
     const carouselElement = document.getElementById(elementId);

@@ -72,4 +72,19 @@ export class BestBuyService {
 
     return this.http.get<CommonPortalData>(httpUrl, options);
   }
+
+  getProductsByIds(productIDs: number[]): Observable<CommonProductsAPIData> {
+    const httpUrl = `https://api.bestbuy.com/v1/products(sku in (${productIDs}))`;
+    const httpParams = new HttpParams()
+      .set(
+        "show",
+        "image,name,customerReviewAverage,customerReviewCount,regularPrice,salePrice"
+      )
+      .set("format", configs.format)
+      .set("apiKey", configs.apiKey);
+
+    const options = { params: httpParams };
+
+    return this.http.get<CommonProductsAPIData>(httpUrl, options);
+  }
 }
