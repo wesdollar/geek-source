@@ -20,3 +20,6 @@ Code should read like a book, describing exactly what's happening in plain Engli
 
 > Pro Tip:
 If the name you think is best is already in use, there's a good chance the code needs to be refactored.
+
+Here's a cool naming cheatsheet:
+[https://github.com/kettanaito/naming-cheatsheet](https://github.com/kettanaito/naming-cheatsheet)
