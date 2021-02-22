@@ -1,49 +1,54 @@
-<div class="portalShroud"></div>
-<div class="flex portalView">
-  <div class="flex carouselContainer">
-    <div id="{{ carouselElementID }}" class="flex carousel">
-      <section class="flex portalProduct" *ngFor="let product of productData">
-        <div>
-          <img
-            class="imageSize"
-            src="{{ product.image }}"
-            alt="{{ product.name }}"
-          />
-        </div>
-        <div style="height: fit-content">{{ product.name }}</div>
-        <div class="reviews">
-          <app-product-ratings
-            [productRating]="product.customerReviewAverage"
-          ></app-product-ratings>
-          {{ product.customerReviewAverage }}
-          ({{ product.customerReviewCount }})
-        </div>
-        <div>
-          {{ product.salePrice }}
-          <app-cart-plus-icon></app-cart-plus-icon>
-        </div>
-        <div>
-          {{ product.regularPrice }}
-        </div>
-      </section>
+<div *ngIf="displayProducts">
+  <div class="portalShroud"></div>
+  <div class="flex portalView">
+    <div class="flex carouselContainer">
+      <div id="{{ carouselID }}" class="flex carousel">
+        <section class="flex portalProduct" *ngFor="let product of productData">
+          <div>
+            <img
+              class="imageSize"
+              src="{{ product.image }}"
+              alt="{{ product.name }}"
+            />
+          </div>
+          <div style="height: fit-content">{{ product.name }}</div>
+          <div class="reviews">
+            <app-product-ratings
+              [productRating]="product.customerReviewAverage"
+            ></app-product-ratings>
+            {{ product.customerReviewAverage }}
+            ({{ product.customerReviewCount }})
+          </div>
+          <div>
+            {{ product.salePrice }}
+            <app-cart-plus-icon></app-cart-plus-icon>
+          </div>
+          <div>
+            {{ product.regularPrice }}
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="flex carouselNavigations">
+      <button
+        [disabled]="leftScrollDisabled"
+        type="button"
+        class="carouselNavigation"
+        (click)="leftScroll(200, carouselID)"
+      >
+        <app-angle-left-icon></app-angle-left-icon>
+      </button>
+      <button
+        [disabled]="rightScrollDisabled"
+        type="button"
+        class="carouselNavigation"
+        (click)="rightScroll(200, carouselID)"
+      >
+        <app-angle-right-icon></app-angle-right-icon>
+      </button>
     </div>
   </div>
-  <div class="flex carouselNavigations">
-    <button
-      [disabled]="leftScrollDisabled"
-      type="button"
-      class="carouselNavigation"
-      (click)="leftScroll(200, carouselElementID)"
-    >
-      <app-angle-left-icon></app-angle-left-icon>
-    </button>
-    <button
-      [disabled]="rightScrollDisabled"
-      type="button"
-      class="carouselNavigation"
-      (click)="rightScroll(200, carouselElementID)"
-    >
-      <app-angle-right-icon></app-angle-right-icon>
-    </button>
-  </div>
+</div>
+<div class="noContentMessage" *ngIf="!displayProducts">
+  <span>{{ errorMessage }}</span>
 </div>

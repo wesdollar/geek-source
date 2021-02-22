@@ -97,3 +97,16 @@ $imageHeight: 95px;
 .carouselNavigation:disabled {
   color: $secondaryLight;
 }
+
+.noContentMessage {
+  display: block;
+  position: relative;
+  margin-top: 2px;
+  background-color: $white;
+  font-size: 16px;
+  width: max-content;
+  padding: 15px 20px 15px 20px;
+  left: -30px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}

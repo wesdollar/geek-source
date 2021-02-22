@@ -17,13 +17,7 @@ export class ProductRatingsComponent implements OnInit {
 
   ngOnInit(): void {
     this.filledRate = Math.floor(this.productRating);
-
-    if (this.productRating % this.filledRate > EMPTY_RATE) {
-      this.hasHalfStar = true;
-    } else {
-      this.hasHalfStar = false;
-    }
-
+    this.hasHalfStar = this.productRating % this.filledRate > EMPTY_RATE;
     this.emptyRate = RATING_MAX - Math.ceil(this.productRating);
   }
 

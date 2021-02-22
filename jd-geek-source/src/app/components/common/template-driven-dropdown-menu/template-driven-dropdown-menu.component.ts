@@ -8,8 +8,14 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
 export class TemplateDrivenDropdownMenuComponent {
   @Input() menuTitle: string;
   @Output() dataChoice = new EventEmitter<string>();
+  @Output() exitMenu = new EventEmitter<boolean>();
 
   getDataSelection(selection: string): void {
     this.dataChoice.emit(selection);
+    this.exitMenu.emit(false);
+  }
+
+  exitMenuButton(): void {
+    this.exitMenu.emit(true);
   }
 }
