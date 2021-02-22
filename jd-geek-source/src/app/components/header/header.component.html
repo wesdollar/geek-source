@@ -12,6 +12,7 @@
       class="mainLeftGutter"
       menuTitle="PRODUCTS"
       [menuItems]="menuItems"
+      (mouseenter)="exitCarosel(exitingMenuButton, true)"
       *ngIf="displayCategoryMenu"
     ></app-vertical-dropdown-menu>
     <div class="noContentMessage" *ngIf="!displayCategoryMenu">

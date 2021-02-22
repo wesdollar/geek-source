@@ -72,8 +72,11 @@ export class HeaderComponent implements OnInit {
           .getProductsByIds(testing.recently_viewed_ids)
           .subscribe(
             (results: CommonProductsAPIData) => {
-              if (results != null) {
+              if (results.products.length > 0) {
                 this.productData = results.products;
+              } else {
+                this.noResultsMessage =
+                  "No proeducts to display. Please try again later!";
               }
             },
             (err) => {
@@ -92,8 +95,11 @@ export class HeaderComponent implements OnInit {
       if (testing.saved_items_ids.length > 0) {
         this.bestBuyService.getProductsByIds(testing.saved_items_ids).subscribe(
           (results: CommonProductsAPIData) => {
-            if (results) {
+            if (results.products.length > 0) {
               this.productData = results.products;
+            } else {
+              this.noResultsMessage =
+                "No proeducts to display. Please try again later!";
             }
           },
           (err) => {
