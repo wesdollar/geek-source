@@ -18,10 +18,12 @@ import { FeaturedProductsComponent } from "./components/featured-products/featur
 import { DailyDealsComponent } from "./components/daily-deals/daily-deals.component";
 import { HottestDealsComponent } from "./components/hottest-deals/hottest-deals.component";
 import { BestBuyService } from "./services/best-buy.service";
+import { TemplateDrivenDropdownMenuComponent } from "./components/common/template-driven-dropdown-menu/template-driven-dropdown-menu.component";
 import { VerticalDropdownMenuComponent } from "./components/common/vertical-dropdown-menu/vertical-dropdown-menu.component";
 import { LogoComponent } from "./components/logo/logo.component";
 import { ShoppingCartComponent } from "./components/shopping-cart/shopping-cart.component";
 import { ProductDisplayPortalComponent } from "./components/common/product-display-portal/product-display-portal.component";
+import { ProductRatingsComponent } from "./components/product-ratings/product-ratings.component";
 import { IconsModule } from "./modules/icons/icons.module";
 
 @NgModule({
@@ -38,10 +40,12 @@ import { IconsModule } from "./modules/icons/icons.module";
     FeaturedProductsComponent,
     DailyDealsComponent,
     HottestDealsComponent,
+    TemplateDrivenDropdownMenuComponent,
     VerticalDropdownMenuComponent,
     LogoComponent,
     ShoppingCartComponent,
     ProductDisplayPortalComponent,
+    ProductRatingsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,11 @@
 @import "../../../constants/color.scss";
+@import "../../../constants/gutters.scss";
 
 .flex {
   display: flex;
 }
 .headerMain {
-  height: 102px;
+  height: 100px;
   align-items: center;
   flex-direction: column;
 }
@@ -21,6 +22,7 @@
   align-items: center;
 }
 .logoItem {
+  margin-left: $mainGutter;
   justify-content: flex-start;
 }
 
@@ -36,7 +38,7 @@
 }
 
 .shoppingCartItem {
-  margin-right: 5px;
+  margin-right: $mainGutter;
   justify-content: flex-end;
   flex: 1;
 }
@@ -45,4 +47,30 @@
   width: 100%;
   background-color: $secondary;
   flex: 2;
+}
+
+.carouselMenu {
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.mainLeftGutter {
+  margin-left: $mainGutter;
+}
+
+.mainLeftDoubleGutter {
+  margin-left: $doubleGutter;
+}
+
+.noContentMessage {
+  display: block;
+  position: absolute;
+  margin-top: 2px;
+  background-color: $white;
+  font-size: 16px;
+  width: max-content;
+  padding: 15px 20px 15px 20px;
+  left: -30px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }

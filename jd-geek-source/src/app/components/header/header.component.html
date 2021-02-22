@@ -9,8 +9,34 @@
   </div>
   <div class="bottomheader">
     <app-vertical-dropdown-menu
-      menuTitle="Products"
+      class="mainLeftGutter"
+      menuTitle="PRODUCTS"
       [menuItems]="menuItems"
+      (mouseenter)="exitCarosel(exitingMenuButton, true)"
+      *ngIf="displayCategoryMenu"
     ></app-vertical-dropdown-menu>
+    <div class="noContentMessage" *ngIf="!displayCategoryMenu">
+      <span>{{ noResultsMessage }}</span>
+    </div>
+    <app-template-driven-dropdown-menu
+      class="mainLeftDoubleGutter"
+      menuTitle="RECENTLY VIEWED"
+      (dataChoice)="getProductSelection($event)"
+      (exitMenu)="exitCaroselMenu($event)"
+    ></app-template-driven-dropdown-menu>
+    <app-template-driven-dropdown-menu
+      class="mainLeftDoubleGutter"
+      menuTitle="SAVED ITEMS"
+      (dataChoice)="getProductSelection($event)"
+      (exitMenu)="exitCaroselMenu($event)"
+    ></app-template-driven-dropdown-menu>
+  </div>
+  <div class="carouselMenu" *ngIf="displayProductsCarousel">
+    <app-product-display-portal
+      [productData]="productData"
+      carouselID="mainCarousel"
+      [errorMessage]="noResultsMessage"
+      (mouseleave)="exitCarosel(exitingMenuButton, true)"
+    ></app-product-display-portal>
   </div>
 </div>
