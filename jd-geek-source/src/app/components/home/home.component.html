@@ -1,13 +1,27 @@
 <div class="flex homeText">
   <app-hero-display></app-hero-display>
-  <div class="carouselRegion">
-    <div class="flex productCarouselDisplay">
-      <div class="smallrect"></div>
-      <span class="productsCarouselTitle">Featured Products</span>
+  <div class="flex carouselRegion">
+    <div>
+      <div class="productCarouselDisplay">
+        <div class="smallrect"></div>
+        <span class="productsCarouselTitle">Featured Products</span>
+      </div>
       <app-product-display-portal
-        id="featured"
+        class="carousel"
         [productData]="featuredProducts"
         carouselID="featured"
+        [errorMessage]="noResultsMessage"
+      ></app-product-display-portal>
+    </div>
+    <div>
+      <div class="productCarouselDisplay">
+        <div class="smallrect"></div>
+        <span class="productsCarouselTitle">Today's Deals</span>
+      </div>
+      <app-product-display-portal
+        class="carousel"
+        [productData]="todaysDeals"
+        carouselID="todays"
         [errorMessage]="noResultsMessage"
       ></app-product-display-portal>
     </div>

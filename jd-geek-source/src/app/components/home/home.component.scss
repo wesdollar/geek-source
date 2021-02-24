@@ -6,11 +6,13 @@
 
 .carouselRegion {
   margin-top: 30px;
+  flex-flow: column nowrap;
+  gap: 20px;
 }
 
 .productCarouselDisplay {
-  flex-flow: column nowrap;
-  align-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px
 }
 
 .smallrect {
@@ -23,8 +25,13 @@
 }
 
 .productsCarouselTitle {
-  position: relative;
   margin-left: 20px;
-  margin-bottom: 10px;
-  font-size: medium;
+  margin-bottom: 30px;
+  font-size: large;
+}
+
+.carousel {
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
