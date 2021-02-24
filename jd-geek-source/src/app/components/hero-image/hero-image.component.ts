@@ -8,19 +8,4 @@ import { BestBuyService } from "src/app/services/best-buy.service";
   templateUrl: "./hero-image.component.html",
   styleUrls: ["./hero-image.component.scss"],
 })
-export class HeroImageComponent implements OnInit {
-  productInformation: CommonPortalData;
-
-  constructor(private bestBuyService: BestBuyService) {}
-
-  ngOnInit(): void {
-    this.bestBuyService
-      .getSingleProduct(5734900)
-      .subscribe((results: CommonPortalData) => {
-        if (results != null) {
-          this.productInformation = results;
-          console.log(this.productInformation);
-        }
-      });
-  }
-}
+export class HeroImageComponent {}

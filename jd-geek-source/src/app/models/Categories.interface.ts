@@ -1,6 +1,12 @@
+export interface SubCategories {
+  id: string;
+  name: string;
+}
+
 export interface CategoriesEntity {
   id: string;
   name: string;
+  subCategories?: SubCategories[] | null;
 }
 
 export interface Categories {

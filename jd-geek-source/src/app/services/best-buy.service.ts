@@ -29,6 +29,26 @@ export class BestBuyService {
       options
     );
   }
+  //   <Link to={{
+  //     pathname: "/category",
+  //     state: {
+  //       urlSearch: "(categoryPath.id=abcat0101000)",pcmcat333800050004
+  //       categoryId: "abcat0101000",6424751
+  //     },
+  //   }}
+  // >
+
+  getSingleCategorybyId(categoryID: string): Observable<Categories> {
+    const httpUrl = `https://api.bestbuy.com/v1/categories(id=${categoryID})?`;
+    const httpParams = new HttpParams()
+      .set("show", "name,id,subCategories.name,subCategories.id")
+      .set("pageSize", "10")
+      .set("format", configs.format)
+      .set("apiKey", configs.apiKey);
+    const options = { params: httpParams };
+
+    return this.http.get<Categories>(httpUrl, options);
+  }
 
   getPortalProducts(offerTypes: string): Observable<CommonProductsAPIData> {
     const httpUrl = `https://api.bestbuy.com/v1/products(offers.type=${offerTypes})?`;

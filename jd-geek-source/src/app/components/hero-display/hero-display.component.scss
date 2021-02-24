@@ -1,0 +1,68 @@
+@import "../../../constants/color.scss";
+@import "../../../constants/sizing.scss";
+@import "../../../constants/gutters.scss";
+
+.megaImageBackground {
+  margin-top: $mainGutter;
+  width: $maxPageWidth + $doubleGutter * 2;
+  height: 400px;
+  position: relative;
+  left: -$doubleGutter * 2;
+}
+
+.flex {
+  display: flex;
+}
+
+.heroDisplayContent {
+  position: relative;
+  justify-content:space-evenly;
+  top: -350px;
+  color: $white;
+}
+
+.heroTextContent {
+  flex-flow: column nowrap;
+}
+
+.heroLargeText {
+  font-size: 35pt;
+  line-height: $mainLineHeight;
+}
+
+.heroSmallText {
+  font-size: large;
+}
+
+.purchasePerksMain {
+  justify-content: space-between;
+  margin-top: $mainGutter;
+  color: $primaryLight;
+}
+
+.wording {
+  flex-flow: column nowrap;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.bigWording {
+  font-size: large;
+}
+
+.smallWording {
+  font-size: small;
+}
+
+.displayTVImage {
+  width: $heroTVImageWidth;
+  height: $heroTVImageHeight;
+  margin-top: 10px;
+}
+
+.displayTVImageBacking {
+  width: $heroTVImageWidth + 20px;
+  height: $heroTVImageHeight + 20px;
+  border-radius: 3px;
+  background-color: $white;
+  justify-content: center;
+}

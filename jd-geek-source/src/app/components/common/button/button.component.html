@@ -1,1 +1,19 @@
-<p>button works!</p>
+<!-- <ng-container *ngTemplateOutlet="buttonConfig['text'] ? text : image">
+</ng-container> -->
+
+<!-- Text Button -->
+<div *ngIf="buttonType == 'redOval'">
+  <button type="button" [ngClass]="buttonClass" [routerLink]="buttonLink">
+    {{ buttonText | uppercase }}
+  </button>
+</div>
+
+<!-- Image Button -->
+<!-- <ng-template #image>
+  <img
+    alt="image button"
+    [src]="buttonConfig.src"
+    [ngStyle]="buttonConfig.styles"
+    (click)="onImageBtnClick()"
+  />
+</ng-template> -->
