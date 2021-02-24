@@ -3,3 +3,28 @@
 .homeText {
   color: $white;
 }
+
+.carouselRegion {
+  margin-top: 30px;
+}
+
+.productCarouselDisplay {
+  flex-flow: column nowrap;
+  align-content: space-around;
+}
+
+.smallrect {
+  position: relative;
+  width: 50px;
+  height: 7px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  background-color: $secondary;
+}
+
+.productsCarouselTitle {
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: medium;
+}

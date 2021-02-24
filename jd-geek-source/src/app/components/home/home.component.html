@@ -1,3 +1,15 @@
-<div>
+<div class="flex homeText">
   <app-hero-display></app-hero-display>
+  <div class="carouselRegion">
+    <div class="flex productCarouselDisplay">
+      <div class="smallrect"></div>
+      <span class="productsCarouselTitle">Featured Products</span>
+      <app-product-display-portal
+        id="featured"
+        [productData]="featuredProducts"
+        carouselID="featured"
+        [errorMessage]="noResultsMessage"
+      ></app-product-display-portal>
+    </div>
+  </div>
 </div>

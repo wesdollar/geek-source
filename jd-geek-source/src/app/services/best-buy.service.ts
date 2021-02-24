@@ -29,14 +29,6 @@ export class BestBuyService {
       options
     );
   }
-  //   <Link to={{
-  //     pathname: "/category",
-  //     state: {
-  //       urlSearch: "(categoryPath.id=abcat0101000)",pcmcat333800050004
-  //       categoryId: "abcat0101000",6424751
-  //     },
-  //   }}
-  // >
 
   getSingleCategorybyId(categoryID: string): Observable<Categories> {
     const httpUrl = `https://api.bestbuy.com/v1/categories(id=${categoryID})?`;
