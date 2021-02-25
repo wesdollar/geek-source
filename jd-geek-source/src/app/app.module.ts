@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from "./app-routing.module";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { IconsModule } from "./modules/icons/icons.module";
 // For api testing -- will be removed
 import { TestDiplayComponent } from "./components/test-diplay/test-diplay.component";
 import { AppComponent } from "./app.component";
@@ -24,7 +25,6 @@ import { LogoComponent } from "./components/logo/logo.component";
 import { ShoppingCartComponent } from "./components/shopping-cart/shopping-cart.component";
 import { ProductDisplayPortalComponent } from "./components/common/product-display-portal/product-display-portal.component";
 import { ProductRatingsComponent } from "./components/product-ratings/product-ratings.component";
-import { IconsModule } from "./modules/icons/icons.module";
 
 @NgModule({
   declarations: [

@@ -2,6 +2,9 @@
 @import "../constants/color.scss";
 @import "../constants/sizing.scss";
 
+.flex {
+  display: flex;
+}
 .wrapper {
   display: flex;
   margin: -8px auto 32px;
@@ -38,4 +41,9 @@ footer a {
   margin: 5px;
   width: 150px;
   height: 25px;
+}
+
+.texFlex {
+  justify-content: space-between;
+  width: 250px;
 }
