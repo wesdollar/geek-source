@@ -6,7 +6,6 @@
   display: flex;
 }
 .wrapper {
-  display: flex;
   margin: -8px auto 32px;
   padding: 0 16px;
   max-width: $maxPageWidth;
@@ -25,17 +24,11 @@
   order: 3;
 }
 
-footer {
+.footer {
   margin-top: 70%;
-  display: flex;
-  align-items: center;
-  line-height: 20px;
+  order: 4;
 }
 
-footer a {
-  display: flex;
-  align-items: center;
-}
 
 .testbutton {
   margin: 5px;
@@ -43,7 +36,7 @@ footer a {
   height: 25px;
 }
 
-.texFlex {
+.testFlex {
   justify-content: space-between;
   width: 250px;
 }

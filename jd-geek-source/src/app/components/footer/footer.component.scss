@@ -1,0 +1,44 @@
+@import "../../../constants/color.scss";
+@import "../../../constants/gutters.scss";
+@import "../../../constants/sizing.scss";
+
+.flex {
+  display: flex;
+}
+
+.footerSpace {
+  width: $maxPageWidth - $doubleGutter;
+  height: 500px;
+  background-color: $primaryDark;
+}
+
+.footerColumns {
+  margin-top: 30px;
+  width: $maxPageWidth - $doubleGutter;
+  justify-content: space-around;
+}
+
+.shop-menu-content {
+  display: block;
+  font-size: 14px;
+  width: max-content;
+  z-index: 2;
+
+  a {
+    color: $white;
+    text-decoration: none;
+    display: block;
+  }
+
+  a:hover {
+    background-color: #dddddd;
+  }
+}
+
+.flexColumns {
+  flex-flow: column nowrap;
+}
+
+.flexSpacing {
+  justify-content: space-around;
+}

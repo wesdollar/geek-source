@@ -1,1 +1,36 @@
-<p>footer works!</p>
+<div class="flex footerSpace">
+  <div class="flex footerColumns">
+    <div>
+      <span>Shop</span>
+      <div class="shop-menu-content">
+        <a *ngFor="let item of menuItems" routerLink="{{ item.url }}">{{
+          item.name
+        }}</a>
+      </div>
+    </div>
+    <div class="flex flexColumns">
+      <span>Quick Links</span>
+      <span>Returns</span>
+      <span>Order Tracking</span>
+      <span>FAQs</span>
+      <span>Cistomer Support</span>
+      <span>Terms & Conditions</span>
+      <span>Provacy Policy</span>
+    </div>
+    <div>
+      <app-search></app-search>
+    </div>
+    <div>
+      <app-shopping-cart></app-shopping-cart>
+      <div class="flex flexSpacing">
+        <app-cc-visa-icon iconSize="2x"></app-cc-visa-icon>
+        <app-cc-mastercard-icon iconSize="2x"></app-cc-mastercard-icon>
+        <app-cc-amex-icon iconSize="2x"></app-cc-amex-icon>
+        <app-cc-apple-pay-icon iconSize="2x"></app-cc-apple-pay-icon>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div></div>
+  </div>
+</div>
