@@ -7,25 +7,31 @@
 }
 
 .footerSpace {
-  width: $maxPageWidth - $doubleGutter;
-  height: 500px;
+  width: $maxPageWidth - $mainGutter;
+  height: 370px;
   background-color: $primaryDark;
 }
 
 .footerColumns {
-  margin-top: 30px;
+  padding: $mainGutter $mainGutter 0 $mainGutter;
   width: $maxPageWidth - $doubleGutter;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.columnTitle {
+  font-size: large;
 }
 
 .shop-menu-content {
   display: block;
-  font-size: 14px;
+  margin-top: 5px;
+  font-size: medium;
   width: max-content;
+  line-height: $lineHeight;
   z-index: 2;
 
   a {
-    color: $white;
+    color: $primaryLight;
     text-decoration: none;
     display: block;
   }
@@ -41,4 +47,19 @@
 
 .flexSpacing {
   justify-content: space-around;
+}
+
+.linePadding {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+hr.footerDivider {
+  border: 1px solid $horizontalLine;
+  width: $maxPageWidth - 90px;
+}
+
+.footerCopyRight {
+  padding-left: $mainGutter;
+  color: $primaryLight;
 }

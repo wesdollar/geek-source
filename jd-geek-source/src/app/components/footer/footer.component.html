@@ -1,7 +1,7 @@
-<div class="flex footerSpace">
+<div class="footerSpace">
   <div class="flex footerColumns">
     <div>
-      <span>Shop</span>
+      <span class="columnTitle">SHOP</span>
       <div class="shop-menu-content">
         <a *ngFor="let item of menuItems" routerLink="{{ item.url }}">{{
           item.name
@@ -9,13 +9,15 @@
       </div>
     </div>
     <div class="flex flexColumns">
-      <span>Quick Links</span>
-      <span>Returns</span>
-      <span>Order Tracking</span>
-      <span>FAQs</span>
-      <span>Cistomer Support</span>
-      <span>Terms & Conditions</span>
-      <span>Provacy Policy</span>
+      <span class="columnTitle">Quick Links</span>
+      <div class="flex flexColumns shop-menu-content">
+        <a>Returns</a>
+        <a>Order Tracking</a>
+        <a>FAQs</a>
+        <a>Cistomer Support</a>
+        <a>Terms & Conditions</a>
+        <a>Provacy Policy</a>
+      </div>
     </div>
     <div>
       <app-search></app-search>
@@ -31,6 +33,11 @@
     </div>
   </div>
   <div>
-    <div></div>
+    <div class="linePadding"><hr class="footerDivider" /></div>
+    <div>
+      <span class="footerCopyRight"
+        >&#169; Copyright 2021 GEEK SOURCE. All Rights Reserved.</span
+      >
+    </div>
   </div>
 </div>

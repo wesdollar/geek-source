@@ -6,7 +6,7 @@
   display: flex;
 }
 .wrapper {
-  margin: -8px auto 32px;
+  margin: -8px auto 0;
   padding: 0 16px;
   max-width: $maxPageWidth;
   flex-flow: column nowrap;
@@ -26,6 +26,7 @@
 
 .footer {
   margin-top: 70%;
+  margin-left: $halfGutter;
   order: 4;
 }
 
