@@ -13,6 +13,10 @@ import { FreeShippingIconComponent } from "../../components/icons/free-shipping-
 import { ZeroPercentFinancingIconComponent } from "../../components/icons/zero-percent-financing-icon/zero-percent-financing-icon.component";
 import { FreeTechSupportIconComponent } from "../../components/icons/free-tech-support-icon/free-tech-support-icon.component";
 import { AngleDownIconComponent } from "../../components/icons/angle-down-icon/angle-down-icon.component";
+import { CCVisaIconComponent } from "../../components/icons/cc-visa-icon/cc-visa-icon.component";
+import { CcMastercardIconComponent } from "../../components/icons/cc-mastercard-icon/cc-mastercard-icon.component";
+import { CcAmexIconComponent } from "../../components/icons/cc-amex-icon/cc-amex-icon.component";
+import { CcApplePayIconComponent } from "../../components/icons/cc-apple-pay-icon/cc-apple-pay-icon.component";
 
 @NgModule({
   declarations: [
@@ -28,6 +32,10 @@ import { AngleDownIconComponent } from "../../components/icons/angle-down-icon/a
     ZeroPercentFinancingIconComponent,
     FreeTechSupportIconComponent,
     AngleDownIconComponent,
+    CCVisaIconComponent,
+    CcMastercardIconComponent,
+    CcAmexIconComponent,
+    CcApplePayIconComponent,
   ],
   exports: [
     SearchIconComponent,
@@ -42,6 +50,10 @@ import { AngleDownIconComponent } from "../../components/icons/angle-down-icon/a
     ZeroPercentFinancingIconComponent,
     FreeTechSupportIconComponent,
     AngleDownIconComponent,
+    CCVisaIconComponent,
+    CcMastercardIconComponent,
+    CcAmexIconComponent,
+    CcApplePayIconComponent,
   ],
   imports: [CommonModule, FontAwesomeModule],
 })

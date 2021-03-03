@@ -26,7 +26,7 @@ import { ShoppingCartComponent } from "./components/shopping-cart/shopping-cart.
 import { ProductRatingsComponent } from "./components/product-ratings/product-ratings.component";
 import { HomeComponent } from "./components/home/home.component";
 import { ProductDisplayPortalComponent } from "./components/common/product-display-portal/product-display-portal.component";
-import { HeroDisplayComponent } from './components/hero-display/hero-display.component';
+import { HeroDisplayComponent } from "./components/hero-display/hero-display.component";
 
 @NgModule({
   declarations: [
