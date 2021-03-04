@@ -1,4 +1,7 @@
 import { Component, OnInit } from "@angular/core";
+import { Categories } from "src/app/models/Categories.interface";
+import { DropDownLink } from "src/app/models/drop-down-link.interface";
+import { BestBuyService } from "src/app/services/best-buy.service";
 
 @Component({
   selector: "app-footer",
@@ -6,7 +9,30 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./footer.component.scss"],
 })
 export class FooterComponent implements OnInit {
-  constructor() {}
+  menuItems: DropDownLink[] = [];
+  noResultsMessage: string;
+  displayCategoryMenu: boolean;
+  constructor(private bestBuyService: BestBuyService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.bestBuyService.getTopLevelCategories().subscribe(
+      (results: Categories) => {
+        console.log("results", results);
+
+        if (results != null) {
+          for (const category of results.categories) {
+            this.menuItems.push({ name: category.name, url: "home" });
+          }
+        } else {
+          this.noResultsMessage = "No categories to select! Try again later!";
+          this.displayCategoryMenu = false;
+        }
+      },
+      (err) => {
+        this.noResultsMessage = "No categories to select! Try again later!";
+        this.displayCategoryMenu = false;
+        console.error(err);
+      }
+    );
+  }
 }

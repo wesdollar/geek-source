@@ -1,0 +1,65 @@
+@import "../../../constants/color.scss";
+@import "../../../constants/gutters.scss";
+@import "../../../constants/sizing.scss";
+
+.flex {
+  display: flex;
+}
+
+.footerSpace {
+  width: $maxPageWidth - $mainGutter;
+  height: 370px;
+  background-color: $primaryDark;
+}
+
+.footerColumns {
+  padding: $mainGutter $mainGutter 0 $mainGutter;
+  width: $maxPageWidth - $doubleGutter;
+  justify-content: space-between;
+}
+
+.columnTitle {
+  font-size: large;
+}
+
+.shop-menu-content {
+  display: block;
+  margin-top: 5px;
+  font-size: medium;
+  width: max-content;
+  line-height: $lineHeight;
+  z-index: 2;
+
+  a {
+    color: $primaryLight;
+    text-decoration: none;
+    display: block;
+  }
+
+  a:hover {
+    background-color: #dddddd;
+  }
+}
+
+.flexColumns {
+  flex-flow: column nowrap;
+}
+
+.flexSpacing {
+  justify-content: space-around;
+}
+
+.linePadding {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+hr.footerDivider {
+  border: 1px solid $horizontalLine;
+  width: $maxPageWidth - 90px;
+}
+
+.footerCopyRight {
+  padding-left: $mainGutter;
+  color: $primaryLight;
+}

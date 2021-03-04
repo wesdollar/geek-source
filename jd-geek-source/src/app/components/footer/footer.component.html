@@ -1,1 +1,43 @@
-<p>footer works!</p>
+<div class="footerSpace">
+  <div class="flex footerColumns">
+    <div>
+      <span class="columnTitle">SHOP</span>
+      <div class="shop-menu-content">
+        <a *ngFor="let item of menuItems" routerLink="{{ item.url }}">{{
+          item.name
+        }}</a>
+      </div>
+    </div>
+    <div class="flex flexColumns">
+      <span class="columnTitle">Quick Links</span>
+      <div class="flex flexColumns shop-menu-content">
+        <a>Returns</a>
+        <a>Order Tracking</a>
+        <a>FAQs</a>
+        <a>Cistomer Support</a>
+        <a>Terms & Conditions</a>
+        <a>Provacy Policy</a>
+      </div>
+    </div>
+    <div>
+      <app-search></app-search>
+    </div>
+    <div>
+      <app-shopping-cart></app-shopping-cart>
+      <div class="flex flexSpacing">
+        <app-cc-visa-icon iconSize="2x"></app-cc-visa-icon>
+        <app-cc-mastercard-icon iconSize="2x"></app-cc-mastercard-icon>
+        <app-cc-amex-icon iconSize="2x"></app-cc-amex-icon>
+        <app-cc-apple-pay-icon iconSize="2x"></app-cc-apple-pay-icon>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="linePadding"><hr class="footerDivider" /></div>
+    <div>
+      <span class="footerCopyRight"
+        >&#169; Copyright 2021 GEEK SOURCE. All Rights Reserved.</span
+      >
+    </div>
+  </div>
+</div>
