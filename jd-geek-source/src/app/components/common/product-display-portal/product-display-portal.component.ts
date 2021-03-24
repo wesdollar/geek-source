@@ -11,7 +11,9 @@ const RIGHT_SCROLL_STOP = 0;
 })
 export class ProductDisplayPortalComponent implements OnChanges {
   ngOnChanges(): void {
-    this.displayProducts = this.productData.length > 0;
+    if (this.productData) {
+      this.displayProducts = this.productData.length > 0;
+    }
   }
   @Input() productData: CommonPortalData[];
   @Input() carouselID: string;

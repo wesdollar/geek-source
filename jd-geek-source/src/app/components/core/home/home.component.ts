@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { CommonPortalData } from "src/app/models/commonPortalData.interface";
 import { CommonProductsAPIData } from "src/app/models/commonProductsAPIData.interface";
-import { BestBuyService } from "../../services/best-buy.service";
+import { BestBuyService } from "../../../services/best-buy.service";
 
 @Component({
   selector: "app-home",

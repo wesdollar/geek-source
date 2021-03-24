@@ -17,8 +17,6 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
     this.bestBuyService.getTopLevelCategories().subscribe(
       (results: Categories) => {
-        console.log("results", results);
-
         if (results != null) {
           for (const category of results.categories) {
             this.menuItems.push({ name: category.name, url: "home" });

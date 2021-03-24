@@ -4,7 +4,7 @@ import { Component, OnInit } from "@angular/core";
 import { Categories } from "src/app/models/Categories.interface";
 import { CommonPortalData } from "src/app/models/commonPortalData.interface";
 import { BestBuyService } from "src/app/services/best-buy.service";
-import * as testing from "../../../assets/testingProductIds.json";
+import * as testing from "../../../../assets/testingProductIds.json";
 import { DropDownLink } from "src/app/models/drop-down-link.interface";
 import { CommonProductsAPIData } from "src/app/models/commonProductsAPIData.interface";
 

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, Input } from "@angular/core";
 import { DropDownLink } from "src/app/models/drop-down-link.interface";
 
 @Component({
@@ -6,10 +6,7 @@ import { DropDownLink } from "src/app/models/drop-down-link.interface";
   templateUrl: "./vertical-dropdown-menu.component.html",
   styleUrls: ["./vertical-dropdown-menu.component.scss"],
 })
-export class VerticalDropdownMenuComponent implements OnInit {
+export class VerticalDropdownMenuComponent {
   @Input() menuTitle: string;
   @Input() menuItems: DropDownLink;
-  constructor() {}
-
-  ngOnInit(): void {}
 }
