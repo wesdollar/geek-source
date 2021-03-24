@@ -15,21 +15,6 @@ export class BestBuyService {
   contentTypeQuery = "?Content-type=%22application%2Fjson%22 HTTP/1.1";
   headers = new HttpHeaders({ "content-type": "application/json" });
 
-  getTestData(): Observable<TestData> {
-    const httpParams = new HttpParams()
-      .set("show", configs.show)
-      .set("pageSize", "3")
-      .set("format", configs.format)
-      .set("apiKey", configs.apiKey);
-
-    const options = { params: httpParams };
-
-    return this.http.get<TestData>(
-      "https://api.bestbuy.com/v1/products?",
-      options
-    );
-  }
-
   getSingleCategorybyId(categoryID: string): Observable<Categories> {
     const httpUrl = `https://api.bestbuy.com/v1/categories(id=${categoryID})?`;
     const httpParams = new HttpParams()

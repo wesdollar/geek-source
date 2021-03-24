@@ -6,7 +6,6 @@ import { AppRoutingModule } from "./app-routing.module";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { IconsModule } from "./modules/icons/icons.module";
 // For api testing -- will be removed
-import { TestDiplayComponent } from "./components/test-diplay/test-diplay.component";
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
@@ -31,7 +30,6 @@ import { HeroDisplayComponent } from "./components/hero-display/hero-display.com
 @NgModule({
   declarations: [
     AppComponent,
-    TestDiplayComponent,
     HeaderComponent,
     FooterComponent,
     ButtonComponent,
