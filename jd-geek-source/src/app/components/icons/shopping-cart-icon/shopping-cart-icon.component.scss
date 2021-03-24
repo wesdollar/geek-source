@@ -1,19 +1,15 @@
 @import "../../../../constants/color.scss";
 
-.headerIconColor {
-  fill: $secondary;
+.iconColor {
+  &--header {
+    fill: $secondary;
+  }
+  &--footer {
+    fill: $white;
+  }
 }
 
-.headerIconSize {
-  width: 20px;
-  height: 20px;
-}
-
-.footerIconColor {
-  fill: $white;
-}
-
-.footerIconSize {
-  width: 20px;
-  height: 20px;
+.iconSize {
+  width: var(--icon-size);
+  height: var(--icon-size);
 }

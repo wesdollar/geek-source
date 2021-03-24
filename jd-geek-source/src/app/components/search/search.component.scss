@@ -1,23 +1,39 @@
 @import "../../../constants/color.scss";
 
-::placeholder {
-  color: var(--box-text);
-}
-
 .searchBox {
-  padding-left: 5px;
-  padding-right: 5px;
-  border: none;
-  color: var(--box-text);
-  background-color: var(--box-background);
-  width: 225px;
-}
-.searchBox:focus {
-  outline: none;
+  &-primary {
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    width: 225px;
+    background-color: transparent;
+  }
+  &--header {
+    color: $secondary;
+    &::placeholder {
+      color: $secondary;
+    }
+  }
+  &--footer {
+    color: $white;
+    &::placeholder {
+      color: $white;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
 }
 
 .searchBoxArea {
-  margin-left: 40px;
-  width: 250px;
-  border-bottom: 1px solid var(--box-bottom-line);
+  &-primary {
+    margin-left: 40px;
+    width: 250px;
+  }
+  &--header {
+    border-bottom: 1px solid $primaryDark;
+  }
+  &--footer {
+    border-bottom: 1px solid $horizontalLine;
+  }
 }

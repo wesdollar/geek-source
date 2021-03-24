@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-shopping-cart",
@@ -8,12 +8,8 @@ import { Component, OnInit } from "@angular/core";
 export class ShoppingCartComponent implements OnInit {
   itemCount = 0;
   message = "items in your cart";
-  headerIconColor = "headerIconColor";
-  headerIconSize = "headerIconSize";
+  @Input() iconPlacement: string;
+  @Input() iconSize: string;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
