@@ -9,5 +9,16 @@
   font-size: 20px;
   border-radius: 30px;
   border: none;
-  margin-top: 30px
+  margin-top: 30px;
+}
+
+.default {
+  position: relative;
+  width: 250px;
+  height: 60px;
+  background-color: $white;
+  color: $menuText;
+  font-size: 20px;
+  border: none;
+  margin-top: 30px;
 }

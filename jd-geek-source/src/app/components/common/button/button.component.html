@@ -2,11 +2,9 @@
 </ng-container> -->
 
 <!-- Text Button -->
-<div *ngIf="buttonType == 'redOval'">
-  <button type="button" [ngClass]="buttonClass" [routerLink]="buttonLink">
-    {{ buttonText | uppercase }}
-  </button>
-</div>
+<button type="button" [class]="buttonClass" [routerLink]="buttonLink">
+  {{ buttonText }}
+</button>
 
 <!-- Image Button -->
 <!-- <ng-template #image>

@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Categories } from "src/app/models/Categories.interface";
 import { DropDownLink } from "src/app/models/drop-down-link.interface";
 import { BestBuyService } from "src/app/services/best-buy.service";
+import * as configs from "../../../../assets/config.json";
 
 @Component({
   selector: "app-footer",
@@ -15,7 +16,7 @@ export class FooterComponent implements OnInit {
   constructor(private bestBuyService: BestBuyService) {}
 
   ngOnInit(): void {
-    this.bestBuyService.getTopLevelCategories().subscribe(
+    this.bestBuyService.getTopLevelCategories(configs.categories).subscribe(
       (results: Categories) => {
         if (results != null) {
           for (const category of results.categories) {

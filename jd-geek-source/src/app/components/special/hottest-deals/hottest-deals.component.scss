@@ -1,0 +1,95 @@
+@import "../../../../constants/color.scss";
+@import "../../../../constants/gutters.scss";
+@import "../../../../constants/sizing.scss";
+
+$imageWidth: 400px;
+$imageHeight: 300px;
+
+.hottestDealDisplayBox {
+  width: 900px;
+  height: 800px;
+  max-width: 900px;
+  max-height: 800px;
+  background-color: $white;
+}
+
+.mainSection {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: $doubleGutter*3;
+  flex-flow: column nowrap;
+  align-content: space-between;
+}
+
+.hottestProduct {
+  flex-flow: column nowrap;
+}
+
+.reviews {
+  color: $secondary;
+}
+
+.imageSize {
+  display: block;
+  max-width: $imageWidth;
+  max-height: $imageHeight;
+  width: auto;
+  height: auto;
+  margin: 10px;
+}
+
+.hottestDealDisplay {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.smallrect {
+  position: relative;
+  width: 50px;
+  height: 7px;
+  margin-bottom: 10px;
+  background-color: $secondary;
+}
+
+.hottestDealTitle {
+  margin-bottom: 30px;
+  font-size: x-large;
+  color: $secondary;
+}
+
+.buttonSection {
+  position: relative;
+}
+
+.productName {
+  color: black;
+  font-size: large;
+  padding-top: $mainGutter;
+  padding-bottom: $halfGutter;
+  height: fit-content;
+}
+
+.mainPriceSection {
+  padding-top: $mainGutter;
+}
+
+.mainPrice {
+  font-size: 50pt;
+  color: $secondary;
+}
+
+.savings {
+  flex-flow: column nowrap;
+  padding-left: $halfGutter;
+  padding-top: $mainGutter+10px;
+}
+
+.savedMoney {
+  font-size: small;
+  color: black;
+}
+
+.wasThis {
+  font-size: small;
+  color: $primaryLight;
+}

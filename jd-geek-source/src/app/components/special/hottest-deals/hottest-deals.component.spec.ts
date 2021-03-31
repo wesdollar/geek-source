@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
-
 import { HottestDealsComponent } from "./hottest-deals.component";
 
 describe("HottestDealsComponent", () => {

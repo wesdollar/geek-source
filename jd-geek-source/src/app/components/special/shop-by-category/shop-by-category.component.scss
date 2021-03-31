@@ -1,0 +1,17 @@
+@import "../../../../constants/color.scss";
+@import "../../../../constants/gutters.scss";
+
+.sbcMain {
+  flex-flow: column nowrap;
+}
+
+.sbcTitle {
+  margin-top: $mainGutter;
+  margin-left: $doubleGutter;
+}
+
+.subcat {
+  flex-flow: column nowrap;
+  margin-left: 20px;
+  font-size: large;
+}

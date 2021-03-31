@@ -1,6 +1,5 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
-import { TestData } from "../models/testdata.interface";
 import * as configs from "../../assets/config.json";
 import { Observable } from "rxjs";
 import { CommonProductsAPIData } from "../models/commonProductsAPIData.interface";
@@ -43,10 +42,10 @@ export class BestBuyService {
     return this.http.get<CommonProductsAPIData>(httpUrl, options);
   }
 
-  getTopLevelCategories(): Observable<Categories> {
-    const httpUrl = "https://api.bestbuy.com/v1/categories(id=abcat*)?";
+  getTopLevelCategories(categories: string): Observable<Categories> {
+    const httpUrl = `https://api.bestbuy.com/v1/categories(id=${categories})?`;
     const httpParams = new HttpParams()
-      .set("show", "id,name")
+      .set("show", "id,name,subCategories")
       .set("format", configs.format)
       .set("apiKey", configs.apiKey);
 

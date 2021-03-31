@@ -1,0 +1,36 @@
+@import "../../../../constants/color.scss";
+@import "../../../../constants/gutters.scss";
+
+.displayArea {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  // margin-left: $mainGutter+10px;
+}
+
+.smallrect {
+  &-primary {
+    position: relative;
+    width: 50px;
+    height: 7px;
+    margin-bottom: 10px;
+  }
+  &--redTheme {
+    background-color: $secondary;
+  }
+  &--lightTheme {
+    background-color: $primaryLight;
+  }
+}
+
+.productTitle {
+  &-primary {
+    margin-bottom: 30px;
+    font-size: var(--font-size);
+  }
+  &--redTheme {
+    color: $secondary;
+  }
+  &--lightTheme {
+    color: $white;
+  }
+}

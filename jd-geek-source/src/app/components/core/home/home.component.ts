@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 import { Component, OnInit } from "@angular/core";
 import { CommonPortalData } from "src/app/models/commonPortalData.interface";
 import { CommonProductsAPIData } from "src/app/models/commonProductsAPIData.interface";
@@ -12,6 +13,7 @@ export class HomeComponent implements OnInit {
   featuredProducts: CommonPortalData[];
   todaysDeals: CommonPortalData[];
   noResultsMessage: string;
+  hottestDeal: CommonPortalData;
   offerTypes = ["digital_insert", "deal_of_the_day"];
   constructor(private bestBuyService: BestBuyService) {}
 
@@ -32,6 +34,7 @@ export class HomeComponent implements OnInit {
       (results: CommonProductsAPIData) => {
         if (results != null) {
           this.todaysDeals = results.products;
+          this.hottestDeal = results.products.slice(0, 1).shift();
         }
       },
       (err) => {

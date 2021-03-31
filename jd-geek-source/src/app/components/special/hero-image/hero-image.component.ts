@@ -1,7 +1,5 @@
 /* eslint-disable no-magic-numbers */
-import { Component, OnInit } from "@angular/core";
-import { CommonPortalData } from "src/app/models/commonPortalData.interface";
-import { BestBuyService } from "src/app/services/best-buy.service";
+import { Component } from "@angular/core";
 
 @Component({
   selector: "app-hero-image",
