@@ -15,7 +15,7 @@ const index = 0;
   styleUrls: ["./accordian.component.scss"],
 })
 export class AccordianComponent implements AfterContentInit {
-  @ContentChildren(FoldoutComponent) groups: QueryList<FoldoutComponent>;
+  @ContentChildren(FoldoutComponent) groups!: QueryList<FoldoutComponent>;
   ngAfterContentInit(): void {
     this.groups.toArray()[index].opened = true;
     this.groups.toArray().forEach((t) => {
