@@ -1,0 +1,38 @@
+@import "../../../../constants/color.scss";
+@import "../../../../constants/gutters.scss";
+@import "../../../../constants/sizing.scss";
+
+.accordian-main {
+  width: $categoryMenuMaxWidth;
+}
+.accordian-heading-box {
+    display: flex;
+    width: $categoryMenuMaxWidth;
+    border-bottom: 1px solid $primaryLight;
+    background-color: none;
+    padding: 10px 3px 10px 30px;
+    font-size: 16px;
+}
+.accordian-heading {
+  color: $white;
+  width: $categoryMenuMaxWidth - 40px;
+  border: none;
+}
+
+.accordian-heading a {
+  text-decoration: none;
+  color: $white;
+
+  &:hover {
+    color: #dddddd;
+  }
+}
+
+.accordian-heading:focus {
+  outline: none;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg);}
+  to { transform: rotate(90deg);}
+}

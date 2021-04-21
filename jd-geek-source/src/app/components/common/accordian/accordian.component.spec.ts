@@ -1,16 +1,14 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { AccordianComponent } from "./accordian.component";
 
-import { AccordianComponent } from './accordian.component';
-
-describe('AccordianComponent', () => {
+describe("AccordianComponent", () => {
   let component: AccordianComponent;
   let fixture: ComponentFixture<AccordianComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AccordianComponent ]
-    })
-    .compileComponents();
+      declarations: [AccordianComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -19,7 +17,9 @@ describe('AccordianComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
+    console.log("!!!!!!!!!!!!!");
+    console.log(component);
     expect(component).toBeTruthy();
   });
 });

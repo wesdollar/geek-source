@@ -5,6 +5,10 @@ import {
 } from "src/app/models/Categories.interface";
 import { BestBuyService } from "../../../services/best-buy.service";
 import * as configs from "../../../../assets/config.json";
+import {
+  AccordianMain,
+  AccordianSub,
+} from "src/app/models/accordion.interface";
 
 @Component({
   selector: "app-shop-by-category",
@@ -13,6 +17,7 @@ import * as configs from "../../../../assets/config.json";
 })
 export class ShopByCategoryComponent implements OnInit {
   menuItems: CategoriesEntity[] = [];
+  accodianItems: AccordianMain[] = [];
   noResultsMessage: string;
   displayCategoryMenu: boolean;
 
@@ -25,6 +30,25 @@ export class ShopByCategoryComponent implements OnInit {
           for (const category of results.categories) {
             this.menuItems.push(category);
           }
+          this.menuItems.forEach((category) => {
+            const subcats: AccordianSub[] = [];
+
+            category.subCategories.forEach((subCategory, index) => {
+              // eslint-disable-next-line no-magic-numbers
+              if (index < 10) {
+                subcats.push(<AccordianSub>subCategory);
+              }
+            });
+            const cats: AccordianMain = {
+              id: category.id,
+              name: category.name,
+              link: "/",
+              subMenuItems: subcats,
+            };
+
+            this.accodianItems.push(cats);
+          });
+          console.log(this.accodianItems);
         } else {
           this.noResultsMessage = "No categories to select! Try again later!";
           this.displayCategoryMenu = false;

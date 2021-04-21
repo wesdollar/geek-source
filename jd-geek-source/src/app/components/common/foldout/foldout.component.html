@@ -1,15 +1,5 @@
-<div class="foldout foldout-info">
-  <div class="foldout-heading">
-    {{ menuCategory.name }}
-    <app-angle-right-icon (click)="toggle.emit(); dropClick();" *ngIf="!categoryItemClicked"></app-angle-right-icon>
-    <app-angle-down-icon (click)="toggle.emit(); dropClick();" *ngIf="categoryItemClicked"></app-angle-down-icon>
+<div class="foldout foldout-info panel">
+  <div class="foldout foldout-body" *ngFor="let item of subMenu">
+    <a href="{{ item.link }}"> {{ item.name }}</a>
   </div>
-  <div class="flex foldout-body" ngClass="{'hidden': !opened}">
-    <a *ngFor="let item of menuCategory.subCategories" >
-      {{ item.name }}</a>
-  </div>
-  <!-- <div *ngIf="opened" class="flex foldout-body" >
-    <a *ngFor="let item of menuCategory.subCategories" >
-      {{ item.name }}</a>
-  </div> -->
 </div>

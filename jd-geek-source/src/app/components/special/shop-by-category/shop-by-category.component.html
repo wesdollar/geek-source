@@ -4,11 +4,9 @@
       fontSize="x-large"
       featureStyle="lightTheme"
       textStyle="lightTheme"
-      titleText="Shop by Category">
+      titleText="Shop by Category"
+    >
     </app-sectionheader>
   </div>
-  <app-accordian>
-    <app-foldout [menuCategory]="item" class="flex subcat" *ngFor="let item of menuItems"></app-foldout>
-  </app-accordian>
-
+  <accordian style="padding-left: 30px" [menuMain]="accodianItems"> </accordian>
 </div>
