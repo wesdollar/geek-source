@@ -32,7 +32,10 @@
   outline: none;
 }
 
-@keyframes rotate {
-  from { transform: rotate(0deg);}
-  to { transform: rotate(90deg);}
+.foldouts.active {
+  display: block !important;
+}
+
+.foldouts {
+  display: none;
 }

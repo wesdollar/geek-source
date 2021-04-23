@@ -10,7 +10,6 @@ import { ProductRatingsComponent } from "../components/common/product-ratings/pr
 import { SectionheaderComponent } from "../components/common/sectionheader/sectionheader.component";
 import { FoldoutComponent } from "../components/common/foldout/foldout.component";
 import { AccordianComponent } from "../components/common/accordian/accordian.component";
-import { AccordianGroupComponent } from "../components/common/accordian/accordian-group.component";
 
 @NgModule({
   declarations: [
@@ -22,7 +21,6 @@ import { AccordianGroupComponent } from "../components/common/accordian/accordia
     SectionheaderComponent,
     FoldoutComponent,
     AccordianComponent,
-    AccordianGroupComponent,
   ],
   exports: [
     ButtonComponent,
@@ -33,7 +31,6 @@ import { AccordianGroupComponent } from "../components/common/accordian/accordia
     SectionheaderComponent,
     FoldoutComponent,
     AccordianComponent,
-    AccordianGroupComponent,
   ],
   imports: [CommonModule, AppRoutingModule, IconsModule],
 })

@@ -4,9 +4,14 @@
       <a href="{{ menuItems.link }}"> {{ menuItems.name }}</a>
     </div>
     <app-angle-right-icon
-      id="icon-{{ menuItems.id }}"
+      *ngIf="menuItems.subMenuItems.length > 1"
+      [menuId]="i"
       (click)="toggleButton(i)"
     ></app-angle-right-icon>
   </div>
-  <foldout [id]="i" [subMenu]="menuItems.subMenuItems"></foldout>
+  <foldout
+    class="foldouts"
+    [id]="i"
+    [subMenu]="menuItems.subMenuItems"
+  ></foldout>
 </div>

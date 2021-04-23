@@ -1,7 +1,15 @@
 /* eslint-disable no-magic-numbers */
-/* eslint-disable quotes */
-import { Component, Input } from "@angular/core";
+import {
+  Component,
+  ElementRef,
+  Input,
+  QueryList,
+  ViewChildren,
+} from "@angular/core";
+import { FaIconComponent } from "@fortawesome/angular-fontawesome";
 import { AccordianMain } from "src/app/models/accordion.interface";
+import { AngleRightIconComponent } from "../../icons/angle-right-icon/angle-right-icon.component";
+import { FoldoutComponent } from "../foldout/foldout.component";
 
 @Component({
   selector: "accordian",
@@ -12,44 +20,34 @@ export class AccordianComponent {
   @Input() menuMain: AccordianMain[];
   iconRotation = 0;
   menuItemClicked = false;
-  showFold: number;
+  showFold: boolean;
+  @ViewChildren(AngleRightIconComponent)
+  iconComponents!: QueryList<AngleRightIconComponent>;
+  @ViewChildren(FoldoutComponent, { read: ElementRef })
+  foldouts!: QueryList<ElementRef>;
+  fold: ElementRef;
 
-  toggleButton(toggle: string): void {
-    const thisButton = document.getElementById(toggle);
-    const acc = document.getElementsByClassName("accordion");
-    const panel = document.getElementsByClassName("panel");
-    const tagsalot = document.querySelectorAll("foldout");
-
-    console.log("here");
-    console.log("thisButton", thisButton);
-    console.log("acc", acc);
-    console.log("panel", panel);
-    console.log("tagsalot", tagsalot);
-
-    tagsalot.forEach((fold) => {
-      const setClasses = !thisButton.classList.contains("active");
-
-      this.setClass(acc, "active", "remove");
-      this.setClass(panel, "show", "remove");
-
-      console.log(setClasses);
-
-      if (setClasses) {
-        fold.classList.toggle("active");
-        fold.classList.toggle("show");
+  toggleButton(toggle: number): void {
+    this.iconComponents.toArray().forEach((icons) => {
+      if (icons.menuId === toggle && icons.iconRotation !== 90) {
+        icons.transformIcon(90);
+      } else {
+        icons.transformIcon(0);
       }
     });
+    this.foldouts.toArray().forEach((folds) => {
+      if (toggle === Math.abs(folds.nativeElement.id)) {
+        folds.nativeElement.classList.toggle("foldouts.active");
+        folds.nativeElement.classList.toggle("foldouts");
+        this.fold = folds;
+      } else {
+        folds.nativeElement.classList.remove("foldouts.active");
 
-    // if (this.menuItemClicked) {
-    //   document.getElementById(toggle).setAttribute("style", "display: block");
-    // } else {
-    //   document.getElementById(toggle).setAttribute("style", "display: none");
-    // }
-  }
-
-  setClass(elements, className, functionName) {
-    for (let i = 0; i < elements.length; i++) {
-      elements[i].classList[functionName](className);
-    }
+        if (!folds.nativeElement.classList.contains("foldouts")) {
+          folds.nativeElement.classList.toggle("foldouts");
+        }
+      }
+    });
+    this.fold.nativeElement.classList.toggle("foldouts.active");
   }
 }

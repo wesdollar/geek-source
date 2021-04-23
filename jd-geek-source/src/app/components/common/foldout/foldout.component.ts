@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Component, Input, Output, EventEmitter } from "@angular/core";
+import { Component, Input } from "@angular/core";
 import { AccordianSub } from "src/app/models/accordion.interface";
-import { CategoriesEntity } from "src/app/models/Categories.interface";
 
 @Component({
   selector: "foldout",

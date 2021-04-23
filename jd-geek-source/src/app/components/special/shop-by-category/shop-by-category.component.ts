@@ -48,7 +48,6 @@ export class ShopByCategoryComponent implements OnInit {
 
             this.accodianItems.push(cats);
           });
-          console.log(this.accodianItems);
         } else {
           this.noResultsMessage = "No categories to select! Try again later!";
           this.displayCategoryMenu = false;
