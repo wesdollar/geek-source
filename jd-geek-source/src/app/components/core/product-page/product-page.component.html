@@ -1,0 +1,42 @@
+<div class="flex productMain">
+  <app-product-display></app-product-display>
+  <app-serviceiconsbar></app-serviceiconsbar>
+  <div class="flex carouselRegion">
+    <div>
+      <div class="productCarouselDisplay">
+        <app-sectionheader
+          fontSize="large"
+          featureStyle="redTheme"
+          textStyle="lightTheme"
+          titleText="Similar Products"
+        >
+        </app-sectionheader>
+      </div>
+      <app-product-display-portal
+        class="carousel"
+        [productData]="featuredProducts"
+        carouselID="featured"
+        [errorMessage]="noResultsMessage"
+      ></app-product-display-portal>
+    </div>
+    <div>
+      <div>
+        <div class="productCarouselDisplay">
+          <app-sectionheader
+            fontSize="large"
+            featureStyle="redTheme"
+            textStyle="lightTheme"
+            titleText="Recently Viewed Items"
+          >
+          </app-sectionheader>
+        </div>
+        <app-product-display-portal
+          class="carousel"
+          [productData]="todaysDeals"
+          carouselID="todays"
+          [errorMessage]="noResultsMessage"
+        ></app-product-display-portal>
+      </div>
+    </div>
+  </div>
+</div>
