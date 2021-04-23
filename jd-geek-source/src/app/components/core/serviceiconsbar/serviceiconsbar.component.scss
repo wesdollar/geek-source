@@ -1,0 +1,22 @@
+@import "../../../../constants/color.scss";
+@import "../../../../constants/sizing.scss";
+@import "../../../../constants/gutters.scss";
+
+.purchasePerksMain {
+  justify-content: space-between;
+  margin-top: $mainGutter;
+  color: $primaryLight;
+}
+
+.wording {
+  flex-flow: column nowrap;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.bigWording {
+  font-size: large;
+}
+
+.smallWording {
+  font-size: small;
+}

@@ -10,6 +10,7 @@ import { SearchComponent } from "../components/core/search/search.component";
 import { LogoComponent } from "../components/core/logo/logo.component";
 import { ShoppingCartComponent } from "../components/core/shopping-cart/shopping-cart.component";
 import { HomeComponent } from "../components/core/home/home.component";
+import { ServiceiconsbarComponent } from "../components/core/serviceiconsbar/serviceiconsbar.component";
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HomeComponent } from "../components/core/home/home.component";
     LogoComponent,
     ShoppingCartComponent,
     HomeComponent,
+    ServiceiconsbarComponent,
   ],
   exports: [
     HeaderComponent,
@@ -27,6 +29,7 @@ import { HomeComponent } from "../components/core/home/home.component";
     LogoComponent,
     ShoppingCartComponent,
     HomeComponent,
+    ServiceiconsbarComponent,
   ],
   imports: [
     CommonModule,

@@ -1,5 +1,6 @@
 <div class="flex homeMain">
   <app-hero-display></app-hero-display>
+  <app-serviceiconsbar></app-serviceiconsbar>
   <div class="flex carouselRegion">
     <div>
       <div class="productCarouselDisplay">
@@ -7,7 +8,8 @@
           fontSize="large"
           featureStyle="redTheme"
           textStyle="lightTheme"
-          titleText="Featured Products">
+          titleText="Featured Products"
+        >
         </app-sectionheader>
       </div>
       <app-product-display-portal
@@ -18,25 +20,27 @@
       ></app-product-display-portal>
     </div>
     <div>
-    <div>
-      <div class="productCarouselDisplay">
-        <app-sectionheader
-          fontSize="large"
-          featureStyle="redTheme"
-          textStyle="lightTheme"
-          titleText="Today's Deals">
-        </app-sectionheader>
+      <div>
+        <div class="productCarouselDisplay">
+          <app-sectionheader
+            fontSize="large"
+            featureStyle="redTheme"
+            textStyle="lightTheme"
+            titleText="Today's Deals"
+          >
+          </app-sectionheader>
+        </div>
+        <app-product-display-portal
+          class="carousel"
+          [productData]="todaysDeals"
+          carouselID="todays"
+          [errorMessage]="noResultsMessage"
+        ></app-product-display-portal>
       </div>
-      <app-product-display-portal
-        class="carousel"
-        [productData]="todaysDeals"
-        carouselID="todays"
-        [errorMessage]="noResultsMessage"
-      ></app-product-display-portal>
     </div>
-  </div>
-  <div class="flex lowerSection">
-    <app-hottest-deals [hottestDeal]="hottestDeal"></app-hottest-deals>
-    <app-shop-by-category></app-shop-by-category>
+    <div class="flex lowerSection">
+      <app-hottest-deals [hottestDeal]="hottestDeal"></app-hottest-deals>
+      <app-shop-by-category></app-shop-by-category>
+    </div>
   </div>
 </div>
