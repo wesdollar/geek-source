@@ -1,0 +1,40 @@
+@import "../../../../constants/color.scss";
+@import "../../../../constants/sizing.scss";
+@import "../../../../constants/gutters.scss";
+
+.flex {
+  display: flex;
+}
+
+.productMain {
+  flex-flow: column nowrap;
+}
+
+.carouselRegion {
+  margin-top: 30px;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+
+.productCarouselDisplay {
+  margin-left: $mainGutter+10px !important;
+}
+
+.smallrect {
+  position: relative;
+  width: 50px;
+  height: 7px;
+  margin-bottom: 10px;
+  background-color: $secondary;
+}
+
+.productsCarouselTitle {
+  margin-bottom: 30px;
+  font-size: large;
+}
+
+.carousel {
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

@@ -31,7 +31,7 @@ export class BestBuyService {
     const httpParams = new HttpParams()
       .set(
         "show",
-        "image,name,customerReviewAverage,customerReviewCount,regularPrice,salePrice"
+        "sku,image,name,customerReviewAverage,customerReviewCount,regularPrice,salePrice,modelNumber,longDescription"
       )
       .set("pageSize", "10")
       .set("format", configs.format)
@@ -59,7 +59,7 @@ export class BestBuyService {
     const httpParams = new HttpParams()
       .set(
         "show",
-        "image,name,customerReviewAverage,customerReviewCount,regularPrice,salePrice"
+        "sku,image,name,customerReviewAverage,customerReviewCount,regularPrice,salePrice,modelNumber,longDescription"
       )
       .set("format", configs.format)
       .set("apiKey", configs.apiKey);
