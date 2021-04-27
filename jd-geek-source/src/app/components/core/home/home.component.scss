@@ -1,7 +1,10 @@
 @import "../../../../constants/color.scss";
+@import "../../../../constants/gutters.scss";
+@import "../../../../constants/sizing.scss";
 
-.homeText {
+.homeMain {
   color: $white;
+  flex-flow: column nowrap;
 }
 
 .carouselRegion {
@@ -11,21 +14,18 @@
 }
 
 .productCarouselDisplay {
-  margin-top: 20px;
-  margin-bottom: 20px
+  margin-left: $mainGutter+10px !important;
 }
 
 .smallrect {
   position: relative;
   width: 50px;
   height: 7px;
-  margin-left: 20px;
   margin-bottom: 10px;
   background-color: $secondary;
 }
 
 .productsCarouselTitle {
-  margin-left: 20px;
   margin-bottom: 30px;
   font-size: large;
 }
@@ -34,4 +34,12 @@
   color: black;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.lowerSection {
+  margin-top: $mainGutter;
+  width: $maxPageWidth + $doubleGutter * 2;
+  height: 400px;
+  position: relative;
+  left: -$doubleGutter * 2;
 }

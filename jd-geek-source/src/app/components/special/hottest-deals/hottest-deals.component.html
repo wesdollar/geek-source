@@ -1,1 +1,54 @@
-<p>hottest-deals works!</p>
+<div class="hottestDealDisplayBox">
+  <div class="flex mainSection">
+    <app-sectionheader
+      fontSize="x-large"
+      featureStyle="redTheme"
+      textStyle="redTheme"
+      titleText="Hottest Deal">
+    </app-sectionheader>
+    <section class="flex hottestProduct" *ngIf="hottestDeal">
+      <div>
+        <img
+          class="imageSize"
+          src="{{ hottestDeal.image }}"
+          alt="{{ hottestDeal.name }}"
+        />
+      </div>
+      <div class="productName">{{ hottestDeal.name }}</div>
+      <div class="reviews">
+        <app-product-ratings
+          [productRating]="hottestDeal.customerReviewAverage"
+        ></app-product-ratings>
+        {{ hottestDeal.customerReviewAverage }}
+        ({{ hottestDeal.customerReviewCount }})
+      </div>
+      <div class="flex mainPriceSection">
+        <div class="mainPrice">
+          <sup>$</sup>{{ hottestDeal.salePrice | currency:'US':'' }}
+        </div>
+        <div class="flex savings">
+          <div class="savedMoney">
+            save <sup>$</sup>{{ savings | currency:'US':'' }}
+          </div>
+          <div class="wasThis">
+            was <sup>$</sup>{{ hottestDeal.regularPrice | currency:'US':'' }}
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="flex buttonSection">
+      <app-button
+        buttonTextCase="upper"
+        buttonClass="ovalRedText"
+        buttonText="buy now"
+        buttonLink="home">
+      </app-button>
+      <app-button
+        buttonTextCase="lower"
+        buttonClass="default"
+        buttonText="shop all deals"
+        buttonLink="home">
+      </app-button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="accordian-main" *ngFor="let menuItems of menuMain; let i = index">
+  <div class="accordion accordian-heading-box">
+    <div class="accordian-heading">
+      <a href="{{ menuItems.link }}"> {{ menuItems.name }}</a>
+    </div>
+    <app-angle-right-icon
+      *ngIf="menuItems.subMenuItems.length > 1"
+      [menuId]="i"
+      (click)="toggleButton(i)"
+    ></app-angle-right-icon>
+  </div>
+  <foldout
+    class="foldouts"
+    [id]="i"
+    [subMenu]="menuItems.subMenuItems"
+  ></foldout>
+</div>

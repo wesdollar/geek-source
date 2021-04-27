@@ -20,6 +20,9 @@ describe("ButtonComponent", () => {
   });
 
   it("should create", () => {
+    console.log("What about here?");
+    console.log(component);
+
     expect(component).toBeTruthy();
   });
 });

@@ -7,6 +7,7 @@ import { BestBuyService } from "src/app/services/best-buy.service";
 import * as testing from "../../../../assets/testingProductIds.json";
 import { DropDownLink } from "src/app/models/drop-down-link.interface";
 import { CommonProductsAPIData } from "src/app/models/commonProductsAPIData.interface";
+import * as configs from "../../../../assets/config.json";
 
 @Component({
   selector: "app-header",
@@ -30,7 +31,7 @@ export class HeaderComponent implements OnInit {
   constructor(private bestBuyService: BestBuyService) {}
 
   ngOnInit(): void {
-    this.bestBuyService.getTopLevelCategories().subscribe(
+    this.bestBuyService.getTopLevelCategories(configs.categories).subscribe(
       (results: Categories) => {
         if (results != null) {
           for (const category of results.categories) {

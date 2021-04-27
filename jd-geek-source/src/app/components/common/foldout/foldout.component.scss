@@ -1,0 +1,40 @@
+@import "../../../../constants/color.scss";
+@import "../../../../constants/gutters.scss";
+@import "../../../../constants/sizing.scss";
+
+.foldout {
+  flex-flow: column nowrap;
+}
+
+.foldout-info {
+  position: relative;
+  display: inline-block;
+  width: $categoryMenuMaxWidth;
+}
+
+.foldout-body {
+  display: flex;
+  width: $categoryMenuMaxWidth;
+  border-bottom: 1px solid $primaryLight;
+  background-color: none;
+  padding: 10px 3px 10px 30px;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  display: block;
+}
+
+a:hover {
+  color: #dddddd;
+}
+
+div.panel {
+  display: none;
+}
+
+div.panel.show {
+  display: block !important;
+}
