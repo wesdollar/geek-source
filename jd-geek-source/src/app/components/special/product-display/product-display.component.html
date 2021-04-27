@@ -1,1 +1,46 @@
-<p>product-display works!</p>
+<div *ngIf="productData !== undefined" class="flex productMain">
+  <div class="flex leftSideBox">
+    <img
+      class="leftSideImage"
+      src="{{ productData.image }}"
+      alt="{{ productData.name }}"
+    />
+  </div>
+  <div class="rightSideData">
+    <span class="headerName">{{ productData.name }}</span>
+    <div class="flex dataSection">
+      <span class="model">Model: {{ productData.modelNumber }}</span>
+      <span>SKU: {{ productData.sku }}</span>
+    </div>
+    <div class="flex reviews">
+      <app-product-ratings
+        class="customerAverage"
+        [productRating]="productData.customerReviewAverage"
+      ></app-product-ratings>
+      <span>
+        {{ productData.customerReviewAverage }}({{
+          productData.customerReviewCount
+        }})
+      </span>
+    </div>
+    <div class="productDescription">
+      {{ productData.longDescription }}{{ productData.longDescription }}
+    </div>
+    <div class="productSalePrice">{{ productData.salePrice | currency }}</div>
+    <div>
+      <span class="savings"
+        >save
+        {{ productData.regularPrice - productData.salePrice | currency }}</span
+      >
+      <span class="regularPrice"
+        >was {{ productData.regularPrice | currency }}</span
+      >
+    </div>
+    <app-button
+      buttonTextCase="upper"
+      buttonClass="ovalRedText"
+      buttonText="ADD TO CART"
+      buttonLink="home"
+    ></app-button>
+  </div>
+</div>

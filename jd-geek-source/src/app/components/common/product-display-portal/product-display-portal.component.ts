@@ -1,5 +1,6 @@
 /* eslint-disable no-magic-numbers */
 import { Component, Input, OnChanges } from "@angular/core";
+import { ActivatedRoute, Router } from "@angular/router";
 import { CommonPortalData } from "src/app/models/commonPortalData.interface";
 
 const RIGHT_SCROLL_STOP = 0;
@@ -24,6 +25,9 @@ export class ProductDisplayPortalComponent implements OnChanges {
   maxScroll: number;
   scrollTracker = RIGHT_SCROLL_STOP;
   displayProducts = true;
+  activatedRoute: ActivatedRoute;
+
+  constructor(public router: Router) {}
 
   leftScroll(scrollAmount: number, elementId: string): void {
     const carouselElement = document.getElementById(elementId);
@@ -52,5 +56,11 @@ export class ProductDisplayPortalComponent implements OnChanges {
       this.rightScrollDisabled = true;
       this.leftScrollDisabled = false;
     }
+  }
+
+  linkToProductPage(productSKU: CommonPortalData): void {
+    this.router
+      .navigateByUrl("/", { skipLocationChange: true })
+      .then(() => this.router.navigateByUrl(`product/${productSKU}`));
   }
 }

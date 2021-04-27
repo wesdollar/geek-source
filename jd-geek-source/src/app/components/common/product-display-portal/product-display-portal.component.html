@@ -9,7 +9,7 @@
               class="imageSize"
               src="{{ product.image }}"
               alt="{{ product.name }}"
-              routerLink="/product"
+              (click)="linkToProductPage(product.sku)"
             />
           </div>
           <div style="height: fit-content">{{ product.name }}</div>

@@ -1,0 +1,93 @@
+@import "../../../../constants/color.scss";
+@import "../../../../constants/sizing.scss";
+@import "../../../../constants/gutters.scss";
+
+$imageWidth: 300px;
+$imageHeight: 250px;
+
+.leftSideImage {
+  width: 100%;
+  max-width: fit-content;
+  height: fit-content;
+  max-height:fit-content;
+  padding: $mainGutter;
+}
+
+$mainBoxWidth: $maxPageWidth - $mainGutter;
+$halfMain: $mainBoxWidth / 2;
+
+.productMain {
+  position: relative;
+  width: $mainBoxWidth;
+  height: 600px;
+  background-color: $white;
+  margin-top: $mainGutter;
+  left: -($doubleGutter + $mainGutter);
+  color: $menuText;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+
+.leftSideBox {
+  margin: $mainGutter $mainGutter $mainGutter 130px;
+  border: 2px solid $grey;
+  width: $halfMain;
+  height: 540px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightSideData {
+  flex-flow: column nowrap;
+  margin-top: $mainGutter;
+  margin-right: $mainGutter;
+  width: $halfMain;
+}
+.headerName {
+  font-size: x-large;
+}
+
+.dataSection {
+  font-size: small;
+  margin-top: $halfGutter;
+  margin-bottom: $halfGutter;
+}
+
+.model {
+  width: 200px;
+}
+
+.customerAverage {
+  margin-right: 5px;
+}
+.reviews {
+  color: $secondary;
+  margin-top: $halfGutter;
+  margin-bottom: $mainGutter;
+}
+
+.productDescription {
+  font-size: medium;
+  height: 150px;
+  margin-bottom: $halfGutter;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.productSalePrice {
+  font-size: 40pt;
+  color: $secondary;
+}
+
+.savings {
+  font-weight: 700;
+  padding-right: $halfGutter;
+}
+
+.regularPrice {
+  font-weight: 700;
+  color: $grey;
+}
